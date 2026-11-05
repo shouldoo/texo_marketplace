@@ -16,6 +16,10 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.0.1
+
+- The v18 accounting delta names no commercial connector: the external transmission connectors in general.
+
 ### v1.0.0
 
 - First release.

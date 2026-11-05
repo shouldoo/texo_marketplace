@@ -8,7 +8,7 @@
       "name": "odoo_partner",
       "source": "./packs/odoo_partner",
       "description": "Odoo Community partners: the way of working on Odoo projects, version deltas, conventions, playbooks, the skills odoo-progetto and browser-test, the hub seed of the sector and a demo.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "name": "ets",
