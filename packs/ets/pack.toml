@@ -1,0 +1,30 @@
+# The contract of this pack with the texo CLI (texo/packs.py of the core).
+[pack]
+name = "ets"
+version = "v1.0.0"
+core = ">=2.0, <3"
+hub = ">=20.0.1.0.0"
+work_dirs = []
+
+# The threads this pack suggests: texo mount says which are missing. The organisation chooses the provider
+# of each and declares it in the threads of the hub with its driver, address and pinned version (docs/fili.md of the core).
+[[suggested_thread]]
+id = "normativa"
+why = "the texts of the laws and decrees the sector applies: the Code of the Third Sector, the decrees on the registry and on the financial statements"
+type = "source"
+data_class = "public"
+guide = "Before an answer on an obligation: search the act, read the article in force, cite it with act and article."
+
+[[suggested_thread]]
+id = "bandi"
+why = "the channels where the calls for funding the organisation may apply to are published"
+type = "source"
+data_class = "public"
+guide = "Calls for funding: follow the channels as external sources of the hub (hub_channel), never apply without the person."
+
+[[suggested_thread]]
+id = "documenti"
+why = "the archive where the organisation keeps its documents: statute, minutes, applications, reports"
+type = "connector"
+data_class = "customer"
+guide = "Read the documents the work needs, never copy them locally; a document about the people served is never read."

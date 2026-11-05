@@ -1,0 +1,9 @@
+{
+  "name": "lista_civica",
+  "version": "1.0.0",
+  "description": "Civic lists, politically neutral: positions and facts, personal data, campaign rules in drafts, signatures and candidacies, spending, method references, the skill comunicato-stampa, the hub seed of the sector.",
+  "author": {
+    "name": "Shouldoo"
+  },
+  "license": "CC-BY-SA-4.0"
+}

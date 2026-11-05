@@ -1,0 +1,32 @@
+# The contract of this pack with the texo CLI (texo/packs.py of the core).
+[pack]
+name = "studio_progettazione"
+version = "v1.0.0"
+core = ">=2.0, <3"
+hub = ">=20.0.1.0.0"
+work_dirs = []
+
+# The kinds of thread a studio mounts: texo mount says which are missing. The customer declares each one in the
+# [[thread]] list of the threads of the hub with the driver, the address and the ref of its own choice.
+[[suggested_thread]]
+id = "normativa"
+why = "the codes, decrees and technical rules the studio applies, read and cited, never quoted from memory"
+type = "source"
+data_class = "public"
+guide = "Codes, decrees, technical standards: search, read the article in force, cite act, article and date read."
+
+[[suggested_thread]]
+id = "progettazione"
+why = "the design and BIM software or the common data environment of the studio, through an adapter in threads/<id>/"
+type = "connector"
+data_class = "customer"
+writes = "confirm"
+guide = "Models and containers of the commissions: read revision and state; never change a model without the person."
+
+[[suggested_thread]]
+id = "documenti"
+why = "the archive of the commissions: drawings, reports, contracts, minutes"
+type = "connector"
+data_class = "customer"
+writes = "confirm"
+guide = "Documents of the commissions: read, never copy them locally; record in the hub the card of a document."

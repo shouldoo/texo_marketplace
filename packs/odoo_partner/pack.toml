@@ -1,0 +1,45 @@
+# The contract of this pack with the texo CLI (texo/packs.py of the core).
+[pack]
+name = "odoo_partner"
+version = "v1.0.0"
+core = ">=2.0, <3"
+hub = ">=20.0.1.0.0"
+# created by texo mount in the working folder, never versioned there
+work_dirs = ["progetti", "modules/V17", "modules/V18", "modules/V19", "modules/V20", "odoo/odoo-clients"]
+
+# The threads this pack suggests: texo mount says which are missing. Declare them in the threads of the hub
+# (Texo Threads) and pin their ref; add one odoo-<NN> per version in use and one oca-<repo> per OCA repository
+# the projects use (their .gitmodules list them).
+[[suggested_thread]]
+id = "odoo-skills"
+why = "the official Odoo skills (odoo-guidelines, odoo-web-guidelines, odoo-review, odoo-security, odoo-git)"
+type = "source"
+driver = "git-mirror"
+repo = "github.com/odoo/odoo"
+ref = "<commit of master>"
+paths = ["skills"]
+skills = "skills"
+data_class = "public"
+guide = "The house rules of Odoo for module code: the skills load when a task matches."
+
+[[suggested_thread]]
+id = "odoo-20"
+why = "the source of Odoo Community 20.0: names of fields, methods and views are checked there, never guessed"
+type = "source"
+driver = "git-mirror"
+repo = "github.com/odoo/odoo"
+ref = "<commit of 20.0>"
+paths = ["addons", "odoo"]
+data_class = "public"
+guide = "Odoo Community 20.0: rg the models, views and tests of the module you touch before writing code."
+
+[[suggested_thread]]
+id = "openupgrade-20"
+why = "the analyses of OCA/OpenUpgrade: what changed from 19.0 to 20.0 (the script build_ontology.py of the pack)"
+type = "source"
+driver = "git-mirror"
+repo = "github.com/OCA/OpenUpgrade"
+ref = "<commit of 20.0>"
+paths = ["openupgrade_scripts"]
+data_class = "public"
+guide = "Version changes of Odoo Community, model by model: for a migration and for a port between versions."

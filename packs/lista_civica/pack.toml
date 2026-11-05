@@ -1,0 +1,30 @@
+# The contract of this pack with the texo CLI (texo/packs.py of the core).
+[pack]
+name = "lista_civica"
+version = "v1.0.0"
+core = ">=2.0, <3"
+hub = ">=20.0.1.0.0"
+work_dirs = []
+
+# The threads this pack suggests: texo mount says which are missing. Each customer declares its own in the
+# [[thread]] list of the threads of the hub, with the driver, the address and the ref of the provider it chooses.
+[[suggested_thread]]
+id = "normativa"
+why = "the electoral law and the rules of political communication, read and cited article by article"
+type = "source"
+data_class = "public"
+guide = "Electoral law, propaganda, par condicio, campaign spending: search the act, read the article in force, cite it."
+
+[[suggested_thread]]
+id = "rassegna"
+why = "the local outlets and public bodies the list follows, as channels of the external sources of the hub"
+type = "source"
+data_class = "public"
+guide = "What others publish about the town and the campaign: read through the cards of the hub, cite outlet and date."
+
+[[suggested_thread]]
+id = "social"
+why = "the social accounts of the list: the agent drafts the posts, a person publishes them"
+type = "connector"
+data_class = "org"
+guide = "The accounts of the list: read the published posts; drafts only, a person publishes; never the data of followers."

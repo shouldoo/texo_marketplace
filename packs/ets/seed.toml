@@ -1,0 +1,123 @@
+# The seed of the ETS pack into the hub (core: texo seed, route admin/seed). Every item has a stable code or
+# key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
+lang = "en_US"
+
+[[activities]]
+code = "funding"
+name = "Funding"
+sequence = 30
+description = "Calls for funding, applications, agreements with funders and donors."
+
+[[activities]]
+code = "reporting"
+name = "Reporting"
+sequence = 40
+description = "Reporting to funders and to the registry: figures, documents, financial statements."
+
+[[activities]]
+code = "volunteers"
+name = "Volunteers and members"
+sequence = 50
+description = "Members, volunteers and staff: registers, insurance, reimbursements, meetings."
+
+[[activities]]
+code = "services"
+name = "Services to people"
+sequence = 60
+description = "The services the organisation runs for the people it serves: the activity with the strictest rules."
+
+[[sections]]
+code = "governance"
+name = "Governance"
+sequence = 60
+description = "Statute, bodies and their terms, members' meetings, the registry of the Third Sector."
+
+[[rules]]
+key = "no_data_of_people_served"
+name = "No data of the people served"
+severity = "never"
+activities = ["services", "communication", "reporting"]
+section = "compliance"
+keywords = "beneficiari, utenti, persone accolte, dati personali, privacy, beneficiaries"
+body = "Never write data about the people the organisation serves (names, stories, situations, contacts, not even an invented example) in the memory, in git, in a conversation or in a document you draft: describe the work by activities, aggregated numbers and outcomes."
+
+[[rules]]
+key = "protected_addresses"
+name = "Protected addresses are never written"
+severity = "never"
+activities = []
+section = "compliance"
+keywords = "indirizzo, struttura protetta, casa rifugio, accoglienza, address, shelter"
+body = "Never write the address of a protected facility anywhere: not in the memory, not in a project, not in a text for the public."
+
+[[rules]]
+key = "communication_never_identifies"
+name = "Communication never identifies a person"
+severity = "never"
+activities = ["communication"]
+section = "operations"
+keywords = "comunicazione, comunicato, social, report pubblico, anonimato"
+body = "A text about the services (report, post, press release, call for volunteers) never makes a person served recognisable, directly or by the combination of place, period, service and small numbers."
+
+[[rules]]
+key = "registry_deadlines_tracked"
+name = "Registry and grant deadlines are tasks"
+severity = "must"
+activities = ["reporting", "funding"]
+section = "governance"
+keywords = "RUNTS, scadenza, deposito, bilancio, rendiconto, deadline"
+body = "Every deadline of the registry of the Third Sector and of each grant is a task of the hub with its date, opened as soon as the deadline is known."
+
+[[rules]]
+key = "figures_from_accounting"
+name = "Figures come from the accounting"
+severity = "must"
+activities = ["reporting", "funding"]
+section = "operations"
+keywords = "cifre, importi, piano dei costi, rendicontazione, contabilita, figures"
+body = "Figures in an application, a report or a financial statement come from the accounting and the documents of the organisation, never estimated or rounded to fit; a missing figure is asked to the person."
+
+[[rules]]
+key = "cite_the_article"
+name = "An obligation cites the article in force"
+severity = "must"
+activities = ["analysis", "reporting", "funding"]
+section = "compliance"
+keywords = "norma, articolo, legge, decreto, citazione, Codice del Terzo settore"
+body = "An answer about a legal obligation cites the act and the article read in the text in force; a reference of the pack is a map, not a substitute for the text."
+
+[[rules]]
+key = "person_submits"
+name = "The person submits"
+severity = "never"
+activities = ["funding", "reporting"]
+section = "operations"
+keywords = "invio, firma, presentazione, PEC, piattaforma, submit"
+body = "Never sign, submit or send an application, a declaration, a report or a registry filing: the agent prepares and checks, the person signs and submits."
+
+[[project_templates]]
+key = "grant_application"
+name = "Grant application (template)"
+description = "<p>From a call for funding to the submission of the application.</p>"
+tasks = [
+    {name = "Card of the call", description = "<p>Funder, objectives, eligible applicants and activities, budget, deadline, criteria, exclusion causes, each with its article.</p>"},
+    {name = "Decision to apply", description = "<p>Requirements checked on the facts of the organisation; who decided and why.</p>"},
+    {name = "Partners and agreements"},
+    {name = "Project proposal", description = "<p>On the chapters of the call and its criteria, in the order of their weight.</p>"},
+    {name = "Budget plan", description = "<p>Eligible items, figures from the person or the accounting, co-financing.</p>"},
+    {name = "Declarations and signatures"},
+    {name = "Final check and submission by the person"},
+]
+
+[[project_templates]]
+key = "funded_project"
+name = "Funded project (template)"
+description = "<p>A project funded by a call: from the agreement to the final report.</p>"
+tasks = [
+    {name = "Agreement and funder rules", description = "<p>Eligibility period, eligible costs, co-financing, staff rules, budget changes, publicity, deadlines.</p>"},
+    {name = "Kick-off"},
+    {name = "Activities"},
+    {name = "Interim report"},
+    {name = "Final report", description = "<p>Activities, results and indicators in aggregated form; the financial statement checked on the accounting.</p>"},
+    {name = "Closing and lessons"},
+]

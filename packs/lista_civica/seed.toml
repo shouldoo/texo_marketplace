@@ -1,0 +1,108 @@
+# The seed of the civic list pack into the hub (core: texo seed, route admin/seed). Every item has a stable code
+# or key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
+lang = "en_US"
+
+[[activities]]
+code = "campaign"
+name = "Campaign"
+sequence = 30
+description = "Events, stalls, meetings and the volunteers who run them."
+
+[[activities]]
+code = "press"
+name = "Press and social media"
+sequence = 40
+description = "Press releases, the press review, posts and messages for the social accounts of the list."
+
+[[activities]]
+code = "programme"
+name = "Programme"
+sequence = 50
+description = "The programme of the list, built in thematic groups."
+
+[[activities]]
+code = "election"
+name = "Election procedures"
+sequence = 60
+description = "Candidacies, signatures, the election agent, campaign spending and its statement."
+
+[[rules]]
+key = "no_invented_positions"
+name = "No invented position, quote or event"
+severity = "never"
+activities = ["press", "communication", "programme"]
+section = "operations"
+keywords = "citazione, posizione, dichiarazione, quote, statement"
+body = "Never invent a position, a statement, a quote or an event of a real person, party, list or body; a quote goes in quotation marks only as the person gives it, word for word."
+
+[[rules]]
+key = "drafts_only"
+name = "Drafts only: a person publishes and sends"
+severity = "never"
+activities = ["press", "campaign", "communication"]
+section = "operations"
+keywords = "pubblicare, inviare, post, comunicato, publish, send"
+body = "Never publish, post, send, e-mail or schedule anything addressed to the press, the social accounts, the voters or other lists: prepare the draft, a person reads it and sends it."
+
+[[rules]]
+key = "people_data_in_the_hub"
+name = "Data of voters and supporters only in the hub"
+severity = "never"
+activities = []
+section = "compliance"
+keywords = "privacy, sostenitori, firmatari, volontari, elettori, contatti"
+body = "The personal data of voters, supporters, signatories, volunteers and donors stay in the hub: never in a file, a chat or a message to a thread that does not admit them; a supporter list reveals political opinions."
+
+[[rules]]
+key = "facts_with_source"
+name = "Facts about others with their source and date"
+severity = "must"
+activities = ["press", "communication", "programme"]
+section = "operations"
+keywords = "fonte, data, rassegna, scheda, source"
+body = "Write a fact about others (a vote, an act, a statement, a figure) only with its public source and its date; what others claim is attributed, never presented as a fact."
+
+[[rules]]
+key = "silence_period"
+name = "The silence period in every draft"
+severity = "must"
+activities = ["press", "campaign"]
+section = "compliance"
+keywords = "silenzio elettorale, giorno prima del voto, propaganda"
+body = "Plan no rally, public propaganda meeting or new posters for the day before and the voting days, and no poll result in the fifteen days before the vote: check the dates on the decree that calls the election."
+
+[[rules]]
+key = "spending_with_document"
+name = "Every expense with its document"
+severity = "must"
+activities = ["election", "campaign"]
+section = "compliance"
+keywords = "spese, rendiconto, fattura, ricevuta, mandatario, spending"
+body = "Record every expense and every contribution of the campaign as a fact with its document attached (invoice, receipt, statement), so the statement of the spending is written from the memory."
+
+[[project_templates]]
+key = "municipal_campaign"
+name = "Municipal campaign (template)"
+description = "<p>The campaign of a civic list for a municipal election, from the programme to the day after the vote.</p>"
+tasks = [
+    {name = "Programme in thematic groups", description = "<p>The groups, their drafts, the assembly that approves the programme.</p>"},
+    {name = "Candidates and list", description = "<p>Who runs, the acceptances, the symbol, the gender rules of the round.</p>"},
+    {name = "Signature collection", description = "<p>See the template of the signature collection.</p>"},
+    {name = "Events and stalls", description = "<p>Calendar, permits, volunteers, materials with the client responsible.</p>"},
+    {name = "Press and social media", description = "<p>Press review, releases, posts: drafts approved by the person in charge.</p>"},
+    {name = "Spending and statement", description = "<p>The election agent, the account, every expense with its document, the statement.</p>"},
+    {name = "Election day and results"},
+]
+
+[[project_templates]]
+key = "signature_collection"
+name = "Signature collection (template)"
+description = "<p>Collecting and checking the signatures that present the list, within the dates of the round.</p>"
+tasks = [
+    {name = "Instructions of the round", description = "<p>Dates, population band, minimum and maximum signatures, forms.</p>"},
+    {name = "Forms and authenticators", description = "<p>The forms of the round, who authenticates and when.</p>"},
+    {name = "Collection stalls"},
+    {name = "Electoral certificates", description = "<p>Certificates of the signatories and of the candidates from the municipality.</p>"},
+    {name = "Check of the signatures", description = "<p>Valid signatures counted, invalid ones explained.</p>"},
+    {name = "Submission"},
+]

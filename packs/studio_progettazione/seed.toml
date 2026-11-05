@@ -1,0 +1,106 @@
+# The seed of the design studio pack into the hub (core: texo seed, route admin/seed). Every item has a stable
+# code or key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
+lang = "en_US"
+
+[[activities]]
+code = "design"
+name = "Design"
+sequence = 30
+description = "Design at every level: feasibility, final and executive design, calculations, drawings, reports."
+
+[[activities]]
+code = "site"
+name = "Works direction and safety"
+sequence = 40
+description = "Works direction, site accounting, safety coordination in design and execution, testing."
+
+[[activities]]
+code = "tender"
+name = "Tenders and offers"
+sequence = 50
+description = "Public tenders and private offers: requirements, documents, fees, technical offer."
+
+[[activities]]
+code = "bim"
+name = "Information management (BIM)"
+sequence = 60
+description = "Models, information requirements, the information management plan, the common data environment."
+
+[[rules]]
+key = "the_professional_signs"
+name = "The professional signs and sends"
+severity = "never"
+activities = ["design", "site", "tender", "communication"]
+section = "compliance"
+keywords = "firma, timbro, invio, PEC, deposito, sign, stamp, send"
+body = "Never sign, stamp, file or send a document to a public body, a client or a contractor: the agent prepares it, the responsible professional checks, signs and sends it."
+
+[[rules]]
+key = "calculations_checked"
+name = "Calculations and safety judgements are proposals"
+severity = "must"
+activities = ["design", "site"]
+section = "operations"
+keywords = "calcolo, verifica, strutture, sicurezza, calculation, check"
+body = "A calculation, a structural or energy check and a safety judgement written by the agent are proposals: the responsible professional verifies them before they enter a drawing, a report or a decision."
+
+[[rules]]
+key = "cite_the_standard"
+name = "Cite the standard read"
+severity = "must"
+activities = ["design", "site", "tender"]
+section = "operations"
+keywords = "norma, articolo, decreto, codice, standard, citation"
+body = "A requirement taken from a code, a decree or a technical standard is cited with act, article and the day the text in force was read; a rule recalled from memory is not a source."
+
+[[rules]]
+key = "documents_stay_in_the_archive"
+name = "Documents stay in the archive"
+severity = "must"
+activities = ["design", "bim", "site"]
+section = "operations"
+keywords = "archivio, CDE, ACDat, modello, elaborato, revisione"
+body = "Models, drawings and reports stay in the archive or the common data environment of the studio: the memory keeps their reference (container, revision, state) and the facts and decisions taken from them, never a copy."
+
+[[rules]]
+key = "ai_register"
+name = "AI output recorded in the commission"
+severity = "must"
+activities = ["design", "site", "tender", "bim", "communication"]
+section = "compliance"
+keywords = "registro AI, intelligenza artificiale, L. 132/2025, trasparenza, AI register"
+body = "Every output of an AI system that reaches a drawing, a calculation, a script or a communication outside the studio is recorded in the AI register of the commission, with who verified it: the intellectual work stays the professional's and the client is informed."
+
+[[rules]]
+key = "client_data_in_the_hub"
+name = "Client and site data only in the hub"
+severity = "never"
+activities = []
+section = "compliance"
+keywords = "dati personali, committente, cantiere, indirizzo, privacy"
+body = "Never write the personal data of private clients, of people on site or of the people of a contractor in files of the working folder: they live in the hub, on the record of the commission, and only as much as the commission needs."
+
+[[project_templates]]
+key = "commission"
+name = "Commission (template)"
+description = "<p>The phases of a commission, from the offer to the closing; drop the ones the assignment does not include.</p>"
+tasks = [
+    {name = "Offer and assignment", description = "<p>Scope, fee, deadlines, the information to the client on the use of AI.</p>"},
+    {name = "Feasibility design", description = "<p>Survey, constraints, alternatives, the technical and economic feasibility.</p>"},
+    {name = "Final and executive design", description = "<p>Drawings, calculations, specifications, estimate, safety plan.</p>"},
+    {name = "Permits", description = "<p>Building, seismic, landscape and fire permits the works need.</p>"},
+    {name = "Works direction", description = "<p>Delivery of the works, site accounting, orders, variants, safety coordination.</p>"},
+    {name = "Testing and closing", description = "<p>Testing, certificates, the as-built documents, the closing of the commission.</p>"},
+]
+
+[[project_templates]]
+key = "public_tender"
+name = "Public tender (template)"
+description = "<p>Taking part in a tender for engineering and architecture services.</p>"
+tasks = [
+    {name = "Go / no go", description = "<p>Requirements, fee, workload, partners: the decision to take part.</p>"},
+    {name = "Grouping and requirements", description = "<p>The grouping of professionals, the commitment, the declarations.</p>"},
+    {name = "Technical offer", description = "<p>Reports, references, the information management offer when asked.</p>"},
+    {name = "Economic offer"},
+    {name = "Submission and follow-up", description = "<p>Submission on the platform, requests for clarification, the outcome.</p>"},
+]

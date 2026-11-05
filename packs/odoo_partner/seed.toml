@@ -1,0 +1,106 @@
+# The seed of the Odoo partner pack into the hub (core: texo seed, route admin/seed). Every item has a stable
+# code or key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
+lang = "en_US"
+
+[[activities]]
+code = "code"
+name = "Code"
+sequence = 30
+description = "Writing, reviewing or testing code: modules, scripts, configuration in a repository."
+
+[[activities]]
+code = "deploy"
+name = "Deploy and environments"
+sequence = 40
+description = "Instances, databases, servers and releases: local, stage and production."
+
+[[activities]]
+code = "data"
+name = "Customer data"
+sequence = 50
+description = "Reading, copying, importing or converting the data and documents of a customer."
+
+[[activities]]
+code = "migration"
+name = "Migration"
+sequence = 60
+description = "Moving an instance or a module to another version of Odoo."
+
+[[rules]]
+key = "production_never_a_test"
+name = "Production is never a test target"
+severity = "never"
+activities = ["deploy", "data"]
+section = "operations"
+keywords = "produzione, production, test, stage, collaudo"
+body = "Never write to, upgrade a module on or run tests against a production database or URL: changes reach production through the release of the project, after the stage and the customer's acceptance."
+
+[[rules]]
+key = "copies_neutralised"
+name = "A copy of production is neutralised first"
+severity = "never"
+activities = ["data", "deploy"]
+section = "compliance"
+keywords = "neutralizzazione, anonimizzazione, copia di produzione, neutralize, anonymize"
+body = "Never start an instance on a copy of a production database before neutralising it (the script neutralize-db.sh of the pack odoo_partner); for an organisation that serves vulnerable people, anonymise it too (anonymize-db.sh)."
+
+[[rules]]
+key = "names_from_the_source"
+name = "Names checked in the source of the version"
+severity = "must"
+activities = ["code", "migration"]
+section = "operations"
+keywords = "campo, metodo, vista, nome, sorgente, field, method, view, source"
+body = "Before using a field, method, view or xmlid, find it in the source of the Odoo version of the instance (the thread odoo-<NN>) or of the OCA module; a name from memory is a guess."
+
+[[rules]]
+key = "tests_with_a_clean_log"
+name = "Tests and a clean log after every change"
+severity = "must"
+activities = ["code"]
+section = "operations"
+keywords = "test, checklog, warning, log, modulo, module"
+body = "After creating or changing a module, run its tests on a database created for the task and check the log with checklog-odoo: a warning fails the change like a failed test."
+
+[[rules]]
+key = "database_through_the_orm"
+name = "Databases through the ORM"
+severity = "prefer"
+activities = ["code", "data"]
+section = "operations"
+keywords = "odoo shell, ORM, SQL, database, query"
+body = "Read and change an Odoo database through odoo shell and the ORM, so access rules, computed fields and constraints apply; raw SQL only when the ORM cannot do it, saying why."
+
+[[rules]]
+key = "dependency_installed"
+name = "A dependency only on an installed module"
+severity = "must"
+activities = ["code"]
+section = "operations"
+keywords = "dipendenza, depends, modulo installato, dependency"
+body = "Propose a dependency on a module only when the description of the project lists it as installed on the instance; otherwise say so and ask."
+
+[[project_templates]]
+key = "odoo_project"
+name = "Odoo project (template)"
+description = "<p>The phases of a new Odoo Community project, from the analysis to the support after go-live.</p>"
+tasks = [
+    {name = "Process analysis", description = "<p>The processes of the customer, the gaps against the standard and the OCA modules that cover them.</p>"},
+    {name = "Instance and repositories", description = "<p>The repository of the instance, its submodules, the local and stage environments.</p>"},
+    {name = "Configuration and development", description = "<p>Configuration first, then the custom modules, each with its tests.</p>"},
+    {name = "Acceptance on stage", description = "<p>The customer tests on stage with users that copy the real roles.</p>"},
+    {name = "Go-live", description = "<p>Data import, the release to production, the checks of the first day.</p>"},
+    {name = "Support after go-live"},
+]
+
+[[project_templates]]
+key = "odoo_migration"
+name = "Odoo version migration (template)"
+description = "<p>Moving an instance to a new Odoo version: assessment, modules, database, acceptance, production.</p>"
+tasks = [
+    {name = "Assessment", description = "<p>Installed modules, their target branches, the OCA dependencies, the version changes that touch them.</p>"},
+    {name = "Custom modules on the target version"},
+    {name = "Trial migration of the database", description = "<p>On a neutralised copy, with the log of the upgrade clean.</p>"},
+    {name = "Acceptance by the customer"},
+    {name = "Production migration"},
+]

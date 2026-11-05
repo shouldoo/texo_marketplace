@@ -1,0 +1,364 @@
+{
+ "questions": [
+  {
+   "query": "email di conferma ordine che non arrivano sullo stage",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Una copia neutralizzata non invia email"
+    }
+   ]
+  },
+  {
+   "query": "copia neutralizzata posta in uscita",
+   "scope": "lessons",
+   "class": "keywords",
+   "expected": [
+    {
+     "lesson": "Una copia neutralizzata non invia email"
+    }
+   ]
+  },
+  {
+   "query": "webhook del provider di pagamento",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Il webhook del provider di pagamento deve raggiungere lo stage"
+    }
+   ]
+  },
+  {
+   "query": "il pagamento con carta resta in sospeso in prova",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Il webhook del provider di pagamento deve raggiungere lo stage"
+    }
+   ]
+  },
+  {
+   "query": "varianti importate come attributi",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Le varianti si importano come attributi, non come prodotti"
+    }
+   ]
+  },
+  {
+   "query": "foglio con una colonna per ogni colore crea troppi prodotti",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Le varianti si importano come attributi, non come prodotti"
+    }
+   ]
+  },
+  {
+   "query": "modulo OCA senza ramo per la nuova versione",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Un modulo OCA senza ramo si migra dalla PR aperta"
+    }
+   ]
+  },
+  {
+   "query": "pull request di migrazione da completare",
+   "scope": "lessons",
+   "class": "keywords",
+   "expected": [
+    {
+     "lesson": "Un modulo OCA senza ramo si migra dalla PR aperta"
+    }
+   ]
+  },
+  {
+   "query": "campo rinominato OpenUpgrade",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Un campo rinominato tra due versioni ferma OpenUpgrade"
+    }
+   ]
+  },
+  {
+   "query": "la colonna nuova resta vuota dopo l'aggiornamento",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Un campo rinominato tra due versioni ferma OpenUpgrade"
+    }
+   ]
+  },
+  {
+   "query": "un salto di versione alla volta",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Una migrazione si prova un salto di versione alla volta"
+    }
+   ]
+  },
+  {
+   "query": "raggruppare le fatture di più ordini",
+   "scope": "lessons",
+   "class": "keywords",
+   "expected": [
+    {
+     "lesson": "Il raggruppamento delle fatture e' standard"
+    }
+   ]
+  },
+  {
+   "query": "una fattura al mese con tutti gli ordini del cliente",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Il raggruppamento delle fatture e' standard"
+    }
+   ]
+  },
+  {
+   "query": "tempo e materiali fatturato sulle ore previste",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Servizi a ore fatturati sulle ore registrate"
+    }
+   ]
+  },
+  {
+   "query": "foto prodotto sfocate",
+   "scope": "lessons",
+   "class": "keywords",
+   "expected": [
+    {
+     "lesson": "Le immagini di prodotto vanno caricate grandi"
+    }
+   ]
+  },
+  {
+   "query": "msgid scritto a mano",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "I termini di traduzione si esportano, non si scrivono a mano"
+    }
+   ]
+  },
+  {
+   "query": "ritiro in negozio solo sotto un certo peso",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Un metodo di consegna si limita per peso con le regole del metodo"
+    }
+   ]
+  },
+  {
+   "query": "posso provare un modulo in produzione",
+   "scope": "rules",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Mai prove in produzione"
+    }
+   ]
+  },
+  {
+   "query": "backup ripristino prima di aggiornare",
+   "scope": "rules",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "Backup prima di aggiornare"
+    }
+   ]
+  },
+  {
+   "query": "copia del database del cliente in locale",
+   "scope": "rules",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Dati dei clienti solo neutralizzati"
+    }
+   ]
+  },
+  {
+   "query": "dove metto la password del server",
+   "scope": "rules",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Segreti fuori dal codice"
+    }
+   ]
+  },
+  {
+   "query": "lingua dei commenti nel codice",
+   "scope": "rules",
+   "class": "keywords",
+   "expected": [
+    {
+     "note": "Codice e commit in inglese"
+    }
+   ]
+  },
+  {
+   "query": "prima la configurazione standard poi OCA",
+   "scope": "rules",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "Prima lo standard"
+    }
+   ]
+  },
+  {
+   "query": "chi manda l'email al cliente",
+   "scope": "rules",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Nessun invio al cliente senza la persona"
+    }
+   ]
+  },
+  {
+   "query": "fermo del gestionale durante la settimana",
+   "scope": "rules",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Fermo solo nel fine settimana"
+    }
+   ]
+  },
+  {
+   "query": "chi siamo",
+   "scope": "facts",
+   "class": "keywords",
+   "expected": [
+    {
+     "fact": "Chi e' Spola Informatica"
+    }
+   ]
+  },
+  {
+   "query": "versioni di Odoo che seguiamo",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Versioni seguite"
+    }
+   ]
+  },
+  {
+   "query": "come si vende l'assistenza",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Pacchetti di assistenza"
+    }
+   ]
+  },
+  {
+   "query": "responsabile del trattamento GDPR",
+   "scope": "facts",
+   "class": "keywords",
+   "expected": [
+    {
+     "fact": "Trattamento dei dati dei clienti"
+    }
+   ]
+  },
+  {
+   "query": "aprire un ticket di supporto",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Come si apre un ticket"
+    }
+   ]
+  },
+  {
+   "query": "cosa fare a fine giornata su un task",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Come si chiude una sessione di lavoro"
+    }
+   ]
+  },
+  {
+   "query": "passi di una prova OpenUpgrade",
+   "scope": "procedures",
+   "class": "keywords",
+   "expected": [
+    {
+     "procedure": "Prova di migrazione con OpenUpgrade"
+    }
+   ]
+  },
+  {
+   "query": "procedura di rilascio in produzione",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Procedura di rilascio in produzione"
+    }
+   ]
+  },
+  {
+   "query": "cosa significa SAL",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Glossario interno"
+    }
+   ]
+  },
+  {
+   "query": "email di conferma ordine non arriva",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Email di conferma ordine non arriva"
+    }
+   ]
+  },
+  {
+   "query": "la prova di migrazione si ferma su un campo",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Prova di migrazione del database"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+line-length = 120
+
+[lint]
+select = ["E", "F", "W", "I", "B"]
+
+[lint.per-file-ignores]
+# the generator of the ontology keeps its parsing tables on one line; the tests their data
+"packs/odoo_partner/scripts/build_ontology.py" = ["E501"]
+"**/tests/*.py" = ["E501"]
+"packs/odoo_partner/demo/*.py" = ["E501"]
