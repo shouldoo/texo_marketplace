@@ -19,6 +19,8 @@ map, with its references in `skills/*-guida/references/`.
 ### v1.0.1
 
 - The v18 accounting delta names no commercial connector: the external transmission connectors in general.
+- The question set of the demo has eleven paraphrases more, on facts, procedures, documents and tasks: the
+  hybrid search is measurable against the lexical one (`demo/questions.json`).
 
 ### v1.0.0
 
