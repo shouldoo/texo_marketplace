@@ -38,8 +38,7 @@ tags: ["accounting", "v18"]
   + `l10n_it_edi_sale`, `l10n_it_edi_doi` (dichiarazione d'intento), `l10n_it_edi_ndd` (note di debito),
   `l10n_it_edi_withholding` (ritenuta in e-fattura).
 - Rimpiazza l'intera famiglia OCA `l10n_it_fatturapa_*` (out/in/purchase/sale/rc/sp/wt/stamp…).
-- **Connettori esterni di trasmissione** (es. ELECTRA / Apulia AFE, `afe_odoo_connector` e satelliti):
-  **dismettibili** a favore del proxy SdI nativo.
+- **Connettori esterni di trasmissione**: **dismettibili** a favore del proxy SdI nativo.
 
 ### Mappatura funzione → nativo V18
 | Funzione | OCA (≤17) | Nativo V18 | Note |

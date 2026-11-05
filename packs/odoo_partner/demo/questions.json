@@ -359,6 +359,116 @@
      "task": "Prova di migrazione del database"
     }
    ]
+  },
+  {
+   "query": "chi firma le scelte per la bottega di vasellame",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chi decide in Ceramiche Arno"
+    }
+   ]
+  },
+  {
+   "query": "quanti depositi ha il distributore e come entra la merce",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Magazzini di Valtrebbia"
+    }
+   ]
+  },
+  {
+   "query": "quanto e' grande la ditta e dove ha sede",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chi e' Spola Informatica"
+    }
+   ]
+  },
+  {
+   "query": "chi da' il via libera alle norme di comportamento degli assistenti",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Ruoli del gruppo"
+    }
+   ]
+  },
+  {
+   "query": "come si porta un database dalla 17 alla 19 senza rischi",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Prova di migrazione con OpenUpgrade"
+    }
+   ]
+  },
+  {
+   "query": "passaggi per mettere online una modifica dal cliente",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Rilascio in produzione"
+    }
+   ]
+  },
+  {
+   "query": "arriva una segnalazione di malfunzionamento: primo passo",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Come si apre un ticket"
+    }
+   ]
+  },
+  {
+   "query": "che merce tratta lo shop e con che corriere",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Brief del negozio online"
+    }
+   ]
+  },
+  {
+   "query": "un solo documento contabile ogni trenta giorni con il lavoro svolto",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Fattura mensile raggruppata"
+    }
+   ]
+  },
+  {
+   "query": "il cliente vuole venire a prendere la merce di persona",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Ritiro in negozio"
+    }
+   ]
+  },
+  {
+   "query": "scaletta del sabato e domenica per il passaggio alla nuova release",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Piano del fine settimana di migrazione"
+    }
+   ]
   }
  ]
 }

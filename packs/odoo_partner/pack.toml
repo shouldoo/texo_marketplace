@@ -1,7 +1,7 @@
 # The contract of this pack with the texo CLI (texo/packs.py of the core).
 [pack]
 name = "odoo_partner"
-version = "v1.0.0"
+version = "v1.0.1"
 core = ">=2.0, <3"
 hub = ">=20.0.1.0.0"
 # created by texo mount in the working folder, never versioned there
