@@ -43,7 +43,7 @@ una nota scritta con «acconto alla ditta» si trova anche cercando «SAL».
 | CSE | coordinatore per la sicurezza in fase di esecuzione; coordinatore sicurezza in esecuzione; coordinatore sicurezza di cantiere |
 | PSC | piano di sicurezza e coordinamento; piano di sicurezza del cantiere |
 | POS | piano operativo di sicurezza; piano di sicurezza dell'impresa |
-| notifica preliminare | notifica art. 99; comunicazione di apertura cantiere ad ASL e Ispettorato |
+| notifica preliminare | notifica di apertura del cantiere; comunicazione di apertura cantiere ad ASL e Ispettorato |
 | ITL | Ispettorato territoriale del lavoro; Ispettorato del lavoro |
 | ASL | azienda sanitaria locale; azienda sanitaria |
 
@@ -84,7 +84,7 @@ una nota scritta con «acconto alla ditta» si trova anche cercando «SAL».
 | PassOE | codice AVCpass; verifica requisiti ANAC |
 | TED | Tenders Electronic Daily; GUUE; gazzetta europea degli appalti; bandi europei |
 | MePA | mercato elettronico della pubblica amministrazione; mercato elettronico |
-| affidamento diretto | incarico senza gara; art. 50 |
+| affidamento diretto | incarico senza gara; affidamento sotto soglia |
 | procedura negoziata | gara a inviti |
 | AQ | accordo quadro |
 | soglia UE | soglia di rilevanza europea; soglia comunitaria; sopra soglia |
@@ -99,22 +99,18 @@ una nota scritta con «acconto alla ditta» si trova anche cercando «SAL».
 |---|---|
 | Inarcassa | cassa di previdenza di ingegneri e architetti; cassa professionisti |
 | equo compenso | compenso minimo; quota non ribassabile |
-| DM 17/06/2016 | decreto parametri; tabelle dei corrispettivi; tariffa professionale |
+| decreto parametri | tabelle dei corrispettivi; tariffa professionale; parametri dei compensi |
 | parcella | corrispettivo; onorario; compenso professionale |
 | G | grado di complessità |
-| E.20 | edilizia su edifici esistenti; riqualificazione su esistente |
-| E.22 | edifici vincolati; edifici tutelati; beni culturali |
-| S.03 | strutture in cemento armato |
-| IA.02 | impianti di riscaldamento e ventilazione |
 
 ## Norme
 
 | Termine | Equivalenti |
 |---|---|
-| D.Lgs. 36/2023 | codice dei contratti pubblici; codice appalti; nuovo codice |
-| D.Lgs. 50/2016 | vecchio codice; codice appalti 2016 |
-| correttivo | D.Lgs. 209/2024; decreto correttivo del codice |
-| D.Lgs. 81/2008 | testo unico sicurezza; TUS |
+| codice dei contratti pubblici | codice appalti; nuovo codice |
+| vecchio codice | codice appalti precedente |
+| correttivo | decreto correttivo del codice |
+| testo unico sicurezza | TUS; testo unico sulla sicurezza sul lavoro |
 | CAM | criteri ambientali minimi; requisiti ambientali; appalti verdi |
 | GPP | Green Public Procurement; acquisti verdi della PA |
 | EPD | dichiarazione ambientale di prodotto; Environmental Product Declaration; scheda ambientale del prodotto |
@@ -127,17 +123,14 @@ una nota scritta con «acconto alla ditta» si trova anche cercando «SAL».
 | APE | attestato di prestazione energetica; certificato energetico; classe energetica |
 | EPgl,nren | indice di prestazione energetica globale non rinnovabile; consumo di energia non rinnovabile |
 | diagnosi energetica | audit energetico; analisi dei consumi |
-| Legge 10 | relazione ex L. 10/91; relazione tecnica energetica; calcoli energetici |
+| Legge 10 | relazione ex Legge 10; relazione tecnica energetica; calcoli energetici |
 | PdC | pompa di calore; heat pump; unità esterna |
 | VMC | ventilazione meccanica controllata; ricambio d'aria meccanico |
 | FV | fotovoltaico; impianto fotovoltaico; pannelli solari |
 | cappotto | isolamento termico a cappotto; isolamento delle facciate; rivestimento isolante esterno |
-| Conto Termico 3.0 | CT 3.0; incentivo GSE; contributo statale per l'efficienza energetica |
+| Conto Termico | CT; incentivo GSE; contributo statale per l'efficienza energetica |
 | GSE | Gestore dei servizi energetici |
 | detrazione per la casa | bonus casa abitazione principale; detrazione sulla spesa |
-| seconda casa | altri immobili; detrazione ridotta |
-| Transizione 5.0 | Industria 5.0; credito d'imposta 5.0 |
-| beni 4.0 | beni strumentali 4.0; macchinari interconnessi; Industria 4.0 |
 | MES | manufacturing execution system; sistema di gestione della produzione |
 
 ## Strutture e sismica

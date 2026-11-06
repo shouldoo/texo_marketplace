@@ -1,16 +1,16 @@
 ---
 type: "Playbook"
 title: "Playbook: testare un modulo sull'istanza locale di un progetto"
-description: "I test di un modulo creato o modificato, sull'istanza locale del progetto, su un database creato per il task e con zero warning nel log."
+description: "Come eseguire i test di un modulo sull'istanza locale del progetto, su un database dedicato, e controllarne il log con checklog-odoo."
 tags: ["test-modulo-locale"]
 ---
 
 # Playbook: testare un modulo sull'istanza locale di un progetto
 
 ## Quando usare
-Ogni volta che crei o modifichi un modulo in `modules/V<N>/<repo>/` o nel
-repository del progetto: i test del modulo girano dopo ogni modifica, prima di proporre
-commit o PR. Vale anche per verificare il comportamento del modulo sull'istanza locale.
+Quando la regola del hub sui test e sul log pulito lo chiede: dopo una modifica a un modulo in
+`modules/V<N>/<repo>/` o nel repository del progetto, prima di proporre commit o PR. Serve anche
+per verificare il comportamento del modulo sull'istanza locale.
 
 ## Come funziona
 
@@ -51,7 +51,7 @@ i suoi argomenti e fallisce con `unrecognized arguments: --db_port 5432` (verifi
 
 ## Il database di test
 
-**Il test gira su un database creato per il task, mai su uno esistente.** Il server
+**Il database di test è tuo: lo crei per il task, non ne usi uno esistente.** Il server
 Postgres dello stack può ospitare la copia neutralizzata della produzione, database di
 altri task o di un'altra versione: un database non creato da te non si usa, non si
 aggiorna e non si cancella.
@@ -119,8 +119,8 @@ o traceback si risolve nel modulo prima di andare avanti.
 ### 4. Zero warning: `checklog-odoo`
 `0 failed` non basta. La CI dei repository OCA fallisce su qualunque record `WARNING` o
 `ERROR` del log: nel template OCA `enable_checklog_odoo` è attivo di default da 18.0 e
-`oca_run_tests` passa il log dei test a `checklog-odoo`. Applica la stessa regola ai
-moduli dei progetti:
+`oca_run_tests` passa il log dei test a `checklog-odoo`. La regola del hub sui test chiede lo
+stesso ai moduli dei progetti:
 
 ```bash
 uvx checklog-odoo --no-echo "$LOG"     # deve uscire con 0

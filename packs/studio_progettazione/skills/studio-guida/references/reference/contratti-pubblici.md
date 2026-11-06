@@ -1,39 +1,29 @@
 ---
 type: "Reference"
 title: "Contratti pubblici per i servizi di ingegneria e architettura"
-description: "Gli articoli del D.Lgs. 36/2023 che uno studio incontra di più: RUP, livelli di progettazione, BIM, affidamenti sotto soglia, direzione dei lavori, collaudo; i corrispettivi del DM 17 giugno 2016."
-tags: ["contratti-pubblici", "dlgs-36-2023", "gare", "corrispettivi"]
+description: "Come leggi il codice dei contratti pubblici per una gara o un incarico pubblico: RUP, livelli di progettazione, gestione informativa, affidamenti sotto soglia, direzione dei lavori, collaudo, corrispettivi; le domande e i fatti da scrivere nel hub."
+tags: ["contratti-pubblici", "gare", "corrispettivi"]
 ---
 
 # Contratti pubblici per i servizi di ingegneria e architettura
 
-> Metodo: questo file dice quale articolo regola che cosa. Soglie, importi e termini si leggono nel testo
-> vigente dal filo `normativa` (il codice è stato modificato più volte) e diventano fatti del hub, con l'articolo,
-> la data di lettura e una scadenza; in un documento si cita l'articolo con la data di lettura.
+> Leggi il codice dei contratti pubblici vigente, i suoi allegati e i decreti correttivi nel filo `normativa`, e
+> per una gara il bando e il disciplinare. Il codice cambia spesso: soglie, importi e termini non si ricordano, si
+> leggono e diventano fatti del hub con l'articolo, la data di lettura e una scadenza.
 
-## D.Lgs. 31 marzo 2023, n. 36
+| Materia | Che cos'è | Domande | Nel hub |
+|---|---|---|---|
+| RUP | il responsabile della stazione appaltante per l'intervento | chi è, quando è nominato, che cosa approva e che cosa valida in ogni fase? | il RUP come ruolo, fatto della commessa |
+| Livelli di progettazione | i livelli in cui si sviluppa un progetto pubblico | quali livelli sono dovuti per questa opera, che cosa contiene ciascuno, chi dà il documento di indirizzo? | il livello dovuto e i contenuti letti, fatto della commessa; le fasi del progetto di conseguenza |
+| Gestione informativa | l'obbligo o la facoltà di usare metodi BIM | sopra quale importo è obbligatoria, da quando, che cosa chiede la stazione appaltante? | `gestione-informativa-bim.md` |
+| Affidamenti sotto soglia | affidamento diretto e procedura negoziata | quale procedura vale per questo importo, quanti operatori si invitano, quale soglia europea vale oggi? | fatto dell'organizzazione «Soglie degli affidamenti di servizi tecnici», con gli importi letti, l'articolo, la data e una scadenza, da rileggere a ogni revisione delle soglie europee |
+| Direzione dei lavori | il controllo tecnico, contabile e amministrativo dell'esecuzione | chi compone l'ufficio di direzione, quali documenti contabili sono dovuti, quali termini corrono? | `../playbooks/sal-e-contabilita-lavori.md` |
+| Riserve | le contestazioni dell'esecutore iscritte negli atti contabili | dove e entro quando si iscrivono e si confermano, che cosa succede se non lo si fa? | ogni riserva come fatto; i suoi termini come task |
+| Collaudo | il collaudo dei lavori e la verifica di conformità | entro quale termine dall'ultimazione, chi lo fa, che cosa si consegna? | il termine letto come task con la data, con l'articolo |
+| Corrispettivi | il calcolo del compenso a base di gara | quale decreto sui parametri vale, quali categorie e gradi di complessità ha l'opera, come si applica l'equo compenso? | il calcolo come documento della gara; le categorie dell'opera come fatto della commessa |
 
-| Articolo | Che cosa | Per lo studio |
-|---|---|---|
-| art. 15 | Responsabile unico del progetto (RUP): nominato nel primo atto di avvio dell'intervento, indicato nel bando, nell'avviso o nell'invito | l'interlocutore della stazione appaltante in ogni fase; nella memoria come ruolo, non come persona |
-| art. 41 e allegato I.7 | Due livelli di progettazione: progetto di fattibilità tecnico-economica (PFTE) e progetto esecutivo; gli obiettivi della progettazione (comma 1) e i contenuti dei livelli nell'allegato | le fasi di una commessa pubblica; il documento di indirizzo della progettazione viene dalla stazione appaltante |
-| art. 43 e allegato I.9 | Metodi e strumenti di gestione informativa digitale | `gestione-informativa-bim.md` |
-| art. 50 | Procedure sotto soglia: affidamento diretto dei servizi di ingegneria e architettura fino a un importo fissato (comma 1, lett. b); procedura negoziata con un numero minimo di operatori sopra quell'importo e fino alla soglia europea (lett. e) | il canale di gran parte degli incarichi pubblici di uno studio. Fatto nel hub: «Soglie degli affidamenti di servizi tecnici», con gli importi e il numero di operatori letti, l'articolo e la data; scadenza un anno, e alla revisione delle soglie europee |
-| art. 114 e allegato II.14 | Direzione dei lavori: il direttore dei lavori, con l'ufficio di direzione, controlla l'esecuzione sotto il profilo tecnico, contabile e amministrativo | `../playbooks/sal-e-contabilita-lavori.md` |
-| art. 116 e allegato II.14 | Collaudo dei lavori e verifica di conformità, nel termine dall'ultimazione che l'articolo fissa | la fase di chiusura della commessa; il termine letto è un fatto del progetto, con l'articolo |
+## Per una gara
 
-## Allegato II.14 (direzione dei lavori e collaudo)
-
-- art. 7: le riserve dell'esecutore, iscritte a pena di decadenza sul primo atto idoneo e confermate alla firma del
-  conto finale.
-- art. 1, comma 3: il direttore dei lavori controlla la spesa compilando i documenti contabili, che sono atti
-  pubblici a tutti gli effetti di legge.
-- art. 12: i documenti contabili: giornale dei lavori, libretti delle misure, registro di contabilità, stato di
-  avanzamento lavori (SAL), conto finale.
-
-## Corrispettivi: DM 17 giugno 2016
-
-Il compenso dei servizi di ingegneria e architettura si calcola con i parametri dell'art. 2: V (costo delle
-categorie dell'opera), G (complessità della prestazione), Q (specificità della prestazione), P (parametro base).
-Le categorie e i gradi di complessità (E.20 edilizia su esistente, E.22 edifici tutelati, S.03 strutture in c.a.,
-IA.02 impianti di riscaldamento e ventilazione, …) sono nelle tavole allegate al decreto.
+1. Leggi il bando e il disciplinare: requisiti, criteri, scadenze, offerta di gestione informativa se chiesta.
+2. Confronta con il codice per ciò che il bando rimanda alla legge, e scrivi le scadenze come task con la loro data.
+3. La decisione di partecipare o no è una nota sul task «Partecipare o no» del template «Gara pubblica (template)».

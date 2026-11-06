@@ -1,59 +1,40 @@
 ---
 type: "Reference"
 title: "Dati personali nella propaganda elettorale"
-description: "Quali dati una lista può usare per la propaganda e con quale base: consenso, fonti pubbliche, aderenti, liste comprate, fonti vietate (Garante, 18 aprile 2019)."
+description: "Quali dati una lista può usare per la propaganda e con quale base: le fonti da leggere e le domande da fare su consenso, fonti pubbliche, aderenti, liste acquistate, fonti escluse."
 tags: ["privacy", "propaganda", "GDPR"]
 ---
 
 # Dati personali nella propaganda elettorale
 
-> Fonte: provvedimento del Garante per la protezione dei dati personali del 18 aprile 2019 in materia di propaganda
-> elettorale e comunicazione politica, che richiama il Regolamento UE 2016/679. Il provvedimento è del 2019: le
-> norme che cita sono **da verificare sul testo vigente** prima di ogni campagna.
+> Metodo: leggi il provvedimento del Garante per la protezione dei dati personali sulla propaganda elettorale e il
+> regolamento europeo sulla protezione dei dati che richiama, nel testo vigente, dal filo `normativa`. Prima di ogni
+> campagna verifica che il provvedimento sia ancora quello in vigore.
 
-## Il principio
+## Che cosa è
 
-Un'opinione politica è una categoria particolare di dati (Regolamento, art. 9): sapere che una persona sostiene la
-lista, ha firmato per lei o ne frequenta gli eventi è un dato di quel tipo. Il consenso, quando serve, è libero,
-specifico, informato, inequivocabile, esplicito per le categorie particolari, distinto dalle altre finalità e
-**documentabile** (Garante 2019, § 2).
+Per mandare propaganda una lista usa nomi, indirizzi, telefoni ed e-mail. Sapere che una persona sostiene la lista,
+ha firmato o ne frequenta gli eventi rivela un'opinione politica: un dato che la legge protegge di più.
 
-## Con il consenso
+## Domande da fare alle fonti
 
-- **Contatti raccolti in una singola iniziativa** (petizione, raccolta di firme o di fondi, banchetto): si usano per la
-  propaganda solo con il consenso esplicito e se l'informativa data alla raccolta dice chiaramente questa ulteriore
-  finalità (§ 2, lett. B). Fa eccezione chi, per statuto o regole preesistenti, aderisce al soggetto politico e al suo
-  programma.
-- **Iscritti di associazioni non politiche** (sportive, professionali, di categoria): l'associazione può usarli per la
-  propaganda solo con il loro consenso specifico; un candidato che usa gli indirizzari di un'associazione senza quel
-  consenso tratta i dati in modo illecito (§ 2, lett. A).
+- **Il principio.** A quale categoria appartiene l'opinione politica? Che caratteristiche deve avere il consenso, e
+  come si documenta?
+- **Contatti di un'iniziativa.** Petizione, raccolta di firme o di fondi, banchetto: si possono usare per la
+  propaganda? A quali condizioni? Che cosa deve dire l'informativa?
+- **Iscritti di associazioni non politiche.** Può una lista usarne gli indirizzari? Con quale consenso, raccolto da
+  chi?
+- **Senza consenso.** Quali fonti pubbliche sono ammesse? Che cosa vale per aderenti e persone con contatti
+  regolari? Serve uno statuto o un regolamento della lista che lo preveda?
+- **Dati di terzi.** Che cosa deve verificare chi compra una lista di contatti? Che ruolo ha un fornitore di invii
+  (titolare, contitolare, responsabile), con quale contratto?
+- **Fonti escluse.** Quali archivi pubblici non si usano mai per la propaganda? Che cosa vale per un candidato che
+  ha dati per ufficio?
 
-## Senza consenso
+## Che cosa scrivi nel hub
 
-- **Fonti pubbliche** accessibili per legge, come le **liste elettorali** detenute dai comuni, rilasciabili in copia
-  per l'applicazione della disciplina dell'elettorato attivo e passivo (§ 3, punto 1).
-- **Aderenti e persone con contatti regolari** con la formazione politica, sulla base dell'informativa, se lo statuto
-  lo prevede (§ 3, punto 2). Per una lista civica vuol dire avere uno statuto o un regolamento che lo dica.
-
-## Dati di terzi
-
-- **Liste «consensate» acquistate**: chi le usa resta titolare e deve verificare, su tutti o su un campione congruo,
-  che il cedente abbia dato l'informativa e raccolto il consenso alla comunicazione a terzi per la propaganda
-  (§ 4, punto I).
-- **Fornitori di servizi** (invii postali, sms, e-mail): contitolari se usano basi dati proprie o decidono sui mezzi,
-  altrimenti responsabili con un contratto ai sensi dell'art. 28 del Regolamento; i dati così acquisiti non passano
-  ad altri committenti (§ 4, punto II).
-
-## Mai
-
-Non sono utilizzabili per la propaganda (§ 5): l'anagrafe della popolazione residente, gli archivi dello stato civile,
-gli schedari consolari, le liste elettorali di sezione già usate nei seggi, e in generale i dati raccolti dalle
-amministrazioni per le loro funzioni istituzionali. Un candidato che lavora in un ente non usa i dati che ha per
-ufficio.
-
-## Nel hub
-
-- Gli elenchi di volontari, sostenitori, firmatari e donatori stanno solo nel hub, con le sue autorizzazioni; mai in
-  un file della cartella di lavoro, in una chat o in un messaggio a un filo che non ha `data_class` `org` o `customer`.
-- L'informativa usata a un banchetto o in una raccolta è un documento della memoria; il consenso raccolto è
-  documentabile (il modulo, la data, la finalità).
+- Procedura «Contatti per la propaganda»: quali fonti la lista usa, con quale base, il modulo di informativa e
+  consenso, dove si custodiscono i moduli.
+- L'informativa usata a un banchetto o in una raccolta è un documento della memoria; ogni consenso è documentabile
+  (modulo, data, finalità).
+- Fatto «Fornitori di invii» con il ruolo di ciascuno e il contratto, quando la lista ne usa.

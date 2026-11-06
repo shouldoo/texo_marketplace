@@ -39,9 +39,9 @@ Se la verifica fallisce, proponi l'installazione all'utente prima di procedere.
   regola e che la description del progetto non lo indichi come ambiente di produzione; se l'host
   non è nella regola, la regola è una bozza o il ruolo non è chiaro, non lo abiliti: chiedi "è
   produzione o stage?" e proponi la regola (la scrivi dopo il sì della persona, con lo stato che
-  il tuo ruolo consente: da member resta una bozza finché un lead non la attiva). **Mai** un host di produzione, nemmeno in sola
-  lettura (a maggior ragione per le organizzazioni con vincoli dichiarati nel contesto, come
-  chi serve persone vulnerabili).
+  il tuo ruolo consente: da member resta una bozza finché un lead non la attiva). Un host di
+  produzione non entra mai in `ODOO_BROWSER_ALLOW`, nemmeno per una lettura: la regola del hub
+  sulla produzione vale anche per questo strumento.
 - Su un host di stage le scritture dell'UI sono scritture sul DB di stage: ammesse per
   provare i flussi, ma solo su dati creati per il test (progetto/commessa ad hoc) e dichiarando
   all'utente cosa si è creato.

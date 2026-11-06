@@ -1,56 +1,48 @@
 ---
 name: ets-guida
 description: >-
-  Come lavora con questo pacchetto un ente del Terzo settore (ETS: APS, ODV): le regole sulle persone servite, su associati e volontari, su finanziamenti e rendicontazione e sul registro, e la mappa di lettura dei reference di metodo e dei playbook. Usala per bandi, rendiconti, adempimenti RUNTS, volontari e bilanci di un ETS. Trigger: "bando", "rendicontazione", "RUNTS", "bilancio ETS", "volontari", "5 per mille", "prepara la domanda per il bando", "cosa dobbiamo depositare al RUNTS", "rendiconta il progetto", "registro dei volontari", "relazione di missione".
+  Come lavora con questo pacchetto un ente del Terzo settore (ETS: APS, ODV): dove leggere le regole del settore, che cosa scrivere nel hub su persone servite, associati e volontari, finanziamenti, rendicontazione e registro, e la mappa di lettura dei reference di metodo e dei playbook. Usala per bandi, rendiconti, adempimenti RUNTS, volontari e bilanci di un ETS. Trigger: "bando", "rendicontazione", "RUNTS", "bilancio ETS", "volontari", "5 per mille", "prepara la domanda per il bando", "cosa dobbiamo depositare al RUNTS", "rendiconta il progetto", "registro dei volontari", "relazione di missione".
 ---
 
 # ets-guida
 
-Il modo di lavorare del pacchetto ets. Le regole che ogni sessione dell'organizzazione deve seguire arrivano dal
-hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come lavorare e che
-cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
+Il modo di lavorare del pacchetto ets. I file nominati sotto sono in `references/`, accanto a questo file.
+
+Le regole del settore sono regole dell'organizzazione nel suo hub: sono arrivate dal seed di questo pacchetto e i
+lead possono cambiarle. Leggile con `texo rules` o nel context pack (`texo context`): ti vincolano. Questa skill
+dice come lavorare.
 
 ## Le persone servite
 
-- Non scrivere mai dati delle persone che l'organizzazione serve (persone aiutate, accolte, assistite, le loro
-  famiglie) nella memoria, in git, in un commit, in una conversazione o in un documento che redigi: né nomi, né
-  storie, né situazioni, né contatti, neppure in un esempio inventato. Il lavoro si descrive con attività, numeri
-  ed esiti, mai con persone.
-- L'indirizzo di una struttura protetta (una casa rifugio, un alloggio protetto) non si scrive mai da nessuna
-  parte: né nella memoria, né in un progetto, né in un testo per il pubblico.
-- Un documento che riguarda una persona servita non si legge e non entra nella memoria; se ti arriva, fermati e
-  dillo.
-- La comunicazione sui servizi (un report, un post, un comunicato stampa, un appello per volontari) non rende mai
-  riconoscibile una persona, né direttamente né per la combinazione dei dettagli.
+- Un documento che riguarda una persona servita non si legge e non entra nella memoria: se ti arriva, fermati e
+  dillo alla persona.
+- Le decisioni sul trattamento dei dati (informative, conservazione, misure) le prende chi ne risponde nell'ente:
+  sono procedure del hub nella sezione `compliance`, non le stabilisci tu.
 
 ## Associati, volontari, personale
 
-- I dati personali di associati, volontari e personale stanno solo nel hub, sui record che Odoo protegge con i suoi
-  permessi; mai in git o in un testo che redigi per altri.
-- Ciò che la legge chiede per loro (il registro dei volontari, la loro assicurazione, il rimborso delle spese) è una
-  procedura dell'organizzazione nel hub; il reference dice che cosa chiede la legge.
+- I loro dati personali stanno solo nel hub, sui record che Odoo protegge con i suoi permessi.
+- Ciò che la norma chiede per loro (registro dei volontari, assicurazione, rimborsi) è una procedura
+  dell'organizzazione nel hub; il reference dice dove leggerlo e che cosa scrivere.
 
 ## Finanziamenti e rendicontazione
 
-- Le regole di un finanziatore (costi ammissibili, cofinanziamento, scadenze, formato della rendicontazione, obblighi
-  di pubblicità) sono fatti del progetto che finanzia, presi dall'avviso o dalla convenzione e con la loro citazione.
-- Le scadenze del registro e di ogni contributo sono task o fatti del hub con la loro data; non affidarti mai al
-  ricordo.
-- Le cifre di una domanda o di un rendiconto vengono dalla contabilità e dai documenti dell'organizzazione, mai
-  stimate o arrotondate per farle tornare; una cifra che manca si chiede alla persona.
-- Una domanda o un rendiconto li presenta la persona, mai l'agente.
+- Le regole di un finanziatore (costi ammissibili, cofinanziamento, scadenze, formato del rendiconto, pubblicità)
+  sono fatti del progetto che finanzia, presi dall'avviso o dalla convenzione, con la loro citazione.
+- Non affidarti al ricordo per una data: cercala nei task e nei fatti del hub.
 
 ## La norma
 
-- Una risposta su un obbligo cita l'atto e l'articolo letti nel filo `normativa`, vigenti alla data; un reference di
-  questo pacchetto è una mappa, non sostituisce il testo.
-- Ciò che un reference segna «da verificare sul testo vigente» si controlla sul testo prima di farci affidamento.
+- Leggi l'atto nel filo `normativa`, nel testo vigente alla data; un reference di questo pacchetto dice quale
+  domanda farti, non la risposta.
+- Ciò che leggi diventa un fatto del hub con l'articolo letto, la data della verifica e una scadenza.
 
 ## Mappa di lettura
 
 > Nessun file è precaricato: si legge quello che il compito tocca. I percorsi sono relativi a questo pacchetto
-> (`$(texo where --pack ets)` dalla cartella di lavoro). Prima di rispondere su un obbligo: il reference, poi l'articolo
-> vigente nel filo `normativa`, poi le lezioni del hub con lo stesso tag.
+> (`$(texo where --pack ets)` dalla cartella di lavoro). Prima di rispondere su un obbligo: il reference, poi il
+> fatto del hub, poi il testo vigente nel filo `normativa` se il fatto manca o è scaduto, poi le lezioni del hub
+> con lo stesso tag.
 
 ### Per compito
 

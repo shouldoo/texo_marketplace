@@ -1,59 +1,51 @@
 ---
 name: lista-civica-guida
 description: >-
-  Come lavora con questo pacchetto una lista civica, in modo politicamente neutrale: posizioni, citazioni e fatti, dati personali, le regole della campagna nelle bozze, firme, candidature e spese, e la mappa di lettura dei reference di metodo e dei playbook. Usala per il lavoro di campagna di una lista civica. Trigger: "lista civica", "campagna elettorale", "raccolta firme", "candidature", "par condicio", "silenzio elettorale", "spese elettorali", "organizziamo un banchetto", "prepara un volantino", "come si presentano le candidature", "rendiconto delle spese elettorali", "possiamo pubblicare un sondaggio".
+  Come lavora con questo pacchetto una lista civica, in modo politicamente neutrale: dove sono le regole, come si leggono gli atti della tornata e si scrivono come fatti del hub, firme, candidature, propaganda, dati personali e spese, e la mappa di lettura dei reference di metodo e dei playbook. Usala per il lavoro di campagna di una lista civica. Trigger: "lista civica", "campagna elettorale", "raccolta firme", "candidature", "par condicio", "silenzio elettorale", "spese elettorali", "organizziamo un banchetto", "prepara un volantino", "come si presentano le candidature", "rendiconto delle spese elettorali", "possiamo pubblicare un sondaggio".
 ---
 
 # lista-civica-guida
 
-Il modo di lavorare del pacchetto lista_civica. Le regole che ogni sessione dell'organizzazione deve seguire
-arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
-lavorare e che cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
+Il modo di lavorare del pacchetto lista_civica. I file nominati sotto sono in `references/`, accanto a questo file.
 
-## Posizioni, citazioni e fatti
+## Le regole e questa skill
 
-- Non inventare mai una posizione, una dichiarazione, una citazione o un evento di una persona, un partito, una
-  lista o un ente reali. Una citazione va tra «» solo come la dà la persona, parola per parola; una citazione che
-  deve ancora arrivare si segna `[citazione da confermare]`.
-- Un fatto su altri (un voto, un atto, una dichiarazione, una cifra) si scrive solo con la sua fonte pubblica e la
-  sua data: una scheda delle fonti esterne, un atto, un documento della memoria. Ciò che altri sostengono si
-  attribuisce, mai presentato come un fatto.
-- Una persona privata non si nomina mai in un testo destinato a uscire; una persona pubblica solo nel suo ruolo
-  pubblico.
-- L'agente redige; non pubblica, non invia, non posta, non manda per e-mail e non programma mai nulla rivolto alla
-  stampa, agli account social, agli elettori o ad altre liste. Lo fa una persona, dopo aver letto la bozza.
+Le regole del settore sono regole dell'organizzazione nel suo hub: sono arrivate dal seed di questo pacchetto e i lead
+possono cambiarle. Leggile con `texo rules` o nel pacchetto di contesto (`texo context`), con l'attività della
+sessione: vincolano. Questa skill dice come lavorare e che cosa leggere.
 
-## Dati personali
+## Come lavori
 
-- I dati di elettori, sostenitori, firmatari, volontari e donatori stanno solo nel hub, con i suoi permessi: mai in
-  git, in un documento della cartella di lavoro, in una chat o in un prompt inviato a un filo di classe `public`.
-- Un'opinione politica è una categoria particolare di dati personali (Regolamento UE 2016/679, art. 9, come
-  richiamato dal provvedimento del Garante del 18 aprile 2019, § 2): l'elenco di chi sostiene la lista o ha firmato
-  per essa lo è. I contatti raccolti in un'iniziativa (una petizione, un banchetto, una raccolta firme) si usano per
-  la propaganda solo con il consenso o la base che il Garante descrive (`references/reference/privacy-propaganda.md`).
-- Le anagrafi della popolazione e le liste già usate ai seggi non sono mai una fonte di contatti (Garante 2019, § 5).
+- Prima di una bozza, apri il pacchetto di contesto del progetto della campagna: i fatti della tornata (date,
+  calendario dei divieti, firme, limiti di spesa) e le procedure della lista. Un fatto della tornata scaduto o non
+  verificato si ricontrolla con la persona prima di usarlo.
+- Una citazione che deve ancora arrivare si segna `[citazione da confermare]`. Una persona privata non si nomina in un
+  testo destinato a uscire; una persona pubblica solo nel suo ruolo pubblico.
+- Ciò che dipende dalla tornata o dalla dimensione del comune (date, firme, limiti, spazi) non si scrive mai a
+  memoria: si legge sugli atti della tornata nei fili della lista, si scrive come fatto del hub, e si dice quando non
+  è stato verificato.
+- Ogni materia ha il suo reference: che cosa è, quale fonte leggere, quali domande farle, quale fatto o task
+  scrivere. Le risposte stanno nei fatti del hub, mai nei file del pacchetto.
+- Firme e candidature: `references/playbooks/raccolta-firme-e-candidature.md`. Spese e contributi:
+  `references/reference/spese-elettorali.md`. Contatti di elettori e sostenitori:
+  `references/reference/privacy-propaganda.md`.
 
-## Le regole della campagna nelle bozze
+## Il fatto della tornata
 
-Le bozze seguono gli atti che il pacchetto ha letto (`references/reference/`): il silenzio del giorno prima e dei
-giorni del voto (L. 4 aprile 1956, n. 212, art. 9), i manifesti solo negli spazi del comune (L. 212/1956, art. 1),
-il nome del committente responsabile su ogni materiale di propaganda (L. 10 dicembre 1993, n. 515, art. 3, comma 2),
-nessun risultato di sondaggi nei quindici giorni prima del voto (L. 22 febbraio 2000, n. 28, art. 8). Date, soglie e
-limiti che dipendono dalla tornata o dalla dimensione del comune si controllano sugli atti di quella tornata, e si
-dice quando non lo sono stati.
+Ciò che leggi negli atti della tornata diventa un fatto del progetto della campagna, uno per argomento:
 
-## Firme, candidature e spese
+- titolo chiaro (per esempio «Calendario dei divieti della tornata», «Firme per la presentazione della lista»,
+  «Limiti di spesa della campagna»);
+- sezione `compliance`, parole chiave con sinonimi;
+- l'atto e l'articolo letti, la data della verifica, chi l'ha fatta;
+- scadenza alla fine della tornata.
 
-- Firme e moduli di candidatura seguono le istruzioni che il Ministero dell'Interno pubblica per la tornata e le leggi
-  che richiamano: `references/playbooks/raccolta-firme-e-candidature.md`. Una cifra a memoria non basta mai.
-- Ogni spesa e ogni contributo della campagna si registra nel hub come fatto con il suo documento (fattura,
-  ricevuta, estratto conto), così il rendiconto delle spese si scrive dalla memoria
-  (`references/reference/spese-elettorali.md`).
+Le scadenze che ne derivano diventano task con la loro data.
 
 ## Mappa di lettura
 
-> Prima le regole: quelle del core e del hub, poi questa skill. Le norme si leggono sul filo `normativa`
-> della cartella di lavoro e si citano per atto e articolo; ciò che dipende dalla tornata si verifica sugli atti di quell'anno.
+> Prima le regole del hub, poi questa skill. Le norme si leggono sul filo `normativa` della lista e si citano
+> nei fatti per atto e articolo; ciò che dipende dalla tornata si verifica sugli atti di quell'anno.
 
 ### Per lavoro
 

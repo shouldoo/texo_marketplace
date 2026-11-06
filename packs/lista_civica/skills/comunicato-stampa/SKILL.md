@@ -85,19 +85,15 @@ la bozza cambia solo dove dice lei.
 2. Se la persona ha deciso qualcosa che varrà anche la prossima volta (chi parla, il paragrafo di chiusura, la
    lunghezza), proponilo come modifica della procedura; se è qualcosa che l'agente deve fare sempre o non fare mai,
    proponilo come regola (la attiva un lead).
-3. Lo invia la persona: l'agente non invia, non pubblica e non manda mai per e-mail un comunicato, né prepara di sua
-   iniziativa un messaggio pronto da inviare alle testate.
+3. Il passo dopo il salvataggio è della persona: di' dove trovare il testo.
 
-## Sicurezza e invarianti
-- **Mai** inviare, pubblicare o mandare per e-mail un comunicato stampa, né programmarlo: lo fa la persona.
-- **Mai** inventare un fatto, una cifra, una data o una citazione; mai mettere tra «» parole che il portavoce non ha
-  dato; ogni fatto del comunicato è nel prospetto delle fonti.
-- **Mai** nominare una persona privata; una persona pubblica solo nel suo ruolo pubblico, con la fonte di ciò che se ne
-  dice.
-- **Mai** presentare come un fatto la posizione di un partito, di un sindacato o di un'azienda: attribuita, con la sua
-  data.
-- Le regole dell'organizzazione vincolano (attività `communication`); una procedura descrive. Organizzazioni che
-  servono persone vulnerabili: nessun dato delle persone che servono, mai, neppure anonimizzato in un esempio.
+## Le regole e questa skill
+Le regole che vincolano un comunicato (che cosa non si inventa mai, chi pubblica, come si scrive un fatto su altri,
+i giorni del silenzio) sono regole dell'organizzazione nel suo hub: sono arrivate dal seed del pacchetto e i lead
+possono cambiarle. Leggile con `texo rules` o nel pacchetto di contesto (`texo context`, attività `communication` e
+`press`): vincolano. Questa skill dice come lavorare.
+- Prima di proporre una data di uscita, leggi il fatto «Calendario dei divieti della tornata» del progetto della
+  campagna (il reference propaganda-e-silenzio-elettorale della skill lista-civica-guida); se manca, dillo.
+- Organizzazioni che servono persone vulnerabili: nessun dato delle persone che servono, neppure anonimizzato in un
+  esempio.
 - Se il hub non è raggiungibile, dillo e non scrivere nulla nella memoria.
-- Durante il silenzio prima del voto e nei giorni del voto un comunicato resta solo una bozza: la persona decide quando
-  esce (il reference propaganda-e-silenzio-elettorale della skill lista-civica-guida).

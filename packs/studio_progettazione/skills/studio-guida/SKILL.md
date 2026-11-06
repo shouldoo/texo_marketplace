@@ -1,52 +1,45 @@
 ---
 name: studio-guida
 description: >-
-  Come lavora con questo pacchetto uno studio di ingegneria e architettura: il professionista decide e firma, le commesse e i loro documenti, l'uso dell'AI e i dati, e la mappa di lettura di glossario, BIM, contratti pubblici, sicurezza nei cantieri e playbook. Usala per una commessa, una gara, la contabilità dei lavori, il BIM, il coordinamento della sicurezza. Trigger: "commessa", "gara", "SAL", "BIM", "CSE", "PSC", "progetto esecutivo", "apri una commessa", "prepariamo l'offerta per la gara", "registra l'output dell'AI", "capitolato informativo", "direzione dei lavori".
+  Come lavora con questo pacchetto uno studio di ingegneria e architettura: le commesse e i loro documenti, le decisioni, il registro AI, le fonti da leggere, e la mappa di lettura di glossario, BIM, contratti pubblici, sicurezza nei cantieri e playbook. Usala per una commessa, una gara, la contabilità dei lavori, il BIM, il coordinamento della sicurezza. Trigger: "commessa", "gara", "SAL", "BIM", "CSE", "PSC", "progetto esecutivo", "apri una commessa", "prepariamo l'offerta per la gara", "registra l'output dell'AI", "capitolato informativo", "direzione dei lavori".
 ---
 
 # studio-guida
 
-Il modo di lavorare del pacchetto studio_progettazione. Le regole che ogni sessione dell'organizzazione deve seguire
-arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
-lavorare e che cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
+Il modo di lavorare del pacchetto studio_progettazione. I file nominati sotto sono in `references/`, accanto a
+questo file.
 
-## Il professionista decide, firma e invia
+## Le regole stanno nel hub
 
-- L'agente prepara, controlla e propone; il professionista responsabile decide, firma e invia. Non firmare, timbrare,
-  depositare o inviare mai nulla a un ente pubblico, a un committente o a un'impresa.
-- Un calcolo, una verifica strutturale, energetica o acustica e un giudizio sulla sicurezza scritti dall'agente sono
-  proposte finché il professionista responsabile non li ha verificati.
-- Un requisito preso da un codice, un decreto o una norma tecnica si cita con atto, articolo e il giorno in cui si è
-  letto il testo vigente. Una regola ricordata a memoria non è una fonte; se il testo non si può leggere, dillo.
+Le regole del settore sono regole dell'organizzazione nel suo hub: sono arrivate dal seed di questo pacchetto e i
+lead possono cambiarle o sostituirle. Leggile con `texo rules` o nel pacchetto di contesto (`texo context`): ti
+vincolano. Questa skill dice come lavorare, non le ripete.
 
 ## Una commessa e i suoi documenti
 
-- Modelli, elaborati e relazioni restano nell'archivio o nell'ambiente di condivisione dei dati. La memoria tiene il
-  loro riferimento (contenitore, disciplina, revisione, stato) e ciò che l'archivio non ha: perché, chi ha deciso, che
-  cosa si è imparato, che cosa ha prodotto l'AI.
-- Una decisione di una commessa si scrive come nota che cita il documento e la revisione da cui viene; una decisione
-  più recente la sostituisce, non si cancella nulla.
+- Una commessa è un progetto del hub. Dei modelli e degli elaborati scrivi il riferimento (contenitore, disciplina,
+  revisione, stato) e ciò che l'archivio non ha: perché, chi ha deciso, che cosa si è imparato.
+- Una decisione di una commessa è una nota che cita il documento e la revisione da cui viene; una decisione più
+  recente la sostituisce, non cancelli nulla (`references/playbooks/registro-decisioni-e-ai.md`).
 - Versioni e revisioni dei documenti, la fase della progettazione, i titoli abilitativi ottenuti e le scadenze del
   contratto sono fatti della commessa nel hub.
-- I documenti che manda un committente o un ente pubblico sono documenti della memoria con il loro riassunto; il loro
-  testo si tiene solo quando la commessa lo consente.
-
-## AI e dati
-
-- Ogni output di un sistema di AI che arriva in un elaborato, un calcolo, uno script o una comunicazione fuori dallo
-  studio si registra nel registro AI della commessa con chi l'ha verificato
-  (`references/playbooks/registro-decisioni-e-ai.md`): l'uso dell'AI è strumentale e l'opera intellettuale resta del
-  professionista, e il committente è informato dei sistemi usati (`references/reference/compliance-ai.md`).
-- I dati personali dei committenti privati, delle persone in cantiere e delle persone delle imprese stanno solo nel
-  hub, sulla commessa, e solo quanto serve alla commessa; le categorie particolari (salute, disabilità per
-  l'accessibilità di un'abitazione) non entrano mai nella memoria.
-- I dati di una commessa non ne escono mai: ciò che lo studio impara diventa una lezione senza il cliente.
+- I documenti che manda un committente o un ente pubblico sono documenti della memoria con il loro riassunto; il
+  loro testo si tiene solo quando la commessa lo consente.
+- Ciò che lo studio impara su una commessa diventa una lezione senza il cliente.
 - La memoria e i registri servono la commessa, mai a valutare le persone che lavorano nello studio.
+
+## Una norma, un fatto
+
+Quando una commessa dipende da una norma (una soglia, un termine, un obbligo), non rispondere a memoria: leggi il
+testo vigente nel filo `normativa`, rispondi alla domanda della commessa e proponi un fatto del hub con la sezione,
+le parole chiave, l'atto e l'articolo letti, la data di lettura e una scadenza. Un termine che corre diventa un
+task con la sua data. I reference sotto dicono quale tipo di fonte leggere e quali domande farle; le risposte
+stanno nei fatti del hub, che una riforma cambia.
 
 ## Mappa di lettura
 
-> Le regole del settore sono sopra e nel hub. Prima di un lavoro si legge il file della riga, poi si cercano le
-> lezioni del hub sull'argomento (`texo search "<parole>" --scope lessons`, con i termini del glossario).
+> Prima di un lavoro leggi il file della riga, poi cerca le lezioni del hub sull'argomento
+> (`texo search "<parole>" --scope lessons`, con i termini del glossario).
 
 ### Per lavoro
 
@@ -64,10 +57,11 @@ lavorare e che cosa leggere. I file nominati sotto sono in `references/`, accant
 
 ### Fonti
 
-- Le norme si leggono dal filo `normativa` della cartella di lavoro (`.texo/THREADS.md`): si cita l'atto, l'articolo e la data
-  di lettura del testo vigente. Le date e le soglie scritte nei reference valgono alla data di lettura indicata.
-- Modelli ed elaborati si leggono dal filo `progettazione` o `documenti`, se la cartella di lavoro li monta; altrimenti la
-  persona li indica.
+- Le norme si leggono dal filo `normativa` della cartella di lavoro (`.texo/THREADS.md`). Se il testo non si può
+  leggere, dillo.
+- Il bando, il disciplinare e il contratto della commessa sono documenti della memoria della commessa.
+- Modelli ed elaborati si leggono dal filo `progettazione` o `documenti`, se la cartella di lavoro li monta;
+  altrimenti la persona li indica.
 
 ### Skill
 

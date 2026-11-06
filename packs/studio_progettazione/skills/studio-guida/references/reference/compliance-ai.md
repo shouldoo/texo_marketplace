@@ -1,51 +1,63 @@
 ---
 type: "Reference"
-title: "AI in uno studio di progettazione: L. 132/2025, AI Act, GDPR"
-description: "Gli obblighi che riguardano l'uso di agenti e modelli in uno studio professionale: prevalenza del lavoro del professionista e informativa al cliente, ruolo e classificazione secondo l'AI Act, dati personali."
-tags: ["compliance", "ai", "l132-2025", "ai-act", "gdpr"]
+title: "AI e dati personali in uno studio di progettazione"
+description: "Come verifichi gli obblighi che l'uso di agenti e modelli porta a uno studio professionale: la norma nazionale sulle professioni intellettuali, il regolamento europeo sull'intelligenza artificiale, la protezione dei dati; le domande e i fatti da scrivere nel hub."
+tags: ["compliance", "ai", "ai-act", "gdpr"]
 ---
 
-# AI in uno studio di progettazione: L. 132/2025, AI Act, GDPR
+# AI e dati personali in uno studio di progettazione
 
-> Non è un parere legale. Ogni riferimento si verifica sul testo vigente e sui decreti attuativi prima dell'uso.
+> Non è un parere legale. Le risposte stanno nei testi vigenti, letti nel filo `normativa`, e diventano fatti del
+> hub con l'atto, l'articolo, la data di lettura e una scadenza.
 
-## L. 23 settembre 2025, n. 132, art. 13 (professioni intellettuali)
+## L'AI nelle professioni intellettuali
 
-- L'uso dell'AI è ammesso per attività strumentali e di supporto, con prevalenza del lavoro intellettuale del
-  professionista.
-- Il professionista informa il cliente dei sistemi di AI usati, in modo chiaro, semplice ed esauriente: una
-  clausola del disciplinare d'incarico, per esempio «Nello svolgimento dell'incarico lo studio può avvalersi di
-  strumenti di intelligenza artificiale con funzione strumentale e di supporto. Le scelte progettuali, le verifiche
-  e la responsabilità degli elaborati restano in capo ai professionisti incaricati.»
-- Il registro AI della commessa (`../playbooks/registro-decisioni-e-ai.md`) è la prova della prevalenza: che cosa
-  ha prodotto l'AI, chi lo ha verificato, dove è confluito.
+Che cos'è: la norma nazionale che dice come un professionista può usare l'AI e che cosa deve dire al cliente.
 
-## Reg. UE 2024/1689 (AI Act)
+Leggi la legge nazionale sull'intelligenza artificiale, nella parte sulle professioni intellettuali. Domande:
 
-- Lo studio che usa agenti e modelli di terzi è deployer; diventa fornitore se sviluppa un sistema di AI e lo
-  consegna ad altri con il proprio nome (per esempio un gemello digitale con componenti di AI): si valuta commessa
-  per commessa.
-- Alfabetizzazione (art. 4): chi usa gli agenti ha competenze adeguate; lo studio tiene traccia della formazione.
-- Pratiche vietate (art. 5): nessuna nell'uso previsto; escluso per esempio il riconoscimento delle emozioni sul
-  luogo di lavoro.
-- Trasparenza (art. 50): immagini e video generati o modificati, quando pubblicati e capaci di ingannare, si
-  indicano come tali.
-- Alto rischio possibile: un componente di sicurezza di un'infrastruttura critica (allegato III, punto 2);
-  sempre alto rischio la valutazione o il monitoraggio di chi lavora (allegato III, punto 4), escluso per scelta.
-- Le date di applicazione degli obblighi per i sistemi ad alto rischio si verificano sul testo vigente prima di
-  citarle.
+- Per quali attività l'uso dell'AI è ammesso, e che rapporto deve avere con il lavoro del professionista?
+- Che cosa va detto al committente, in che forma, e quando?
+- Che cosa deve poter dimostrare lo studio, e il registro AI della commessa basta a dimostrarlo?
 
-## GDPR (Reg. UE 2016/679)
+Nel hub: un fatto dell'organizzazione (sezione `compliance`) con le risposte, l'articolo e la data di lettura; una
+procedura dell'organizzazione con il testo dell'informativa che lo studio usa nel disciplinare d'incarico, scritto
+dal professionista; per ogni commessa, il fatto con la data dell'informativa.
 
-| Situazione | Ruolo dello studio |
+## Il regolamento europeo sull'intelligenza artificiale
+
+Che cos'è: le regole europee su chi fornisce e chi usa un sistema di AI, per livello di rischio.
+
+Leggi il regolamento europeo sull'intelligenza artificiale e gli atti che lo attuano. Domande, per ogni uso
+previsto in una commessa:
+
+- Lo studio è utilizzatore (deployer) di un sistema di terzi, o fornitore perché consegna un sistema con il proprio
+  nome (per esempio un gemello digitale con componenti di AI)?
+- L'uso è vietato, ad alto rischio, soggetto a obblighi di trasparenza, o nessuno di questi? Un componente di
+  sicurezza di un'infrastruttura e il monitoraggio di chi lavora sono i casi da guardare per primi.
+- Quali obblighi ne vengono (competenze di chi usa gli agenti, trasparenza dei contenuti generati, documentazione) e
+  da quando si applicano?
+
+Nel hub: un fatto della commessa con la classificazione, l'articolo letto, la data e l'autore della valutazione; un
+fatto dell'organizzazione sulla formazione di chi usa gli agenti; un task con la data per ogni obbligo che non si
+applica ancora.
+
+## I dati personali
+
+Che cos'è: la protezione dei dati delle persone che una commessa tocca.
+
+Leggi il regolamento europeo sulla protezione dei dati e le indicazioni dell'autorità di controllo. Domande:
+
+| Situazione | Domanda |
 |---|---|
-| dati di soci, collaboratori, committenti persone fisiche, fornitori | titolare |
-| dati che il committente affida per la gestione (per esempio i dati di esercizio di un gemello digitale) | di norma responsabile (art. 28), con contratto |
-| fornitore del modello di AI, hosting, CDE in cloud | responsabili o sub-responsabili: accordo sul trattamento, luogo del trattamento, trasferimenti fuori UE |
+| dati di soci, collaboratori, committenti persone fisiche, fornitori | lo studio è titolare? quale base giuridica? |
+| dati che il committente affida (per esempio i dati di esercizio di un gemello digitale) | lo studio è responsabile del trattamento? c'è il contratto? |
+| fornitore del modello di AI, hosting, CDE in cloud | c'è l'accordo sul trattamento? dove sono trattati i dati, escono dall'Unione? |
 
-- Minimizzazione: nella memoria solo ciò che serve alla commessa; delle persone il ruolo (committente, RUP,
-  direttore dei lavori, impresa).
-- Categorie particolari (art. 9: salute, disabilità per l'accessibilità di un'abitazione): mai nella memoria;
-  restano nei documenti di progetto, con accesso limitato.
-- Registro dei trattamenti (art. 30): l'uso degli agenti si descrive come trattamento. Valutazione d'impatto
-  (art. 35): probabile per i gemelli digitali che monitorano persone.
+- L'uso degli agenti va descritto nel registro dei trattamenti? Serve una valutazione d'impatto (probabile per un
+  gemello digitale che monitora persone)?
+- Ci sono categorie particolari di dati (salute, disabilità per l'accessibilità di un'abitazione)? Restano nei
+  documenti di progetto, con accesso limitato, mai nella memoria.
+
+Nel hub: il ruolo privacy dello studio come fatto della commessa, delle persone solo il ruolo (committente, RUP,
+direttore dei lavori, impresa); la valutazione d'impatto, se serve, come task con la sua data.

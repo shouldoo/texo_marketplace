@@ -68,8 +68,8 @@ name = "Il silenzio elettorale in ogni bozza"
 severity = "must"
 activities = ["press", "campaign"]
 section = "compliance"
-keywords = "silenzio elettorale, giorno prima del voto, propaganda, comizio, sondaggi"
-body = "Non pianificare comizi, riunioni di propaganda pubblica o nuovi manifesti per il giorno prima e i giorni del voto, né risultati di sondaggi nei quindici giorni prima del voto: controlla le date sul decreto che indice le elezioni."
+keywords = "silenzio elettorale, divieto dei sondaggi, propaganda, comizio, sondaggi"
+body = "Non pianificare comizi, riunioni di propaganda pubblica o nuovi manifesti nel periodo di silenzio, né risultati di sondaggi nel periodo di divieto, che il fatto del hub della tornata fissa («Calendario dei divieti della tornata»); se il fatto manca o è scaduto, dillo prima di proporre una data."
 
 [[rules]]
 key = "spending_with_document"

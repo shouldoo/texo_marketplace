@@ -69,7 +69,7 @@ name = "Output dell'AI registrato nella commessa"
 severity = "must"
 activities = ["design", "site", "tender", "bim", "communication"]
 section = "compliance"
-keywords = "registro AI, intelligenza artificiale, L. 132/2025, trasparenza, AI register"
+keywords = "registro AI, intelligenza artificiale, legge sull'intelligenza artificiale, trasparenza, AI register"
 body = "Ogni output di un sistema di AI che arriva in un elaborato, un calcolo, uno script o una comunicazione fuori dallo studio si registra nel registro AI della commessa, con chi l'ha verificato: l'opera intellettuale resta del professionista e il committente è informato."
 
 [[rules]]

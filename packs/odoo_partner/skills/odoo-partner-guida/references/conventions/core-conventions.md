@@ -10,14 +10,16 @@ tags: ["core-conventions"]
 > Il nucleo delle convenzioni, da leggere in ogni sessione su un progetto Odoo. La struttura di un modulo,
 > il manifest e le regole di scrittura di Python, XML e JavaScript sono nelle skill ufficiali di Odoo
 > (`odoo-guidelines`, `odoo-web-guidelines`, dal filo `odoo-skills`): le convenzioni sotto le precisano.
-> Le convenzioni tecniche proprie dell'organizzazione stanno in `conventions/` del customer e vincono su
-> queste.
+> Le convenzioni proprie dell'organizzazione e del cliente sono loro procedure nel hub (il pacchetto di
+> contesto, `texo search "<parole>" --scope procedures`) e vincono su queste. Le regole del settore (test,
+> database, produzione, copie, nomi, dipendenze) sono regole dell'organizzazione nel hub: questo file dice
+> solo come applicarle.
 
 ## Autore
 
 `$AUTHOR_NAME` e `$AUTHOR_WEBSITE` (autore e sito nel manifest, nel copyright e nel README dei moduli) sono
-dell'organizzazione: li dà una regola dell'organizzazione nel hub (attività `code`, nelle
-istruzioni di ogni sessione). Senza la regola, chiedili alla persona; non inventarli.
+dell'organizzazione: li dà il suo hub (un fatto o una procedura dell'organizzazione, nel pacchetto di
+contesto). Se mancano, chiedili alla persona; non inventarli.
 
 Header copyright in ogni file Python: `# $AUTHOR_NAME`.
 
@@ -62,18 +64,16 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
   `.claude/`, `.gemini/`, `.agents/`.
 - Quando serve documentazione di librerie/API, usa il server MCP di documentazione
   dell'assistente se c'è (per esempio Context7), senza che ti venga chiesto.
-- **Test dopo ogni modifica a un modulo**, su un database di test creato per il
-  task, con zero warning nel log (`checklog-odoo`): `playbooks/test-modulo-locale.md`.
+- **Test di un modulo** e controllo del log (la regola del hub sui test):
+  `playbooks/test-modulo-locale.md`.
 - **Modifiche ai sorgenti con lo strumento di modifica file dell'assistente**,
   mai con `sed`, heredoc o script: la persona segue il lavoro dal diff di ogni
   modifica. La shell resta per letture, ricerche, test e git.
 
 ## Azioni sul database
 
-- **Sempre con `odoo shell` e l'ORM**, letture comprese, anche quando la query SQL
-  sarebbe di una riga (`env[...]`, `search`, `search_count`, `fields_get`,
-  `env.ref`). L'ORM applica regole, campi calcolati e cache che l'SQL salta.
-  Nello stack Docker:
+- **Con `odoo shell`** (la regola del hub sul database e l'ORM), letture comprese:
+  `env[...]`, `search`, `search_count`, `fields_get`, `env.ref`. Nello stack Docker:
 
   ```bash
   docker compose -f odoo/odoo-clients/<slug>/docker-compose.yml \
@@ -83,9 +83,8 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
   La shell esegue lo script letto da stdin e chiude con un rollback
   (`odoo/cli/shell.py`): una scrittura vale solo con `env.cr.commit()` esplicito,
   dopo la conferma della persona.
-- **SQL con `psql` solo come ultima risorsa**: registry rotto, server che non parte,
-  operazioni che l'ORM non esprime (cataloghi PostgreSQL, lock, dimensioni). Di'
-  perché la shell non bastava.
+- **I casi in cui la shell non basta** e serve `psql`: registry rotto, server che non
+  parte, operazioni che l'ORM non esprime (cataloghi PostgreSQL, lock, dimensioni).
 - **Anche lo spazio occupato si misura con l'ORM**: «cosa occupa più spazio» si
   risponde con uno script per la shell che raggruppa `ir.attachment`
   (`_read_group` su `res_model`, `res_field`, `mimetype`, `create_date:day`,
@@ -98,9 +97,9 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
 
 ## Dati dei progetti: dove stanno
 
-- **Procedurale** (convenzioni, reference Odoo per versione, playbook, skill):
-  in git, in questo pacchetto (del pacchetto) e in `conventions/` e `skills/` del customer. Solo
-  contenuto generico e anonimo.
+- **Procedurale del settore** (convenzioni, reference Odoo per versione, playbook, skill):
+  in git, in questo pacchetto. Solo contenuto generico e anonimo. Le convenzioni e le procedure
+  dell'organizzazione e del cliente sono note di tipo procedura nel hub.
 - **Per progetto** (perimetro, ambienti, moduli installati e decisioni nella
   description; roadmap nelle milestone; presente nell'ultimo update; eventi nel
   chatter dei task), **regole** con il loro stato e **lezioni** senza cliente:
@@ -118,19 +117,17 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
 - **Task**: `project.task` dell'Odoo di coordinamento; commit e PR citano l'id
   del task.
 - **Dati personali del cliente** (dipendenti, clienti, soci, beneficiari): mai fuori
-  dall'istanza; in locale e in stage solo database neutralizzati e
-  anonimizzati.
+  dall'istanza. Per le copie in locale e in stage vale la regola del hub sulle copie; gli
+  script sono `neutralize-db.sh` e `anonymize-db.sh` del pacchetto.
 - Una soluzione nata su un progetto e riusabile altrove diventa una lezione del hub senza cliente; arriva
   in questo pacchetto (`conventions/patterns/`) solo riscritta in astratto, verificata su una fonte pubblica,
   con una pull request rivista.
 
 ## Allegati e deliverable
 
-- **Nome file**: ogni allegato intenzionale (deliverable, export, file allegato
-  a un'issue) è preceduto dalla data di creazione in formato `AAMMDD_nomefile`
-  (es. `260720_Report.xlsx` per un file creato il 20/07/2026).
-- Se un deliverable viene aggiornato in-place, la data nel nome resta quella
-  della **prima creazione**.
+- **Nome file**: il formato del nome di un allegato intenzionale (deliverable, export, file
+  allegato a un'issue), per esempio la data di creazione in testa, è una procedura
+  dell'organizzazione nel hub: se c'è, seguila; se non c'è, chiedi alla persona.
 - I deliverable non si versionano nei repository Texo: si allegano al task
   pertinente nell'Odoo di coordinamento o si mettono dove il cliente li tiene,
   solo se la persona lo chiede.
