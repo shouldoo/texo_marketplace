@@ -49,7 +49,7 @@ files named below are in `references/` next to this file.
 ## Mappa di lettura
 
 > Nessun file è precaricato: si legge quello che il compito tocca. I percorsi sono relativi a questo pack
-> (`` dalla cartella di lavoro). Prima di rispondere su un obbligo: il reference, poi l'articolo
+> (`$(texo where --pack ets)` dalla cartella di lavoro). Prima di rispondere su un obbligo: il reference, poi l'articolo
 > vigente nel filo `normativa`, poi le lezioni del hub con lo stesso tag.
 
 ### Per compito

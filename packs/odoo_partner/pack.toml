@@ -1,8 +1,8 @@
 # The contract of this pack with the texo CLI (texo/packs.py of the core).
 [pack]
 name = "odoo_partner"
-version = "v1.0.1"
-core = ">=2.0, <3"
+version = "v1.1.0"
+core = ">=2.2, <3"
 hub = ">=20.0.1.0.0"
 # created by texo mount in the working folder, never versioned there
 work_dirs = ["progetti", "modules/V17", "modules/V18", "modules/V19", "modules/V20", "odoo/odoo-clients"]
@@ -10,17 +10,19 @@ work_dirs = ["progetti", "modules/V17", "modules/V18", "modules/V19", "modules/V
 # The threads this pack suggests: texo mount says which are missing. Declare them in the threads of the hub
 # (Texo Threads) and pin their ref; add one odoo-<NN> per version in use and one oca-<repo> per OCA repository
 # the projects use (their .gitmodules list them).
-[[suggested_thread]]
+# The threads the pack carries: part of its method, mounted with it at the ref its version pins (core 2.2). The hub
+# replaces one by declaring a thread with the same id.
+[[thread]]
 id = "odoo-skills"
-why = "the official Odoo skills (odoo-guidelines, odoo-web-guidelines, odoo-review, odoo-security, odoo-git)"
 type = "source"
 driver = "git-mirror"
 repo = "github.com/odoo/odoo"
-ref = "<commit of master>"
+# master of odoo/odoo on 2026-11-05: a new version of the pack moves it
+ref = "906fa5c4ebf95ddf4d50282eb3feda608aa9f02c"
 paths = ["skills"]
 skills = "skills"
 data_class = "public"
-guide = "The house rules of Odoo for module code: the skills load when a task matches."
+guide = "The official skills of Odoo (odoo-guidelines, odoo-web-guidelines, odoo-review, odoo-security, odoo-git): the house rules of Odoo for module code, loaded when a task matches."
 
 [[suggested_thread]]
 id = "odoo-20"
