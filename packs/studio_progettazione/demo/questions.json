@@ -1,0 +1,2276 @@
+{
+ "about": "The question sets of the demo of studio_progettazione (Studio Tre Archi, scenario S2 of the measure of the memory): every question names the set it belongs to. A: Question set A of scenario S2 (Studio Tre Archi), written knowing the data, 2026-11-01. B: Blind question set B of scenario S2 (Studio Tre Archi): written from the titles only, 2026-11-01. passaggi: Domande sul passaggio (articolo/comma o paragrafo) dei documenti dello studio di progettazione, scritte il 2026-11-02 dai passaggi prodotti da structure.passages()",
+ "questions": [
+  {
+   "set": "A",
+   "query": "gara europea Provveditorato con architetto di chiara fama ed esperienza post sisma: perché abbiamo rinunciato?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Ancona uffici giudiziari BIM (TED 418556)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Perché ci hanno buttato fuori dalla gara della palestra dove eravamo mandanti per gli impianti?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Gara palestra Narni - RTP con Studio Ferri"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "AQ verifiche sismiche edifici sanitari, requisito fatturato specifico 3x base gara",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Accordo quadro manutenzioni ASL - verifica requisiti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "OEPV PFTE+esecutivo E.22 182k: ribasso offerto sul 35% ribassabile, PassOE",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Gara SIA Comune di Amelia - riqualificazione biblioteca"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Nella gara del liceo della Provincia alla fine usiamo l'ambiente dati nostro o il loro?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Gara SIA Provincia - adeguamento sismico liceo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "foglio parcella due livelli I.13 testato sul capitolato via Saffi, colonna QbII.05",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Calcolo parcella tipo E.20/S.03 - foglio studio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "linee guida BIM aggiornate a I.9 post correttivo e UNI 11337, par. formati IFC 4 di default: approvate?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Linee guida BIM rev. 2026"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "export IFC4 MEP sistemi persi sui canali flessibili, mapping custom",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Test export IFC impianti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "set regole clash STR/MEC/ELE: hard 10mm, soft 50mm, travi vs canali > 300mm",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Regole clash detection standard"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Elena può fare le veci di Matteo sull'archivio condiviso dei modelli? ha fatto la formazione?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Corso ACDat per Elena"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Entro quando Lorenzo deve finire le ore di aggiornamento da coordinatore, sennò cosa salta a gennaio?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Aggiornamento 40h coordinatori sicurezza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "NC IFC rifiutato, azione correttiva verifica in viewer indipendente prima dell'upload",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "NC 2026-05 IFC rifiutato da ATER"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando scadeva l'assicurazione professionale e al rinnovo è cambiato il massimale?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Rinnovo polizza RC professionale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto ha fatturato lo studio nel 2025 e quanto di quello era progettazione?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Fatturato 2025 per requisiti gare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il disco in ufficio è quasi pieno, cosa abbiamo deciso per salvare i progetti?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Nuovo server / backup ACDat"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dopo che abbiamo mandato il preventivo per la scuola media, quando è arrivato l'affidamento?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Preventivo e affidamento diretto"
+    },
+    {
+     "task": "Scuola Valfonda - affidamento diretto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Di quanto è scesa la parcella della scuola dopo aver cambiato categoria d'opera?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Calcolo parcella"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "esiti lab carote fck medio 18 MPa staffe rade FC2",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Sopralluogo e piano indagini"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Con quali interventi la scuola supera il 60% di sicurezza sismica richiesto?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Modello strutturale e verifica sismica"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "alla scuola che si fa del vecchio serbatoio del gasolio sotto terra?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Progetto energetico ex L.10 e APE"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Perché alla scuola abbiamo sostituito il polistirene grafitato con un altro isolante, e chi abbiamo avvisato?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Relazione CAM"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il Comune dice che i soldi per la sicurezza del cantiere della scuola sono troppi: quanto avevamo messo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "PSC e fascicolo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa ci ha chiesto la preside sui tempi dei lavori e cosa le abbiamo proposto?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Incontro con dirigente scolastico"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando arriva il laboratorio per le prove sulla muratura del municipio?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Prove martinetti piatti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa è successo dopo che il gestore dell'ATER ha respinto il caricamento del progetto di fattibilità?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Consegna PFTE su ACDat ATER"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Qual era il conflitto grave nel modello federato di via dei Tigli e come l'abbiamo risolto?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Clash detection PFTE"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando siamo riusciti a inviare la domanda di incentivo per via dei Tigli dopo il blocco del portale?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Domanda Conto Termico 3.0 a prenotazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Gli inquilini delle case popolari devono lasciare l'appartamento o restano senza termosifoni a gennaio?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "PSC con alloggi abitati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "I condomini chiedono quando c'è il prossimo acconto da pagare alla ditta e se chi ha la seconda casa paga di più",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Mail amministratore su pagamenti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un signore dell'ultimo piano ha paura del rumore delle macchine sul tetto: a che punto siamo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Pompa di calore: posizione unità esterne"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa ha chiesto di cambiare la Soprintendenza dopo che abbiamo depositato l'istanza per il casale?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Relazione paesaggistica e istanza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti giorni dopo l'allestimento è partita la notifica al capannone e cosa abbiamo fatto nel frattempo?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Notifica preliminare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "SAL 3 riserva impresa scavo in roccia vasca antincendio 47,6k CdP 183.825",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "SAL 3 contestato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Se l'impresa ritarda e il capannone non è pronto per la linea nuova, chi paga?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Mail del titolare sui tempi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dopo il ritardo dei pannelli di quanto si è spostata la fine lavori del capannone?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Sospensione parziale pannelli"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il subappaltatore degli impianti elettrici può entrare in cantiere adesso?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Subappalto impianti: documenti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto credito d'imposta prende il titolare e quando lo saprà?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Certificazione ex post"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Sono nuovo: chi lavora nello studio e chi si occupa di cosa?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Chi è lo studio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Qual è il massimale dell'assicurazione professionale dello studio?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Polizza RC professionale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Fino a che importo un Comune ci può dare un incarico di progettazione senza gara?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Affidamenti diretti e soglie"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "grado di complessità G E.21 ed E.22, spese fino al 25% sotto 1 mln",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Formula parcella"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "BIM obbligatorio dal 1/1/2025 sopra 2 mln, art. 43, CI oGI pGI, ruoli UNI 11337-7",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "BIM obbligatorio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "CAM DM MASE 24/11/2025 da febbraio 2026, sostituisce DM 256/2022, attenzione 2.4.7",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "CAM nuovi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "La direttiva europea sulle case green ci impone qualcosa adesso?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Detrazioni 2026-2027"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando ha riaperto il PortalTermico dopo la sospensione per fondi finiti?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Conto Termico 3.0 - stato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa c'è nella cartella dei documenti da allegare alle gare e chi la tiene aggiornata?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Documenti standard per gare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "stati WIP SHARED PUBLISHED ARCHIVED dell'ACDat su cloud",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "ACDat studio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti crediti formativi servono a un ingegnere per poter lavorare?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Crediti formativi: regole"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "In Comune a Valfonda chi decide le cose tecniche e perché ci pagano tardi?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Comune: chi decide"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Riassumimi le scelte progettuali principali fissate per la scuola media",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Scuola: decisioni progetto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi è il RUP all'agenzia casa e con chi parlano gli inquilini?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "ATER: interlocutori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Che versione di BCF e che PDF vuole l'agenzia casa per le consegne?",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "CI ATER: formati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Con quanti millesimi passano le delibere a Le Querce e come vengono pagati i nostri onorari?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Le Querce: chi decide"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Sotto che temperatura esterna parte ancora la vecchia caldaia nel condominio?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Le Querce: impianto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Che vincoli ha messo la Soprintendenza sul casale per tetto, finestre e intonaci?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Casale: prescrizioni Soprintendenza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando conviene telefonare al titolare dell'officina, ed è lui che decide?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Meccanica Nera: chi decide"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "contratto capannone a corpo e misura 1,38 mln ritenuta penale riserve",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Capannone: contratto impresa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quali sono i passaggi per calcolare un corrispettivo, dagli importi lavori fino al ribasso?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Calcolo parcella"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Come si partecipa a una gara di progettazione, dalla ricerca del bando al caricamento?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Partecipazione gara SIA"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Entro quanti giorni i partner decidono se partecipare o no a una gara?",
+   "scope": "procedures",
+   "class": "temporale",
+   "expected": [
+    {
+     "procedure": "Partecipazione gara SIA"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa devo fare prima che le ditte entrino in cantiere quando facciamo i coordinatori della sicurezza?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Apertura cantiere come CSE"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "La riunione di coordinamento si fa prima o dopo la consegna dei lavori?",
+   "scope": "procedures",
+   "class": "temporale",
+   "expected": [
+    {
+     "procedure": "Apertura cantiere come CSE"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "PortalTermico scheda-domanda con diagnosi ante allegata, conferma GSE impegno a preventivo, acconto intermedia saldo",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "CT 3.0 prenotazione: passi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Come arriva ai condomini il conto della ditta e come si paga per avere la detrazione?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "SAL condominio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa viene dopo il certificato di ultimazione, fino all'agibilità?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "procedure": "Chiusura lavori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Possiamo mandare al cliente il file Revit del modello 3D come consegna?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Consegna ufficiale solo IFC"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Posso firmare uno stato di avanzamento a percentuale su un lavoro privato?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "SAL solo con libretto delle misure"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "L'impresa può montare la recinzione prima che sia partita la notifica?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Niente inizio lavori senza notifica e PSC"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Elena può scrivere direttamente al RUP una mail tecnica?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Con la stazione appaltante parla il partner di commessa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Entro quando va registrato l'attestato di un seminario nel foglio crediti?",
+   "scope": "notes",
+   "class": "temporale",
+   "expected": [
+    {
+     "note": "Crediti CFP registrati entro il mese"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Sopra che importo un preventivo deve partire dal decreto parametri verificato da un secondo?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Parcella sempre con DM 17/06/2016"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "controllo firma digitale da due persone, anche mandanti, carico 48h prima",
+   "scope": "notes",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "Firme incrociate prima del carico"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Posso mandare le tavole al Comune con un link di trasferimento?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Elaborati al Comune solo firmati e via PEC"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Con quanto anticipo e tramite chi si avvisano gli inquilini se si stacca l'acqua?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Alloggi abitati: preavviso agli inquilini tramite ATER"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Una signora del condominio ci chiama per sapere quanto detrae: le rispondiamo?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Con i condòmini parla l'amministratore"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Possiamo contabilizzare un nuovo prezzo approvato dal titolare solo a voce?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Varianti solo con ok scritto del titolare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa rischia un raggruppamento se un mandante carica la bozza non firmata dell'impegno a costituirsi?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Atto di impegno RTP non firmato: esclusione senza soccorso"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un edificio pubblico che sembra storico ma non ha decreto di vincolo: che categoria d'opera uso?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "E.22 solo per edifici vincolati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Con due livelli di progetto e senza appalto integrato, a quale fase va l'aliquota di elenco prezzi e computo?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "QbII.05 va all'esecutivo senza appalto integrato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Perché un caricamento sull'ambiente dati del committente può essere respinto anche se il modello è giusto?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Modello nativo rifiutato dall'ACDat della stazione appaltante"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "centinaia di clash falsi positivi per tolleranze e un canale che attraversa una trave esistente",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Canali di ventilazione contro travi esistenti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il portale degli incentivi può chiudere all'improvviso? come regolarsi con le domande?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Il portale del Conto Termico può chiudere per budget esaurito"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando conviene scegliere gli isolanti per non avere sorprese coi criteri ambientali?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "CAM: isolante senza dichiarazione del riciclato non è verificabile"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Montare baracche e recinzione conta già come inizio dei lavori?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "L'allestimento del cantiere conta come inizio lavori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Prima di inviare la notifica preliminare bisogna aspettare i POS dei subappaltatori?",
+   "scope": "lessons",
+   "class": "temporale",
+   "expected": [
+    {
+     "lesson": "L'allestimento del cantiere conta come inizio lavori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "L'impresa vuole mettere nello stato di avanzamento un lavoro imprevisto a prezzo suo: cosa fa il DL?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Lavorazioni non contrattuali fuori dal SAL"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Se mettiamo le pompe di calore sul tetto piano, il solaio regge?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "pdc in copertura: verificare solaio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un coordinatore con l'aggiornamento scaduto può restare su un cantiere già iniziato?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Aggiornamento quinquennale dei coordinatori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "checklist emissione: codifica, cartiglio, firma PAdES, copia in PUBLISHED",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Checklist emissione elaborati (rev. 4)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Come si chiamano i file dei modelli nello studio, commessa fase disciplina tipo?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Linee guida BIM dello studio (rev. 2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Che livello di dettaglio serve per gli impianti nel modello as-built?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Linee guida BIM dello studio (rev. 2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "bando tipo ANAC delibera 153 del 15/4/2026 disciplinare SIA sopra soglia",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Nel disciplinare tipo per le gare di progettazione sopra soglia, quanto pesa al massimo il prezzo?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Nel decreto dei corrispettivi del 2016 come si calcolano spese e oneri accessori?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - corrispettivi SIA (articolato)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "A quale vecchia classe della legge 143/49 corrisponde la categoria E.20?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Con l'appalto integrato come si dividono le aliquote QbIII.03, .04, .05 e .07 tra PFTE ed esecutivo?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.13 - parametri per la progettazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "L'aliquota del capitolato e dello schema di contratto si paga anche nell'appalto integrato?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.13 - parametri per la progettazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi deve scrivere il quadro esigenziale di un'opera pubblica?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "DOCFAP: alternative progettuali, nuova costruzione o recupero, consumo di suolo",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi può fare il RUP e cosa succede se il Comune non lo nomina?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 - articoli scelti (testo vigente)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dove dev'essere scritto il nome del responsabile unico in un affidamento diretto?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 - articoli scelti (testo vigente)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quali lavori sono esclusi dalle regole sulla sicurezza nei cantieri, per esempio gli impianti senza opere edili?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando la legge obbliga il committente a nominare il coordinatore per la progettazione?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa deve contenere come minimo il piano di sicurezza che ogni ditta porta in cantiere?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "In che Gazzetta Ufficiale è uscito il decreto del ministero dell'ambiente sui nuovi criteri per l'edilizia?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "DM MASE 24/11/2025 - nuovi CAM edilizia (decreto)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa chiedono i criteri ambientali sul contenuto di riciclato dei materiali e come si verifica?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "I criteri ambientali prevedono punteggi premianti e analisi del ciclo di vita e dei costi?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi può chiedere il nuovo conto termico e per quali interventi, secondo il decreto di agosto 2025?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa dice la legge regionale umbra sull'elenco dei professionisti per gli incarichi sotto soglia, e chi lo gestisce?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Regione Umbria DD 618/2026 - elenchi regionali"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "A chi vanno comunicati gli ordini di servizio del direttore dei lavori?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa deve attestare il direttore lavori al RUP sullo stato dei luoghi prima della gara?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto vale e chi bandisce la gara europea in BIM per il palazzo di piazza Cavour?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "TED 418556-2026 - SIA in BIM, uffici giudiziari Ancona"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Che base d'asta e che fondi aveva il servizio di progettazione della sede regionale di Terni?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa deve fare un ente prima di adottare il BIM: formazione, software, atto organizzativo?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.9 - gestione informativa digitale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto prendiamo per la scuola dopo lo sconto dell'8%, e quante spese abbiamo messo?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Foglio parcella scuola Valfonda rev. 2"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Al sopralluogo della scuola in quali aule entrava acqua dal tetto?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Verbale di sopralluogo scuola Valfonda"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa prevedono le regole del GSE per gli edifici delle ex case popolari?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "GSE - Regole applicative Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto costava ciascuna delle tre soluzioni proposte al condominio?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Diagnosi energetica Condominio Le Querce"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto erano i lavori complessivi contabilizzati del capannone fino al terzo avanzamento?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "SAL 3 capannone - stato avanzamento e certificato di pagamento"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Abbiamo in archivio il contratto firmato col proprietario del casale?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Contratto d'incarico Moretti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Concorso europeo per la progettazione con modellazione informativa della sede dei tribunali nelle Marche",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Ancona uffici giudiziari BIM (TED 418556)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quella gara per il palazzetto sportivo dove ci mettiamo in squadra con un altro studio di ingegneri",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Gara palestra Narni - RTP con Studio Ferri"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Procedura per i servizi di ingegneria dell'ente provinciale sul rinforzo antisismico di un istituto superiore",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Gara SIA Provincia - adeguamento sismico liceo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi sta guardando i nuovi bandi usciti sui siti regionali per fine anno?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Scouting dicembre (piattaforme Umbria)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Prova di esportazione del modello degli impianti meccanici ed elettrici nel formato aperto interoperabile",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Test export IFC impianti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "La collega nuova deve fare un corso sulla piattaforma dove si condividono i file di progetto, a che punto è?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Corso ACDat per Elena"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Corso di aggiornamento quinquennale obbligatorio per chi coordina la sicurezza nei cantieri",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Aggiornamento 40h coordinatori sicurezza"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quella volta che ci hanno buttato fuori da un concorso perché mancava una firma",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "NC 2026-03 esclusione gara per firma mancante"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Non conformità per il modello in formato aperto respinto dall'ente di edilizia residenziale pubblica",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "NC 2026-05 IFC rifiutato da ATER"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Bisogna rinnovare l'assicurazione dello studio per gli errori professionali?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Rinnovo polizza RC professionale"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Ricavi dell'esercizio precedente da dichiarare come requisito economico nelle procedure di affidamento",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Fatturato 2025 per requisiti gare"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Serve una macchina nuova per salvare le copie dei file, quella vecchia non regge più",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Nuovo server / backup ACDat"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Verifica della posizione contributiva dei soci presso la cassa previdenziale di ingegneri e architetti",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Regolarità Inarcassa soci"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quando ci vediamo col preside per parlare dei lavori nella scuola?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Incontro con dirigente scolastico"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Prove con martinetti sulla muratura per misurare lo stato tensionale e la deformabilità",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Prove martinetti piatti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Abbiamo già chiesto i soldi dell'incentivo statale per la caldaia prima di partire coi lavori?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Domanda Conto Termico 3.0 a prenotazione"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "La riunione con i condòmini per spiegare il progetto, quando si fa?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Assemblea di presentazione"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Collocazione delle macchine esterne dell'impianto a pompa di calore",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Pompa di calore: posizione unità esterne"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "L'impresa non è d'accordo sul terzo pagamento a stato avanzamento, cosa è successo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "SAL 3 contestato"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Relazione giurata sull'integrazione dei macchinari nel sistema di fabbrica per l'agevolazione industria 4.0",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Perizia interconnessione beni 4.0"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Ma questo studio chi è, cosa fa e dove sta?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Chi è lo studio"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Fino a quali importi si può conferire un incarico senza gara",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Affidamenti diretti e soglie"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "È vero che adesso per i lavori pubblici bisogna per forza fare i modelli tridimensionali al computer?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "BIM obbligatorio"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Aliquote delle agevolazioni fiscali sui lavori edilizi per il prossimo biennio",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Detrazioni 2026-2027"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dove teniamo i file condivisi con i clienti, quella piattaforma online dello studio?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "ACDat studio"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Regole sull'obbligo formativo professionale e sul conteggio dei crediti",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Crediti formativi: regole"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Con chi devo parlare all'ente delle case popolari?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "ATER: interlocutori"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Caratteristiche della centrale termica del condominio Le Querce",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Le Querce: impianto"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Cosa ci ha imposto la tutela dei beni culturali per il vecchio casale?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Casale: prescrizioni Soprintendenza"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Condizioni dell'accordo con l'appaltatore per il fabbricato industriale",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Capannone: contratto impresa"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come si fa a capire quanto chiedere di onorario per un lavoro?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Calcolo parcella"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Fasi per partecipare a una procedura di affidamento di servizi di ingegneria e architettura",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Partecipazione gara SIA"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il primo giorno in cantiere come responsabile della sicurezza, cosa devo fare?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Apertura cantiere come CSE"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Iter della richiesta preventiva dell'incentivo statale per l'efficienza energetica",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "CT 3.0 prenotazione: passi"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come funziona il pagamento a tappe dei lavori in un palazzo con tanti proprietari?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "SAL condominio"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Adempimenti alla fine dell'esecuzione dei lavori",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Chiusura lavori"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "In che formato deve essere il modello informativo nella trasmissione formale al committente?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Consegna ufficiale solo IFC"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Si può pagare l'impresa a tappe senza le misure scritte dei lavori fatti?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "SAL solo con libretto delle misure"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi tiene i rapporti con l'ente committente pubblico durante l'incarico?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Con la stazione appaltante parla il partner di commessa"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Con quale tabella ufficiale bisogna sempre calcolare quanto ci paga il cliente?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Parcella sempre con DM 17/06/2016"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Modalità di trasmissione degli elaborati all'amministrazione comunale",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Elaborati al Comune solo firmati e via PEC"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Posso rispondere direttamente a un inquilino del palazzo che mi scrive?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Con i condòmini parla l'amministratore"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Autorizzazione necessaria per modificare il progetto in corso d'opera",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Varianti solo con ok scritto del titolare"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "C'è un elenco di cose da controllare prima di mandare fuori i disegni?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Checklist emissione elaborati (rev. 4)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Schema di disciplinare dell'autorità anticorruzione per servizi tecnici di importo superiore alla soglia europea",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Le tabelle con le categorie delle opere e i gradi di complessità per l'onorario",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Codice dei contratti pubblici: cosa deve contenere ciascun livello di progetto",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "La legge sulla sicurezza nei cantieri, la parte che riguarda i coordinatori",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Criteri ambientali minimi per l'edilizia: elenco dei requisiti dell'allegato tecnico",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il provvedimento della regione sulle liste dei tecnici a cui affidare incarichi",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Regione Umbria DD 618/2026 - elenchi regionali"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Allegato del codice appalti sulla gestione digitale delle informazioni e dei modelli",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.9 - gestione informativa digitale"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Le istruzioni del gestore per chiedere i contributi per la pompa di calore",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "GSE - Regole applicative Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Certificato di pagamento del terzo stato di avanzamento per il fabbricato industriale",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "SAL 3 capannone - stato avanzamento e certificato di pagamento"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Se nel raggruppamento un socio non firma l'impegno, ti lasciano rimediare dopo?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Atto di impegno RTP non firmato: esclusione senza soccorso"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quando si può applicare la categoria di opere edilizie per immobili sottoposti a tutela",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "E.22 solo per edifici vincolati"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il file del programma che usiamo noi non è stato accettato dal sistema dell'ente, perché?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Modello nativo rifiutato dall'ACDat della stazione appaltante"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Interferenza tra condotte d'aria e elementi strutturali esistenti",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Canali di ventilazione contro travi esistenti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Può succedere che il sito dell'incentivo statale chiuda perché sono finiti i soldi?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Il portale del Conto Termico può chiudere per budget esaurito"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quando la predisposizione dell'area di cantiere configura l'avvio dell'opera",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "L'allestimento del cantiere conta come inizio lavori"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Se mettiamo la macchina del riscaldamento sul tetto, regge il solaio?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "pdc in copertura: verificare solaio"
+    }
+   ]
+  },
+  {
+   "set": "passaggi",
+   "query": "Per un privato che accede al Conto Termico, sotto quale importo totale l'incentivo viene pagato tutto in una volta sola?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ],
+   "passage": "Art. 11 (Erogazione e durata dell'incentivo) > commi 4-6"
+  },
+  {
+   "set": "passaggi",
+   "query": "Un comune che riqualifica un edificio di sua proprietà e che usa può sommare il Conto Termico ad altri contributi pubblici? Fino a che limite?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ],
+   "passage": "Art. 17 (Cumulabilità)"
+  },
+  {
+   "set": "passaggi",
+   "query": "Cosa prevede l'art. 21 del DM Conto Termico 3.0 se il soggetto responsabile si rifiuta di sottoscrivere il processo verbale del gruppo di verifica?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ],
+   "passage": "Art. 21 (Verifiche, controlli e sanzioni) > commi 5-6"
+  },
+  {
+   "set": "passaggi",
+   "query": "Con quanto anticipo il GSE deve avvisarci prima di venire a controllare l'intervento sul posto, e con quale mezzo ce lo comunica?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ],
+   "passage": "Art. 21 (Verifiche, controlli e sanzioni) > commi 12-13"
+  },
+  {
+   "set": "passaggi",
+   "query": "Qual è il limite annuo di 150 milioni di euro e il tetto per singola impresa e intervento previsti dall'art. 28 per gli incentivi alle imprese?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ],
+   "passage": "Art. 28 (Limiti di spesa incentivabile)"
+  },
+  {
+   "set": "passaggi",
+   "query": "Per sapere se un'associazione del terzo settore va trattata come ente economico o non economico ai fini del Conto Termico, a cosa si guarda?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "GSE - Regole applicative Conto Termico 3.0"
+    }
+   ],
+   "passage": "3.3 Gli Enti del Terzo Settore"
+  },
+  {
+   "set": "passaggi",
+   "query": "Per un piccolo intervento in una casa privata, sotto le soglie contrattuali, come può la società di servizi energetici incassare l'incentivo al posto del proprietario?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "GSE - Regole applicative Conto Termico 3.0"
+    }
+   ],
+   "passage": "Precisazioni sulle soglie contrattuali in ambito residenziale"
+  },
+  {
+   "set": "passaggi",
+   "query": "Finiti i lavori, come si fa sapere a chi ha subito danni o occupazioni dal cantiere che può chiedere di essere pagato, e entro quanto tempo deve farsi avanti?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ],
+   "passage": "> Articolo 16"
+  },
+  {
+   "set": "passaggi",
+   "query": "L'ente vuole usare l'edificio prima che arrivi il collaudo provvisorio: a quali condizioni può prenderlo in uso in anticipo?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ],
+   "passage": "> Articolo 24 > commi 1-2"
+  },
+  {
+   "set": "passaggi",
+   "query": "Qual è il compenso massimo riconosciuto alla segreteria tecnico-amministrativa del collaudo secondo l'art. 29-bis dell'allegato II.14?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ],
+   "passage": "> Articolo 29-bis"
+  },
+  {
+   "set": "passaggi",
+   "query": "Sopra i 500.000 euro un servizio è di particolare importanza ai fini del direttore dell'esecuzione? Quali servizi lo sono indipendentemente dall'importo?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ],
+   "passage": "> Articolo 32 > comma 2"
+  },
+  {
+   "set": "passaggi",
+   "query": "Per lavori sopra i 20 milioni di euro chi deve fare la verifica preventiva del progetto, e chi la fa sotto 1 milione?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ],
+   "passage": "> Articolo 34 > comma 2"
+  },
+  {
+   "set": "passaggi",
+   "query": "Che copertura assicurativa deve avere chi viene incaricato di verificare un progetto, in percentuale sul valore dei lavori e con quale tetto?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ],
+   "passage": "> Articolo 43"
+  },
+  {
+   "set": "passaggi",
+   "query": "Prima di aprire un cantiere pubblico, a quali enti il committente deve mandare la comunicazione iniziale, e dove va tenuta una copia?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ],
+   "passage": "Art. 99 > commi 1-2"
+  },
+  {
+   "set": "passaggi",
+   "query": "Trabattelli, andatoie e spogliatoi rientrano tra gli apprestamenti da considerare nel PSC secondo l'Allegato XV?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ],
+   "passage": "Allegato XV.1"
+  },
+  {
+   "set": "passaggi",
+   "query": "Per la sede di Terni quanti giorni abbiamo per consegnare il progetto definitivo e da quando partono?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ],
+   "passage": "ART. 10 - TEMPI"
+  },
+  {
+   "set": "passaggi",
+   "query": "Quanto vale la penale per ogni assenza non giustificata a riunioni nel capitolato di Terni via Saffi, e qual è il tetto complessivo delle penali?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ],
+   "passage": "ART. 18 - RITARDI, PENALI E RISOLUZIONE DEL CONTRATTO > comma 1"
+  },
+  {
+   "set": "passaggi",
+   "query": "In un incarico di progettazione, quando le spese aumentano molto in corso d'opera, quando si aggiornano i prezzi e di quanto?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ],
+   "passage": "3.3. REVISIONE PREZZI"
+  },
+  {
+   "set": "passaggi",
+   "query": "La certificazione UNI 11337-7 dei professionisti BIM può dare punteggio premiale nel disciplinare tipo?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ],
+   "passage": "Requisiti del gruppo di lavoro"
+  },
+  {
+   "set": "passaggi",
+   "query": "Se in organico non c'è nessuno con i requisiti per fare il responsabile unico del progetto, l'ente può prenderlo da un'altra amministrazione?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 - articoli scelti (testo vigente)"
+    }
+   ],
+   "passage": "Articolo 15 > commi 2-3"
+  },
+  {
+   "set": "passaggi",
+   "query": "Per i contratti ad alta intensità di manodopera, qual è il tetto massimo del punteggio economico nell'offerta economicamente più vantaggiosa (art. 108)?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 - articoli scelti (testo vigente)"
+    }
+   ],
+   "passage": "Articolo 108 > comma 4"
+  },
+  {
+   "set": "passaggi",
+   "query": "In caso di appalto integrato, a quale fase va attribuita l'aliquota QbII.05 e quale aliquota QbII.08 non si applica?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.13 - parametri per la progettazione"
+    }
+   ],
+   "passage": "Articolo 2 > commi 1-3"
+  },
+  {
+   "set": "passaggi",
+   "query": "Con i nuovi criteri ambientali minimi per l'edilizia, una gara su un progetto validato quando valevano i vecchi CAM può ancora seguire quelli? Entro quando va bandita?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM MASE 24/11/2025 - nuovi CAM edilizia (decreto)"
+    }
+   ],
+   "passage": "Art. 2 (Disposizioni transitorie)"
+  },
+  {
+   "set": "passaggi",
+   "query": "A quali norme UNI EN ISO 19650 e UNI 11337 fa riferimento l'allegato I.9 per la gestione informativa digitale?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.9 - gestione informativa digitale"
+    }
+   ],
+   "passage": "Allegato I.9 > Articolo 1 > comma 7"
+  }
+ ]
+}

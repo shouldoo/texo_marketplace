@@ -1,0 +1,2804 @@
+{
+ "about": "The question sets of the demo of the pack lista_civica («Terni 2027»), on the curated layer: set A (120, written knowing the data), set B (60, written blind from the titles), set persona (30, written by a person who knows the city, the only ones without the vocabulary of an LLM), set fonti (26, temporal and attribution questions on the cards of the external sources, scope sources; «all» marks a question that asks for a list, «filters» what an agent reads in it: the period, the person, the channel, a word of the subject; days are relative to 2026-11-01, the day the scenario was written: «ultima settimana» is 25-31/10). The expected records are named by title and resolved on the database by <core>/scripts/eval_memoria.py.",
+ "questions": [
+  {
+   "set": "A",
+   "query": "quelli delle palazzine dietro la chiesa a Borgo Rivo coi termosifoni freddi, che gli abbiamo risposto?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Mail al comitato di Borgo Rivo (riscaldamento e infiltrazioni)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa proponiamo per chi non riesce più a pagare l'affitto e rischia lo sfratto?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Scheda programma: affitti e morosità"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi c'era all'incontro con le cooperative sugli asili e cosa si è proposto per il secondo figlio?",
+   "scope": "tasks",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "task": "Incontro coop sociali sui servizi 0-6"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "i ragazzi di Cesi e Collestatte la sera non hanno un posto dove stare, l'abbiamo messo da qualche parte?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Centri giovani e sale studio di quartiere"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Per cosa chiede aiuto la maggior parte di chi va dal volontario della parrocchia?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Sportello casa della parrocchia"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quante testimonianze abbiamo raccolto per il foglio sulla casa e cosa facciamo se non arriviamo a tre?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Storie per il volantino casa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando c'è l'assemblea sulla casa nella sala degli anziani e quante sedie ci mancano?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Assemblea pubblica casa a Borgo Rivo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nota 12/10 bruciatori conca porta a porta tariffa puntuale",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Nota rifiuti per il tavolo (termovalorizzatore)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'ARPA ci ha mai risposto alla pec sui superamenti per centralina?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Smog: dati ARPA per stazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Coi sei gruppi ambientalisti cosa abbiamo concordato per i pannelli sulle case popolari, e lo sconto in bolletta a chi va?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "CER sui tetti delle palazzine Ater"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dopo aver protocollato la richiesta sugli abbattimenti e le perizie di stabilità, quanto tempo dobbiamo aspettare?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Alberi tagliati: accesso agli atti e mappa segnalazioni"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "A che punto è il capitolo sulle vecchie discariche e i terreni inquinati da mettere nel programma comune?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Siti contaminati: capitolo per la bozza comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi ci ha chiesto più centraline e i dati dell'aria in tempo reale?",
+   "scope": "tasks",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "task": "Incontro comitati di Maratta e Prisciano"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "ma l'ospedale nuovo lo fanno a Colle Obito? cosa ci scriviamo col tavolo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Ospedale nella bozza comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa abbiamo risposto agli infermieri e agli OSS dell'emergenza sulle barelle nei corridoi e le aggressioni?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Lettera degli operatori del PS: risposta"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "delibera regionale distretti link bozza case di comunità richiesta scritta USL",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Verbale gruppo sanità 14/10"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Se l'esame non arriva entro i tempi della priorità scritta sulla ricetta, cosa proponiamo?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Scheda programma: tempi per esami e visite"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "al gazebo c'è ancora chi chiede quando firmano l'accordo dell'acciaieria, che gli dico e cosa chiediamo noi?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Acciaieria: cosa chiediamo sull'attuazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "canone agevolato fondo vuoto sconto IMU grandi superfici",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Negozi del centro: idee per il programma"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "idrogeno fondi transizione niente cifre bandi bozza v2",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "H2 nell'area industriale: documento del gruppo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi ha firmato l'impegno sul cambio d'appalto per le mense e le pulizie, e quando l'abbiamo consegnato?",
+   "scope": "tasks",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "task": "Lettera lavoratrici mense e pulizie"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "con la squadra e lo stadio che linea teniamo, che i tifosi sono spaccati?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Ternana e stadio: cosa diciamo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "noi la sfiducia la firmiamo? come lo aiutiamo a mandarlo a casa?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Sfiducia: cosa facciamo noi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Proposta per far decidere ai quartieri una parte degli investimenti e trasmettere le commissioni in video",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Scheda partecipazione: quartieri e dirette"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi della lista è andato alla serata sulle società partecipate e chi confronta i bilanci?",
+   "scope": "tasks",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "task": "Serata dell'Osservatorio civico sulle società comunali"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dove facciamo banchetto mercoledì 18 e chi coordina domenica mattina in piazza Tacito?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Calendario gazebo novembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa è uscito dalla riunione di coalizione di fine ottobre e quando ci si rivede?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Tavolo di coalizione: riunione del 30/10"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il pdf buono del volantino dei quartieri dove sta? e quante copie abbiamo ordinato alla tipografia?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Volantino quartieri: versione finale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando facciamo la serata di presentazione della lista e come sono divisi gli interventi?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Presentazione pubblica al CAOS"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi fa la rassegna il giovedì e il venerdì?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Rassegna quotidiana: turni"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Umbria7 feed errore 500",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Feed UmbriaON e Umbria7"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "sabato al banchetto partiamo con le firme? i fogli vidimati li abbiamo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Raccolta sottoscrizioni: moduli e autenticatori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto si è raccolto nella cassetta sabato a Borgo Bovio e con quali ricevute?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Offerte al gazebo: come le teniamo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti eravamo il giorno in cui abbiamo votato il nome, e qual era l'alternativa?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Assemblea costitutiva 20/9"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il simbolo con la torre e le onde va bene così anche per la scheda elettorale?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Logo e contrassegno"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Al ballottaggio del 2023 con che percentuale ha vinto il sindaco contro Masselli, e quanti seggi ha preso la sua coalizione?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Comunali 2023: come è andata"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "i quattro che hanno mollato la maggioranza, che gruppo hanno fatto e com'è andato il voto sul consolidato?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Consiglio del 26/10: i quattro passano all'opposizione"
+    },
+    {
+     "document": "ANSA Umbria 26/10/2026 - quattro consiglieri lasciano la maggioranza, nasce Per Terni; consolidato 15 sì 9 no 6 astenuti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il giorno dopo che i quattro sono passati all'opposizione, cosa hanno fatto i partiti di centrodestra e quante firme servono per le dimissioni contestuali?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "27/10: notaio e firme"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Al 31 ottobre la mozione per far cadere il sindaco risulta depositata? E chi la scrive?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Sfiducia: dove siamo al 31/10"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "TUEL art. 52 mozione motivata due quinti appello nominale",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Come funziona la sfiducia (TUEL 52)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Se il consiglio viene sciolto entro febbraio, si vota già in primavera? Su che legge ci basiamo?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Quando si vota se cade"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi presiede il consiglio comunale e quali gruppi stanno all'opposizione?",
+   "scope": "all",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "fact": "Chi sta all'opposizione in consiglio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la Regione ha tolto l'obbligo di residenza per entrare nelle case popolari?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Regione: legge case popolari cambiata in commissione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa prevede la proposta di legge regionale sui rifiuti per la discarica, e che fine ha fatto l'inceneritore del piano 2023?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Regione: rifiuti e ddl Umbria Circolare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "557 milioni di investimenti entro il 2028",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Acciaieria: accordo di programma firmato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il sindaco ha rinunciato al Consiglio di Stato sullo stadio con la clinica? e lui che dice?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Stadio-clinica"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il centrosinistra ce l'ha già un nome per fare il sindaco?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Candidato sindaco csx: ancora nessuno"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando ci dicono che l'ospedale è roba della Regione, cosa può fare davvero il sindaco?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Sindaco e salute: le leve del Comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi ha le password della pagina facebook e instagram, e chi fa da riserva?",
+   "scope": "all",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "fact": "Social e canali"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi segue l'ambiente nella lista e chi organizza i banchetti e i volontari?",
+   "scope": "facts",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "fact": "Chi fa cosa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti iscritti e quanti attivi ha la lista, e da quando esiste la rete di comitati?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chi siamo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "i fogli per le firme vanno timbrati in Comune prima o no?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Moduli: la vidimazione non serve"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "12.500 euro più 0,05 per elettore consigliere",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Tetti di spesa (L. 96/2012)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Si possono usare le liste elettorali per mandare materiale senza chiedere il consenso? E gli elenchi telefonici?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Contatti per la propaganda: cosa si può usare"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un candidato che spende meno di 2.500 euro di tasca sua deve avere un mandatario?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Mandatario: Paolo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Fino a quanti giorni prima del voto si possono diffondere sondaggi, e da quando si ferma la comunicazione istituzionale?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Par condicio e silenzio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "finito il turno al banchetto, i moduli e la cassetta a chi li lascio?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Turno al gazebo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi deve dare l'ok a un comunicato prima dell'invio e da quale indirizzo parte?",
+   "scope": "all",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "procedure": "Comunicato stampa: giro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quante sottoscrizioni servono a una città delle dimensioni di Terni, e un elettore può firmare per due liste?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Firme per presentare la lista: numeri e tempi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un avvocato può autenticare le firme? E un consigliere comunale che è candidato?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Chi può autenticare le firme"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "In che giorni e a che ore si porta la lista in segreteria comunale, e cosa ci va dentro?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "procedure": "Consegna della lista in Comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "ricevuta nome e cognome sopra 50 euro foglio cassa versamento entro la settimana",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Offerte e contributi: come si registrano"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Dopo le elezioni entro quanto va presentato il rendiconto della lista e chi lo controlla?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "procedure": "Dopo il voto: rendiconto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "scheda rassegna testata data titolo link due righe minuti",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Scheda di rassegna"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "posso mettere tra virgolette una frase che il sindaco ha detto più o meno così?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Mai virgolettati inventati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un post sulla giunta senza testata, data e link può uscire?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Sul sindaco sempre fonte e data"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "ho trovato i numeri nel gruppo fb del quartiere, posso girargli il volantino?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Niente contatti presi dai social"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "casella consenso distinta dalla firma per la lista",
+   "scope": "notes",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "Consenso separato per i contatti del gazebo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "un cronista mi ha chiamato solo per capire, posso rispondergli io?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Coi giornalisti parla il portavoce"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Si può mettere nel gruppo il pdf della pagina del giornale o il testo intero dell'articolo?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Non si copiano gli articoli"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Posso scaricare il servizio di una tv locale e tirarne fuori la trascrizione automatica?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Video solo come scheda"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Possiamo scrivere in un post cosa ha sostenuto un partito alleato durante la riunione di coalizione?",
+   "scope": "notes",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "note": "Posizioni degli alleati solo da fonti pubbliche"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Un residente intervistato in un articolo lo mettiamo per nome nella scheda?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Privati negli articoli non si schedano"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Una volta indette le elezioni posso pagare io le magliette e farmi rimborsare dopo?",
+   "scope": "notes",
+   "class": "temporale",
+   "expected": [
+    {
+     "note": "Soldi della campagna solo dal mandatario"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa è successo quella volta che una frase dell'avversario ripetuta a memoria era diversa dall'originale?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Una frase senza link non si pubblica"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la cartella coi pdf dei giornali non la usava nessuno, cosa ne abbiamo imparato?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "La rassegna fatta di schede si ritrova, quella di pdf no"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Perché le schede dei video con solo il titolo non servono quando ci serve la frase precisa?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "video schedati senza minuti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "volevano partire con le firme prima di avere i candidati, cosa ci ha insegnato?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Firme raccolte troppo presto non valgono"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Settimane di lavoro perse sul foglio contatti: come si evita che ricapiti?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Il consenso ai contatti va in una casella a parte"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa succede se attribuiamo in pubblico a un alleato quello che ha detto in riunione, anche se è vero?",
+   "scope": "lessons",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "lesson": "Quello che si dice al tavolo resta nei verbali interni"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "un volontario ha fatto una battuta a un giornalista ed è finita nel titolo: che lezione ne abbiamo tratto?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Un solo portavoce con i giornalisti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "allo stampatore è andato il file col refuso nel titolo, come evitiamo che ricapiti?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "mandata in stampa la bozza sbagliata"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Le stime di un comitato contestate dall'ente: come vanno citate?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "I numeri dei comitati si citano come loro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Prima di commentare una delibera che gira in chat cosa bisogna fare?",
+   "scope": "lessons",
+   "class": "temporale",
+   "expected": [
+    {
+     "lesson": "Non commentare atti che non abbiamo letto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "FdI attacca il PD: tante parole ma mancano le firme",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "UmbriaON 31/10/2026 - Terni, FdI attacca Pd e opposizioni: «Tante parole ma mancano le firme per cacciare Bandecchi»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti soldi ha messo il Comune per la gronda di Villalago?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "UmbriaON 30/10/2026 - Terni, Villalago: 50 mila euro per la gronda. Ok a manutenzione straordinaria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Due giorni dopo l'ordinanza sugli scarichi della scuola Galilei, cosa ha fatto il Comune?",
+   "scope": "documents",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "UmbriaON 29/10/2026 - Terni, scarichi del ‘Galilei’ e largo don Minzoni: Comune annulla la propria ordinanza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "lo scontro tra Comune e Provincia sugli scarichi di largo don Minzoni, quando è uscita l'ordinanza?",
+   "scope": "documents",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "UmbriaON 27/10/2026 - Terni, scarichi del ‘Galilei’ e largo don Minzoni: scontro Comune-Provincia, c’è l’ordinanza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanto manca per arredare il teatro Verdi e quando dovrebbe aprire?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "UmbriaON 29/10/2026 - Terni: teatro Verdi pronto a giugno 2027 ma senza arredi. Servono altri 4 milioni"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Chi del PD ha detto che tutti devono fare la loro parte per mandare a casa il sindaco?",
+   "scope": "documents",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "document": "UmbriaON 29/10/2026 - Terni, Bernardini (Pd): «Tutti facciano la propria parte per mandare a casa Bandecchi»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quale scheda del 28/10 riporta il centrosinistra che annuncia la mozione di sfiducia?",
+   "scope": "documents",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "UmbriaON 28/10/2026 - Terni, crisi in Comune. Il centrosinistra: «Presentiamo la mozione di sfiducia»"
+    },
+    {
+     "document": "Umbria Settegiorni 28/10/2026 - csx d'accordo sulla mozione di sfiducia (PD, M5S, AVS, PSI, CR-IV, Rifondazione)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "revoca tre elevate qualificazioni governo del territorio",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "UmbriaON 28/10/2026 - Terni, governo del territorio: revoca di tre elevate qualificazioni. Via a iter per nuovi incarichi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il PD che dice che il destino del sindaco è segnato, dove l'abbiamo schedato?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "UmbriaON 27/10/2026 - Terni, crisi in Comune. PD: «Destino Bandecchi è segnato. Al lavoro con gli alleati»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Umbria24 notaio dimissioni contestuali firmano in sei",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Umbria24 27/10/2026 - cdx dal notaio per le dimissioni (firmano in sei), M5S avvia le firme per la sfiducia"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quali partiti del centrosinistra si sono detti d'accordo sulla mozione di sfiducia?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Umbria Settegiorni 28/10/2026 - csx d'accordo sulla mozione di sfiducia (PD, M5S, AVS, PSI, CR-IV, Rifondazione)"
+    },
+    {
+     "fact": "Sfiducia: dove siamo al 31/10"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Da quale giornale viene la frase del sindaco sui 17 voti che non arriveranno mai?",
+   "scope": "documents",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "document": "Quotidiano dell'Umbria 29/10/2026 - il sindaco: «Per sfiduciarmi servono 17 voti e loro non ci arriveranno mai»"
+    },
+    {
+     "document": "UmbriaON 29/10/2026 - Bandecchi ‘sfida’ le minoranze: «Per sfiduciarmi servono 17 voti e non ci arriveranno mai»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quando è uscita la notizia che il partito del patron e Alternativa Popolare si separano?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "Il Giornale 10/01/2026 - AP e Dimensione, percorsi separati"
+    },
+    {
+     "fact": "AP e Dimensione: strade separate"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la rissa in aula con quello di FdI e il sindaco finito indagato, chi l'ha scritta?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Sky TG24 31/08/2023 - scontro in aula col consigliere FdI Cecconi, sindaco indagato; lui: «Lo rifarei»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Nel 2024 il sindaco annunciò le dimissioni in un video e poi rimase: dov'è la scheda?",
+   "scope": "documents",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "Sky TG24 08/02/2024 - annuncia in un video le dimissioni «per motivi politici», poi resta"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quella storia di Gaza e dei bambini con la gente sotto il Comune",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "L'Espresso 29/09/2025 - su Gaza «20mila bambini non sono mai morti», contestazione davanti al Comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'articolo sulla legge rifiuti della Regione, quello dei 53 articoli",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Materia Rinnovabile 29/04/2026 - ddl Umbria Circolare, 53 articoli, discarica dal 30 al 20% entro il 2030"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la notizia del ministero sul primo comitato esecutivo dell'acciaieria",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "MIMIT 09/2026 - primo comitato esecutivo dell'accordo di programma AST"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "articolo sui tifosi spaccati per la nuova squadra in serie D",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "La Nazione Umbria 29/07/2026 - Nuova Ternana 1925 in serie D promossa dal sindaco, tifosi divisi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il video dove il sindaco dice che qualcuno sta con lui pur non stando con lui",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Video Umbria24 - Crisi Comune Terni, Bandecchi: «Qualcuno sta con me anche senza starci. Cittadini dalla mia parte»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il video in cui dice che se non ha più la maggioranza li devono mandare a casa senza pensare ai soldi",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Video Radio Tele Galileo - Terni, Bandecchi “Se non abbiamo la maggioranza, mandateci a casa non guardate il portafoglio”"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il video di Radio Tele Galileo sulla rissa e le minacce in consiglio è lo stesso episodio del 2023?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Video Radio Tele Galileo - Terni: Follia in consiglio comunale minacce e rissa tra Bandecchi e un consigliere di opposizione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il video dove dice che aspetta e non gli andava di fare le consultazioni",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Video Umbria24 - Terni, Bandecchi senza maggioranza: «Aspetto, non ho avuto voglia di consultazioni»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il video dove dice che alle dimissioni esultano solo i cani",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Video Umbria24 - Terni, Bandecchi va avanti: «Dimissioni? No, esultano solo i cani»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "short Terninrete notaio sfiduciatemi",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Video Terninrete - Terni, Bandecchi sfida ancora i consiglieri: andate dal notaio e sfiduciatemi così andiamo a casa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Il primo articolo uscito su di noi dopo l'assemblea, quello con la foto, quando è uscito?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "TerniCittà (testata fittizia) 22/09/2026 - Nasce Terni 2027, lista civica: «Il programma lo scriviamo nei quartieri»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quali erano le richieste più frequenti al mercato secondo il giornale che ci ha seguiti al banchetto?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Conca Notizie (testata fittizia) 12/10/2026 - Terni 2027 al mercato di Borgo Bovio: «Case, bus e verde le richieste più frequenti»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'intervista di Michele alla radio su casa e affitti, si può trascrivere?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Radio Nera Libera (emittente fittizia) 15/10/2026 - Intervista al portavoce di Terni 2027 su casa e affitti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Di chi è il virgolettato «prima i contenuti, poi i nomi» sulle civiche al tavolo?",
+   "scope": "documents",
+   "class": "attribuzione",
+   "expected": [
+    {
+     "document": "Terni Sera (testata fittizia) 31/10/2026 - Centrosinistra, le civiche al tavolo del programma: «Prima i contenuti, poi i nomi»"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quante firme servono, per legge, nei comuni tra 40.001 e 100.000 abitanti?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "L. 81/1993 - elezione diretta del sindaco"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Quanti spazi per i manifesti elettorali deve fissare la giunta in una città tra 100.001 e 500.000 abitanti?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "L. 212/1956 - propaganda elettorale e silenzio"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la legge nata per Camera e Senato che regola mandatario, conto dedicato e Collegio di garanzia",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "L. 515/1993 - campagne elettorali, mandatario e rendiconto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Le disposizioni AGCOM per le comunali dell'8 e 9 giugno 2024 su emittenti locali e messaggi autogestiti",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "AGCOM delibera 122/24/CONS - par condicio comunali"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "280 appartamenti chiusi un centinaio da ristrutturare riassunto Luisa",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Dossier appartamenti Ater vuoti - Coordinamento casa (bozza)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Cosa dice la paginetta approvata a settembre su quello che non facciamo?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Carta dei valori T27"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Nel libretto del Viminale c'è anche la parte sull'esame della commissione e la giurisprudenza?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Ministero dell'Interno - istruzioni candidature comunali 2026 (pubblicazione n. 1)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Bisogna scrivere agli inquilini organizzati del quartiere per i problemi di caldaie spente e acqua che entra dai muri",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Mail al comitato di Borgo Rivo (riscaldamento e infiltrazioni)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "ma 'sta riforma regionale delle case popolari ci tocca o no?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Nuova legge ERP della Regione: cosa cambia per noi"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Ascensori assenti e scale impossibili per chi è in carrozzina negli edifici pubblici: chi se ne occupa?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Barriere architettoniche nelle palazzine"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quella storia dei pannelli solari condivisi sopra le case popolari a che punto è?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "CER sui tetti delle palazzine Ater"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Vogliamo chiedere i documenti ufficiali sugli abbattimenti del verde e mappare dove la gente li ha visti",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Alberi tagliati: accesso agli atti e mappa segnalazioni"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "chi risponde a quelli del pronto soccorso che ci hanno scritto?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Lettera degli operatori del PS: risposta"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Servono le cifre su attese e accessi al reparto di emergenza dell'ospedale",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Numeri del PS"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "com'è andata con le aziendine dell'indotto, quelle della plastica?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Riunione ditte della subfornitura (Polymer)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Le addette alle cucine scolastiche e alle pulizie ci hanno mandato uno scritto: che seguito ha avuto?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Lettera lavoratrici mense e pulizie"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "sulla squadra di calcio e il nuovo campo che linea teniamo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Ternana e stadio: cosa diciamo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quali delibere e documenti dell'amministrazione vogliamo richiedere formalmente come cittadini?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Accesso civico: atti da chiedere"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "nei conti del Comune per l'anno prossimo dove dobbiamo mettere gli occhi?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Bilancio di previsione: cosa guardare"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quali sono i turni e le piazze dei banchetti in strada per il prossimo mese?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Calendario gazebo novembre"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "le regole della chat dei volontari chi le ha scritte?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Regole del gruppo whatsapp volontari"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi ordina t-shirt e oggetti promozionali con il simbolo della lista?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Magliette e gadget"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quel video col titolo che insulta il sindaco come lo abbiamo trattato?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Scheda TuttOggi: titolo offensivo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dobbiamo procurarci i documenti che attestano l'iscrizione alle liste elettorali di chi ha sottoscritto",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Certificati elettorali dei firmatari"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "chi porta materialmente le carte all'ufficio comunale il giorno della presentazione?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Deposito: chi va in segreteria"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Serve una copertura contro incidenti e danni per i banchetti in piazza?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Assicurazione per i gazebo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la rubrica dei contatti è un casino, chi la sistema?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Foglio contatti: pulizia"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come sono divisi i ruoli e le responsabilità tra le persone della lista?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chi fa cosa"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "cosa è successo in aula quando quei consiglieri hanno mollato il sindaco?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Consiglio del 26/10: i quattro passano all'opposizione"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il giorno in cui il centrodestra è andato a firmare le dimissioni davanti al pubblico ufficiale",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "27/10: notaio e firme"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "come si manda a casa un sindaco, che articolo è?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Come funziona la sfiducia (TUEL 52)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Se l'amministrazione cade, quando sarebbero le nuove elezioni?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Quando si vota se cade"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il csx ce l'ha un nome per fare il sindaco o no?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Candidato sindaco csx: ancora nessuno"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dove potrebbe sorgere il nuovo ospedale cittadino, quali localizzazioni sono state studiate?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Nuovo Santa Maria: tre siti nel Docfap"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "che dati sull'inquinamento dell'aria abbiamo in mano?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Smog: i numeri ARPA che abbiamo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "I fogli per raccogliere le sottoscrizioni devono essere timbrati prima dall'ufficio?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Moduli: la vidimazione non serve"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "i numeri di telefono raccolti, quali possiamo usare per mandare roba elettorale?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Contatti per la propaganda: cosa si può usare"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come si svolge un turno di presenza al banchetto, passo per passo?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Turno al gazebo"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quando esce un comunicato chi lo vede e a chi lo mandiamo?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Comunicato stampa: giro"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quali figure hanno il potere di certificare le sottoscrizioni per la presentazione?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Chi può autenticare le firme"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "finite le elezioni cosa dobbiamo consegnare sui soldi spesi?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Dopo il voto: rendiconto"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come si compila la scheda di un articolo per l'archivio stampa?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Scheda di rassegna"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "possiamo mettere tra virgolette una frase che nessuno ha detto davvero?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Mai virgolettati inventati"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "È consentito usare i recapiti delle persone trovati su Facebook o Instagram?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Niente contatti presi dai social"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "si può incollare il pezzo intero del giornale nella rassegna?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Non si copiano gli articoli"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Da quali fonti possiamo ricavare cosa pensano i partiti con cui ci alleiamo?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Posizioni degli alleati solo da fonti pubbliche"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "se in un articolo c'è un cittadino qualunque lo mettiamo in archivio?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Privati negli articoli non si schedano"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi è autorizzato a incassare e pagare per la campagna elettorale?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Soldi della campagna solo dal mandatario"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "dove sta la guida aggiornata per chi fa il banchetto?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Vademecum del gazebo (rev. ottobre)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il testo con i principi e l'identità politica della nostra lista",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Carta dei valori T27"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il teatro in centro quando riapre e quanti soldi mancano ancora?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "UmbriaON 29/10/2026 - Terni: teatro Verdi pronto a giugno 2027 ma senza arredi. Servono altri 4 milioni"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "L'episodio in cui il sindaco offese la funzionaria apicale del Comune durante una seduta",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Lentepubblica 07/2023 - insulti in consiglio alla segretaria generale, il sindacato dei segretari condanna"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quella volta che annunciò in un filmato che lasciava e poi è rimasto",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Sky TG24 08/02/2024 - annuncia in un video le dimissioni «per motivi politici», poi resta"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Le dichiarazioni del sindaco che negavano le vittime infantili nella Striscia e la protesta che ne è seguita",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "L'Espresso 29/09/2025 - su Gaza «20mila bambini non sono mai morti», contestazione davanti al Comune"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la legge regionale sull'economia circolare con le percentuali di discarica",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Materia Rinnovabile 29/04/2026 - ddl Umbria Circolare, 53 articoli, discarica dal 30 al 20% entro il 2030"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "L'articolo sulle tre ipotesi di localizzazione del nuovo nosocomio ternano",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Quotidiano Sanità 03/09/2026 - nuovo Santa Maria, Docfap con tre alternative: Sabbione, Campitello, Colle Obito"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la notizia che la squadra è fallita",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Calcio e Finanza 2026 - Ternana in liquidazione giudiziale"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il filmato in cui il sindaco esclude di lasciare l'incarico e dice che festeggiano solo gli animali",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Video Umbria24 - Terni, Bandecchi va avanti: «Dimissioni? No, esultano solo i cani»"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la norma su chi autentica le firme, l'articolo preciso",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "L. 53/1990 - autenticazione delle firme (art. 14)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Il provvedimento dell'autorità per la protezione dei dati sull'uso delle informazioni personali nella propaganda",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Garante privacy 18/4/2019 - dati e propaganda elettorale"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "l'intervista in radio del nostro portavoce sugli affitti",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Radio Nera Libera (emittente fittizia) 15/10/2026 - Intervista al portavoce di Terni 2027 su casa e affitti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Perché conviene archiviare gli articoli come schede invece di salvare i file scaricati?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "La rassegna fatta di schede si ritrova, quella di pdf no"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "i filmati archiviati senza segnare il punto preciso, che problema hanno dato?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "video schedati senza minuti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Cosa succede se si iniziano a raccogliere le sottoscrizioni con troppo anticipo?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Firme raccolte troppo presto non valgono"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quella volta che è andato in tipografia il file vecchio",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "mandata in stampa la bozza sbagliata"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come vanno riportate le cifre fornite dalle associazioni di quartiere?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "I numeri dei comitati si citano come loro"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "perché non dobbiamo parlare di delibere che non ci siamo letti?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Non commentare atti che non abbiamo letto"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che cosa abbiamo risposto al comitato inquilini di Borgo Rivo sulla mancata manutenzione delle caldaie e delle coperture nelle case ATER?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Mail al comitato di Borgo Rivo (riscaldamento e infiltrazioni)"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Quanti alloggi popolari risultano attualmente sfitti e non riassegnati a Terni secondo l'ultimo dossier che abbiamo analizzato?",
+   "scope": "documents",
+   "class": "persona",
+   "expected": [
+    {
+     "document": "Dossier appartamenti Ater vuoti - Coordinamento casa (bozza)"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Qual è la nostra proposta ufficiale per rifinanziare il fondo per il sostegno all'affitto ed evitare che le famiglie in difficoltà finiscano sotto sfratto esecutivo?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Scheda programma: affitti e morosità"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Chi della lista ha partecipato all'incontro con le associazioni del terzo settore sui servizi educativi comunali e quali criticità sono emerse sulle rette dei nidi?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Incontro coop sociali sui servizi 0-6"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa prevede la nostra linea di programma per recuperare e riaprire gli spazi di aggregazione giovanile e le biblioteche di quartiere nelle periferie?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Centri giovani e sale studio di quartiere"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Qual è la posizione ufficiale della nostra lista e del tavolo di coalizione sull'ipotesi di nuovo inceneritore e sul ddl regionale 'Umbria Circolare'?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Nota rifiuti per il tavolo (termovalorizzatore)"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa possiamo citare con dati precisi riguardo ai giorni di sforamento dei limiti PM10 registrati nell'ultimo anno dalle centraline di Terni?",
+   "scope": "facts",
+   "class": "persona",
+   "expected": [
+    {
+     "fact": "Smog: i numeri ARPA che abbiamo"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che accordi abbiamo preso con le associazioni ambientaliste per promuovere le Comunità Energetiche Rinnovabili nei complessi residenziali pubblici?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "CER sui tetti delle palazzine Ater"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Come contestiamo con dati e delibere le dichiarazioni della giunta sulla gestione del verde pubblico e la sostituzione delle alberature cittadine?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Alberi tagliati: accesso agli atti e mappa segnalazioni"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che impegni specifici abbiamo concordato con i partiti alleati per accelerare la bonifica delle discariche storiche e dei terreni contaminati della conca?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Siti contaminati: capitolo per la bozza comune"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Quali sono i punti fermi del documento congiunto con PD e M5S sulla localizzazione, le risorse e i tempi di realizzazione del nuovo ospedale di Terni?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Ospedale nella bozza comune"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa abbiamo risposto ai sindacati e agli operatori sanitari in merito al sovraffollamento del pronto soccorso e alla carenza di infermieri e medici al Santa Maria?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Lettera degli operatori del PS: risposta"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che osservazioni abbiamo verbalizzato sulla delibera regionale riguardante la ripartizione dei distretti sanitari e la reale attivazione delle Case di Comunità a Terni?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Verbale gruppo sanità 14/10"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa propone la nostra scheda programmatica sulle liste d'attesa per garantire che le prestazioni diagnostiche urgenti non costringano i ternani a rivolgersi al privato?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Scheda programma: tempi per esami e visite"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Come replichiamo alla maggioranza quando sostiene che la sanità è una partita solo regionale su cui il sindaco e il consiglio comunale non hanno voce in capitolo?",
+   "scope": "facts",
+   "class": "persona",
+   "expected": [
+    {
+     "fact": "Sindaco e salute: le leve del Comune"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "A che punto è la firma dell'Accordo di Programma per le acciaierie AST e quali condizioni vincolanti chiediamo come lista su livelli occupazionali e investimenti ambientali?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Acciaieria: cosa chiediamo sull'attuazione"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa è stato deciso nell'ultimo confronto con le categorie economiche sul futuro delle aziende dell'indotto siderurgico e dei fornitori locali?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Riunione ditte della subfornitura (Polymer)"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Qual è la nostra ricetta per rivitalizzare il commercio di prossimità in centro storico contro la desertificazione e l'espansione dei centri commerciali periferici?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Negozi del centro: idee per il programma"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa prevede la nostra proposta industriale sull'utilizzo delle risorse destinate alla transizione ecologica e alla filiera dell'idrogeno nell'area industriale ternana?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "H2 nell'area industriale: documento del gruppo"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che impegni formali abbiamo assunto verso le lavoratrici e i lavoratori degli appalti comunali (mense scolastiche, pulizie, manutenzioni) per garantire la clausola sociale?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Lettera lavoratrici mense e pulizie"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Che cosa è successo esattamente in aula nella prima seduta consiliare dopo che i quattro consiglieri di maggioranza sono passati al gruppo 'Per Terni'?",
+   "scope": "facts",
+   "class": "persona",
+   "expected": [
+    {
+     "fact": "Consiglio del 26/10: i quattro passano all'opposizione"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Quali uscite pubbliche del sindaco verso l'opposizione, i giornalisti e i vertici regionali abbiamo archiviato con data e fonte verificata per la mozione di sfiducia?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Raccolta episodi del sindaco con fonte"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "A che punto è la limatura del testo unitario per la mozione di sfiducia al sindaco concordato tra il centrosinistra, i 5 Stelle e le altre forze contrarie alla giunta?",
+   "scope": "facts",
+   "class": "persona",
+   "expected": [
+    {
+     "fact": "Sfiducia: dove siamo al 31/10"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Come è formulata la nostra proposta per reintrodurre il bilancio partecipativo nei quartieri e rendere obbligatorio lo streaming delle commissioni consiliari?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Scheda partecipazione: quartieri e dirette"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Chi rappresentava la lista all'assemblea pubblica sulle partecipate comunali e quali anomalie su nomine e bilanci sono state segnalate?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Serata dell'Osservatorio civico sulle società comunali"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "A che punto siamo con i fogli vidimati per raccogliere le firme della lista e quali pubblici ufficiali o consiglieri abbiamo di turno per autenticarle sabato al banchetto?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Raccolta sottoscrizioni: moduli e autenticatori"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Quali zone tocca il calendario dei banchetti di ascolto nelle prossime due settimane e chi coordina il presidio di domenica mattina a piazza Tacito?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Calendario gazebo novembre"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Cosa è emerso dall'ultimo vertice politico con la delegazione di campo largo (PD, Movimento 5 Stelle, AVS) sulla stesura del manifesto comune e sui candidati?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Tavolo di coalizione: riunione del 30/10"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Chi è il nostro mandatario elettorale per il rendiconto delle spese e quali regole interne dobbiamo seguire per registrare le piccole donazioni al banchetto?",
+   "scope": "procedures",
+   "class": "persona",
+   "expected": [
+    {
+     "procedure": "Offerte e contributi: come si registrano"
+    }
+   ]
+  },
+  {
+   "set": "persona",
+   "query": "Dove sono salvati i file grafici definitivi e il volantino approvato per la campagna 'Terni 2027' da mandare in tipografia per la distribuzione a Borgo Bovio?",
+   "scope": "tasks",
+   "class": "persona",
+   "expected": [
+    {
+     "task": "Volantino quartieri: versione finale"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa è uscito sulla crisi in Comune il 27 e il 28 ottobre?",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "k": 10,
+   "filters": {
+    "date_from": "2026-10-27",
+    "date_to": "2026-10-28"
+   },
+   "expected": [
+    {
+     "source": "Terni, crisi in Comune. Il centrosinistra: «Presentiamo la mozione di sfiducia»"
+    },
+    {
+     "source": "Terni, crisi in Comune. PD: «Destino Bandecchi è segnato. Al lavoro con gli alleati»"
+    },
+    {
+     "source": "cdx dal notaio per le dimissioni (firmano in sei), M5S avvia le firme per la sfiducia"
+    },
+    {
+     "source": "csx d'accordo sulla mozione di sfiducia (PD, M5S, AVS, PSI, CR-IV, Rifondazione)"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Il giorno dopo che i quattro hanno lasciato la maggioranza, cosa è successo?",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "filters": {
+    "date_from": "2026-10-27",
+    "date_to": "2026-10-27"
+   },
+   "expected": [
+    {
+     "source": "cdx dal notaio per le dimissioni (firmano in sei), M5S avvia le firme per la sfiducia"
+    },
+    {
+     "source": "Terni, crisi in Comune. PD: «Destino Bandecchi è segnato. Al lavoro con gli alleati»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Le notizie sugli scarichi della scuola Galilei, in ordine: prima l'ordinanza e poi?",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "filters": {
+    "query": "Galilei"
+   },
+   "expected": [
+    {
+     "source": "Terni, scarichi del ‘Galilei’ e largo don Minzoni: scontro Comune-Provincia, c’è l’ordinanza"
+    },
+    {
+     "source": "Terni, scarichi del ‘Galilei’ e largo don Minzoni: Comune annulla la propria ordinanza"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Quali notizie del 29 ottobre parlano del sindaco Bandecchi?",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "filters": {
+    "date_from": "2026-10-29",
+    "date_to": "2026-10-29",
+    "persons": "Bandecchi"
+   },
+   "expected": [
+    {
+     "source": "Bandecchi ‘sfida’ le minoranze: «Per sfiduciarmi servono 17 voti e non ci arriveranno mai»"
+    },
+    {
+     "source": "Terni, Bernardini (Pd): «Tutti facciano la propria parte per mandare a casa Bandecchi»"
+    },
+    {
+     "source": "il sindaco: «Per sfiduciarmi servono 17 voti e loro non ci arriveranno mai»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa abbiamo in archivio sul sindaco del 2023 e del 2024?",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "filters": {
+    "date_from": "2023-01-01",
+    "date_to": "2024-12-31",
+    "persons": "Bandecchi"
+   },
+   "expected": [
+    {
+     "source": "scontro in aula col consigliere FdI Cecconi, sindaco indagato; lui: «Lo rifarei»"
+    },
+    {
+     "source": "insulti in consiglio alla segretaria generale, il sindacato dei segretari condanna"
+    },
+    {
+     "source": "annuncia in un video le dimissioni «per motivi politici», poi resta"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Di quando è la notizia sulle tre alternative per il nuovo ospedale?",
+   "scope": "sources",
+   "class": "temporale",
+   "filters": {
+    "query": "ospedale"
+   },
+   "expected": [
+    {
+     "source": "nuovo Santa Maria, Docfap con tre alternative: Sabbione, Campitello, Colle Obito"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Quando la commissione regionale ha approvato le modifiche sulle case popolari?",
+   "scope": "sources",
+   "class": "temporale",
+   "filters": {
+    "query": "popolari",
+    "date_from": "2026-01-01"
+   },
+   "expected": [
+    {
+     "source": "III commissione approva le modifiche alla LR 23/2003 sulle case popolari"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Gli articoli usciti su Terni 2027 a ottobre",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "k": 10,
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "query": "Terni 2027"
+   },
+   "expected": [
+    {
+     "source": "Terni 2027 al mercato di Borgo Bovio: «Case, bus e verde le richieste più frequenti»"
+    },
+    {
+     "source": "Borgo Rivo, gli inquilini delle case Ater mostrano muffa e infiltrazioni alla lista civica"
+    },
+    {
+     "source": "Intervista al portavoce di Terni 2027 su casa e affitti"
+    },
+    {
+     "source": "Mense e pulizie del Comune, la lista civica firma un impegno con le lavoratrici"
+    },
+    {
+     "source": "Energia condivisa sui tetti delle case popolari: ambientalisti e Terni 2027 al lavoro"
+    },
+    {
+     "source": "Sanità, Terni 2027 annuncia un'assemblea pubblica a fine novembre"
+    },
+    {
+     "source": "Società del Comune, l'Osservatorio civico chiede trasparenza: in sala anche le liste civiche"
+    },
+    {
+     "source": "Centrosinistra, le civiche al tavolo del programma: «Prima i contenuti, poi i nomi»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Le notizie dell'estate su Ternana e stadio",
+   "scope": "sources",
+   "class": "temporale",
+   "all": true,
+   "filters": {
+    "date_from": "2026-06-01",
+    "date_to": "2026-09-30"
+   },
+   "expected": [
+    {
+     "source": "stadio-clinica: il Comune rinuncia al Consiglio di Stato, il sindaco: «si farà»"
+    },
+    {
+     "source": "Nuova Ternana 1925 in serie D promossa dal sindaco, tifosi divisi"
+    },
+    {
+     "source": "Ternana in liquidazione giudiziale"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "L'ultima cosa uscita sulle firme per la sfiducia prima di novembre",
+   "scope": "sources",
+   "class": "temporale",
+   "filters": {
+    "date_to": "2026-10-31",
+    "query": "firme"
+   },
+   "expected": [
+    {
+     "source": "Terni, FdI attacca Pd e opposizioni: «Tante parole ma mancano le firme per cacciare Bandecchi»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa è successo nel consiglio comunale del 26 ottobre?",
+   "scope": "sources",
+   "class": "temporale",
+   "filters": {
+    "date_from": "2026-10-26",
+    "date_to": "2026-10-26"
+   },
+   "expected": [
+    {
+     "source": "quattro consiglieri lasciano la maggioranza, nasce Per Terni; consolidato 15 sì 9 no 6 astenuti"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Prima di Per Terni, a gennaio, chi si era separato dal partito del sindaco?",
+   "scope": "sources",
+   "class": "temporale",
+   "filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-01-31"
+   },
+   "expected": [
+    {
+     "source": "AP e Dimensione, percorsi separati"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Chi ha detto che per sfiduciarlo servono 17 voti, e dove è uscito?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "all": true,
+   "filters": {
+    "persons": "Bandecchi",
+    "query": "17"
+   },
+   "expected": [
+    {
+     "source": "Bandecchi ‘sfida’ le minoranze: «Per sfiduciarmi servono 17 voti e non ci arriveranno mai»"
+    },
+    {
+     "source": "il sindaco: «Per sfiduciarmi servono 17 voti e loro non ci arriveranno mai»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa ha detto Bernardini del PD sulla crisi?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "persons": "Bernardini"
+   },
+   "expected": [
+    {
+     "source": "Terni, Bernardini (Pd): «Tutti facciano la propria parte per mandare a casa Bandecchi»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Le prese di posizione del PD sulla crisi in Comune",
+   "scope": "sources",
+   "class": "attribuzione",
+   "all": true,
+   "filters": {
+    "query": "PD",
+    "date_from": "2026-10-25"
+   },
+   "expected": [
+    {
+     "source": "Terni, crisi in Comune. PD: «Destino Bandecchi è segnato. Al lavoro con gli alleati»"
+    },
+    {
+     "source": "Terni, Bernardini (Pd): «Tutti facciano la propria parte per mandare a casa Bandecchi»"
+    },
+    {
+     "source": "csx d'accordo sulla mozione di sfiducia (PD, M5S, AVS, PSI, CR-IV, Rifondazione)"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa ha dichiarato Fratelli d'Italia sulle firme per cacciare il sindaco?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "FdI firme"
+   },
+   "expected": [
+    {
+     "source": "Terni, FdI attacca Pd e opposizioni: «Tante parole ma mancano le firme per cacciare Bandecchi»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Quali video di Radio Tele Galileo abbiamo sul sindaco?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "all": true,
+   "filters": {
+    "channel": "Radio Tele Galileo"
+   },
+   "expected": [
+    {
+     "source": "Terni, Bandecchi “Se non abbiamo la maggioranza, mandateci a casa non guardate il portafoglio”"
+    },
+    {
+     "source": "Terni: Follia in consiglio comunale minacce e rissa tra Bandecchi e un consigliere di opposizione"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Tutti i video in cui Bandecchi parla della crisi della maggioranza",
+   "scope": "sources",
+   "class": "attribuzione",
+   "all": true,
+   "k": 10,
+   "filters": {
+    "persons": "Bandecchi",
+    "query": "video"
+   },
+   "expected": [
+    {
+     "source": "Crisi Comune Terni, Bandecchi: «Qualcuno sta con me anche senza starci. Cittadini dalla mia parte»"
+    },
+    {
+     "source": "Terni, Bandecchi “Se non abbiamo la maggioranza, mandateci a casa non guardate il portafoglio”"
+    },
+    {
+     "source": "Terni, Bandecchi senza maggioranza: «Aspetto, non ho avuto voglia di consultazioni»"
+    },
+    {
+     "source": "Terni, Bandecchi va avanti: «Dimissioni? No, esultano solo i cani»"
+    },
+    {
+     "source": "Terni, Bandecchi sfida ancora i consiglieri: andate dal notaio e sfiduciatemi così andiamo a casa"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Quale testata ha scritto dei 53 articoli della legge regionale sui rifiuti?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "53"
+   },
+   "expected": [
+    {
+     "source": "ddl Umbria Circolare, 53 articoli, discarica dal 30 al 20% entro il 2030"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Chi ha detto «il programma lo scriviamo nei quartieri»?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "quartieri"
+   },
+   "expected": [
+    {
+     "source": "Nasce Terni 2027, lista civica: «Il programma lo scriviamo nei quartieri»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa ha detto il nostro portavoce in radio?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "portavoce"
+   },
+   "expected": [
+    {
+     "source": "Intervista al portavoce di Terni 2027 su casa e affitti"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Chi ha detto «lo rifarei» dopo lo scontro in aula?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "rifarei"
+   },
+   "expected": [
+    {
+     "source": "scontro in aula col consigliere FdI Cecconi, sindaco indagato; lui: «Lo rifarei»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Quale testata ha dato i risultati delle regionali tra Proietti e Tesei?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "persons": "Proietti"
+   },
+   "expected": [
+    {
+     "source": "regionali: Proietti 51,1%, Tesei 46,2%"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Chi ha annunciato il primo comitato esecutivo dell'accordo per l'acciaieria AST?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "query": "AST"
+   },
+   "expected": [
+    {
+     "source": "primo comitato esecutivo dell'accordo di programma AST"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Di chi è la frase che alle dimissioni esultano solo i cani?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "persons": "Bandecchi",
+    "query": "cani"
+   },
+   "expected": [
+    {
+     "source": "Terni, Bandecchi va avanti: «Dimissioni? No, esultano solo i cani»"
+    }
+   ]
+  },
+  {
+   "set": "fonti",
+   "query": "Cosa ha detto il sindaco dello stadio-clinica dopo la rinuncia al Consiglio di Stato?",
+   "scope": "sources",
+   "class": "attribuzione",
+   "filters": {
+    "persons": "Bandecchi",
+    "query": "stadio"
+   },
+   "expected": [
+    {
+     "source": "stadio-clinica: il Comune rinuncia al Consiglio di Stato, il sindaco: «si farà»"
+    }
+   ]
+  }
+ ]
+}
