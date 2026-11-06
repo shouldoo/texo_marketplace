@@ -1,6 +1,6 @@
 # ets
 
-A Texo skill pack. Third sector organisations (ETS): the way of working with the people served, volunteers, funding, reporting and the registry, method references and playbooks, the hub seed of the sector.
+A Texo skill pack. Third sector organisations (ETS): the way of working with the people served, volunteers, funding, reporting and the registry, method references and playbooks, the hub seed of the sector and a demo.
 
 | Part | What |
 |---|---|
@@ -8,11 +8,22 @@ A Texo skill pack. Third sector organisations (ETS): the way of working with the
 | Seed (`seed.toml`) | activities `funding`, `reporting`, `volunteers`, `services`; sections `governance`; 7 rules of the organisation; templates: Domanda di finanziamento (template), Progetto finanziato (template) |
 | Suggested threads | `normativa`, `bandi`, `documenti` |
 | Working folders | none |
+| `demo/` | an invented association of the third sector («Ginestra APS») and its question sets, loaded by `<core>/setup/load-demo.sh ets <database> [--create]` into a test database |
 
 The rules that must always hold arrive in the hub through the seed; the guide skill holds how to work and the reading
 map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
+
+### v1.3.0
+
+- The demo of the pack (`demo/`): «Ginestra APS», an invented association with a help desk against violence, a
+  shelter house, a campaign, volunteering, the obligations towards the registry and its funders; the public acts
+  and ministerial pages it reads (`demo/texts/`); its question sets (`demo/questions.json`: set A written knowing
+  the data, set B written blind from the titles, the passages of the long acts), so the search of the memory is
+  measured on it with `<core>/scripts/eval_memoria.py`. The demo is the curated layer of the scenario: the
+  session note of every task with its keywords, the keywords of rules, facts, procedures, lessons and documents,
+  the summaries of the documents.
 
 ### v1.2.0
 
