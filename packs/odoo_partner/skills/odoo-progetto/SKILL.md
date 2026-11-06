@@ -21,7 +21,7 @@ il riepilogo, e alla fine la nota, le ore, l'aggiornamento, fatti, procedure, le
 un progetto Odoo tra il riepilogo e la prima modifica, e alla fine.
 
 I comandi `texo` si lanciano dalla cartella di lavoro. I percorsi `odoo-partner-guida/...` sono quelli della skill guida
-del pacchetto, collegata in `.agents/skills/` e `.claude/skills/` della cartella.
+del pacchetto, collegata tra le skill della cartella di lavoro.
 
 | Che cosa | Dove | Come |
 |---|---|---|
