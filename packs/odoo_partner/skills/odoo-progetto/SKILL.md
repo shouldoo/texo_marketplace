@@ -6,8 +6,8 @@ description: >-
   chiusura): trova il repository del progetto in `progetti/<slug>/` e i suoi submodule, la
   versione Odoo dell'istanza dalla description del progetto, i reference e le lezioni
   dell'area, il codice upstream di quella versione nei fili (nomi di campi, metodi e viste
-  controllati lì, mai a memoria), l'istanza locale e i test con zero warning; una dipendenza
-  solo da un modulo che la description elenca come installato. Usala con texo-sessione
+  si cercano lì), l'istanza locale e i test del modulo, secondo le regole del settore nel
+  hub. Usala con texo-sessione
   all'inizio di ogni sessione su un progetto Odoo. Trigger: "lavoriamo su <progetto>",
   "task <n>", "apri il progetto", "start work on <project>", "modifica il modulo",
   "il modulo non installa", "riprendiamo il progetto Odoo", "cosa c'è da fare sul modulo".
@@ -54,26 +54,27 @@ chiedila: tutto quello che segue dipende da lei. Dilla nel riepilogo.
 1. `.texo/THREADS.md` elenca il filo `odoo-<NN>` della versione del progetto e il suo mirror.
    Se manca, dillo e proponi il filo per la configurazione nel hub (il pacchetto lo suggerisce);
    `texo doctor` dice se il mirror è al ref fissato. I nomi di campi, metodi e viste si
-   controllano con `rg` in quel mirror e nei mirror `oca-<repo>`, mai a memoria.
+   cercano con `rg` in quel mirror e nei mirror `oca-<repo>` (la regola del hub sui nomi).
 2. Leggi la «Mappa di lettura» della skill `odoo-partner-guida`: le convenzioni, il delta della
    versione per l'area, il playbook dell'operazione. Cerca le lezioni dell'area prima di
    scrivere codice: `texo search "<words>" --terms <synonyms> --scope lessons --applies-to <NN>.0`.
 3. Per un nome che può essere cambiato tra versioni, l'ontologia che
    `$(texo where --pack odoo_partner)/scripts/build_ontology.py` genera in `.texo/ontology/`.
-4. Una dipendenza da un altro modulo si può proporre solo se la description del progetto lo
-   elenca come installato; altrimenti dillo e chiedi.
+4. Prima di aggiungere una voce a `depends`, confrontala con i moduli installati nella
+   description del progetto (la regola del hub sulle dipendenze).
 5. Prima di creare un modulo, cercane uno che esiste già (il progetto, i mirror OCA, i moduli
    che OCA pubblica per la versione): chiedi se estenderlo.
 
 ## 4. Lavoro e test
 
 - Il codice segue `odoo-partner-guida/references/conventions/core-conventions.md`
-  e le skill ufficiali; le convenzioni del cliente (`references/conventions/` alla radice della
-  cartella di lavoro) vincono su di esse.
-- Dopo ogni modifica a un modulo: i suoi test su un database creato per il task, zero warning
-  nel log (`checklog-odoo`): `odoo-partner-guida/references/playbooks/test-modulo-locale.md`.
-- Azioni sul database, letture comprese, con `odoo shell` e l'ORM; SQL solo come ultima
-  risorsa, dicendo perché.
+  e le skill ufficiali. Le convenzioni dell'organizzazione e del cliente sono loro procedure
+  nel hub (il pacchetto di contesto, `texo search "<parole>" --scope procedures`) e vincono su
+  `core-conventions.md`.
+- I test di un modulo e il controllo del log, come chiede la regola del hub sui test:
+  `odoo-partner-guida/references/playbooks/test-modulo-locale.md`.
+- Le letture e le scritture sul database con `odoo shell`:
+  `odoo-partner-guida/references/conventions/core-conventions.md`, «Azioni sul database».
 - Modifiche alla UI (JavaScript, Owl, viste, azioni): skill `browser-test`, solo istanza locale
   a meno che una regola attiva del progetto abiliti un host di stage.
 
@@ -90,9 +91,8 @@ Oltre alla chiusura di `texo-sessione`:
 
 ## Sicurezza
 
-- Mai la produzione come bersaglio: niente scritture, aggiornamenti di moduli o test su un
-  database o un URL di produzione. Prima lo stage, poi i test del cliente, poi la produzione
-  attraverso il workflow di deploy del progetto.
+- Le regole del hub sulla produzione e sulle copie dei database valgono in ogni passo: una
+  modifica arriva in produzione con il workflow di deploy del progetto.
 - Non modificare mai il core di Odoo né i submodule OCA di un progetto: estendili da un modulo
   del progetto.
 - Niente del progetto va nei repository di Texo o nel repository del progetto oltre al suo

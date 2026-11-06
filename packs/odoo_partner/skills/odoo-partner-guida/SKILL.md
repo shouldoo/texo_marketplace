@@ -1,14 +1,16 @@
 ---
 name: odoo-partner-guida
 description: >-
-  Come lavora un partner Odoo con questo pacchetto: le regole del settore per il codice e le istanze, la mappa di lettura dei delta di versione, delle convenzioni e dei playbook, i fili del codice upstream. Usala quando il lavoro tocca un progetto Odoo Community, un modulo, un'istanza, una migrazione. Trigger: "modulo Odoo", "progetto Odoo", "migrazione", "istanza locale", "Odoo 19", "Odoo 20", "OCA", "scrivi un modulo", "modifica il modulo", "porta il modulo alla nuova versione", "che cosa cambia nella 19".
+  Come lavora un partner Odoo con questo pacchetto: come si lavora sul codice e sulle istanze (le regole del settore sono nel hub), la mappa di lettura dei delta di versione, delle convenzioni e dei playbook, i fili del codice upstream. Usala quando il lavoro tocca un progetto Odoo Community, un modulo, un'istanza, una migrazione. Trigger: "modulo Odoo", "progetto Odoo", "migrazione", "istanza locale", "Odoo 19", "Odoo 20", "OCA", "scrivi un modulo", "modifica il modulo", "porta il modulo alla nuova versione", "che cosa cambia nella 19".
 ---
 
 # odoo-partner-guida
 
-Il modo di lavorare del pacchetto odoo_partner. Le regole che ogni sessione dell'organizzazione deve seguire
-arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
-lavorare e che cosa leggere. I file citati sotto sono in `references/`, accanto a questo file.
+Il modo di lavorare del pacchetto odoo_partner. Le regole del settore (la produzione, le copie dei database,
+i nomi controllati nel sorgente, i test e il log, il database e l'ORM, le dipendenze) sono regole
+dell'organizzazione nel suo hub: le ha seminate questo pacchetto e i lead possono cambiarle. Leggile con
+`texo rules` o nel pacchetto di contesto: vincolano. Questa skill dice come lavorare e che cosa leggere. I file
+citati sotto sono in `references/`, accanto a questo file.
 
 ## Prima di scrivere codice
 
@@ -17,26 +19,24 @@ lavorare e che cosa leggere. I file citati sotto sono in `references/`, accanto 
 - Leggi la mappa (sotto) per l'area che tocchi, poi cerca le lezioni del hub per quell'area e quella versione
   (`texo search "<words>" --scope lessons`, con i tag dell'area). Un delta di `references/reference/v<NN>/`
   contiene solo ciò che cambia in quella versione.
-- Controlla ogni campo, metodo, vista e xmlid nel sorgente di quella versione (il filo `odoo-<NN>`) o del modulo
-  OCA; per un cambio tra versioni, l'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
+- I nomi si cercano con `rg` nel mirror del filo `odoo-<NN>` (`.texo/THREADS.md`) e nei mirror `oca-<repo>`;
+  per un cambio tra versioni, nell'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
   scrive in `.texo/ontology/` da OpenUpgrade.
 - Prima di creare un modulo, cercane uno esistente (prima OCA) e di' che cosa hai trovato.
-- Una dipendenza da un modulo si può proporre solo se la description del progetto lo elenca come installato.
+- I moduli installati sull'istanza sono nella description del progetto: leggila prima di aggiungere una voce a
+  `depends`.
 - Il core di Odoo e i repository OCA sono codice di terzi: estendili per ereditarietà da un modulo del
   progetto, mai modificandoli.
 
 ## Durante il lavoro
 
-- I test sono obbligatori dopo aver creato o modificato un modulo: esegui i suoi test e aggiungi test per ciò
-  che hai cambiato, su un database di test creato per il task, con zero warning nel log (`checklog-odoo`):
-  `references/playbooks/test-modulo-locale.md`.
-- Agisci su un database con `odoo shell` e l'ORM; SQL diretto solo come ultima risorsa, dicendo perché.
+- I test di un modulo e il controllo del log: `references/playbooks/test-modulo-locale.md`.
+- Le letture e le scritture con `odoo shell`: `references/conventions/core-conventions.md`, «Azioni sul
+  database».
 - Quando proponi una modifica a un modello, di' che cosa segue: riavvio, `-u <module>`, test.
 - Niente `print()` né log di debug nel codice finale.
-- Una copia di un database di produzione si neutralizza prima che un'istanza parta su di essa, e si anonimizza
-  per un'organizzazione che serve persone vulnerabili (`$(texo where --pack odoo_partner)/scripts/neutralize-db.sh`, `$(texo where --pack odoo_partner)/scripts/anonymize-db.sh`).
-- La produzione non è mai un bersaglio di test: prima lo stage, poi il collaudo del cliente, poi la produzione
-  attraverso il rilascio del progetto.
+- Per neutralizzare o anonimizzare una copia di un database: `$(texo where --pack odoo_partner)/scripts/neutralize-db.sh`
+  e `$(texo where --pack odoo_partner)/scripts/anonymize-db.sh`.
 
 ## Che cosa tiene la memoria per questo settore
 
@@ -49,15 +49,16 @@ lavorare e che cosa leggere. I file citati sotto sono in `references/`, accanto 
 ## Mappa di lettura
 
 > Nessun file di questo pacchetto è precaricato: si legge quello che il compito tocca. I percorsi sono
-> relativi a questo pacchetto (`$(texo where --pack odoo_partner)` dalla cartella di lavoro). Regola: prima di scrivere
-> codice su un'area si leggono il delta della versione del progetto, le lezioni del hub di quell'area e il
-> codice upstream di quella versione.
+> relativi a questo pacchetto (`$(texo where --pack odoo_partner)` dalla cartella di lavoro). Prima di scrivere
+> codice su un'area leggi il delta della versione del progetto, le lezioni del hub di quell'area e il codice
+> upstream di quella versione.
 
 ### Prima di tutto
 
 | Che cosa | Dove |
 |---|---|
-| Le convenzioni di codice e di lavoro su Odoo | `references/conventions/core-conventions.md` (quelle dell'organizzazione, in `references/conventions/` alla sua radice, vincono) |
+| Le convenzioni di codice e di lavoro su Odoo | `references/conventions/core-conventions.md` |
+| Le convenzioni dell'organizzazione e del cliente | le loro procedure nel hub: il pacchetto di contesto, `texo search "<parole>" --scope procedures`; vincono su `core-conventions.md` |
 | L'avvio e la chiusura del lavoro su un progetto | skill `texo-sessione` (core), poi skill `odoo-progetto` |
 | La versione dell'istanza, gli ambienti, i moduli installati | la description del progetto nel hub (`texo project <id>`) |
 | Il codice upstream della versione | il mirror del filo `odoo-<NN>` (`.texo/THREADS.md`): `rg`, mai la memoria |
@@ -95,7 +96,7 @@ nell'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
 | Operazione | Dove |
 |---|---|
 | Prendere in carico un progetto (hub, repository, istanza locale) | `references/playbooks/onboard-progetto.md` |
-| Testare un modulo sull'istanza locale, zero warning nel log | `references/playbooks/test-modulo-locale.md` |
+| Testare un modulo sull'istanza locale e controllarne il log | `references/playbooks/test-modulo-locale.md` |
 | Portare un progetto a una nuova versione | `references/playbooks/migrazione-progetto.md` |
 | Portare un modulo OCA a una nuova major | `references/playbooks/migrazione-modulo-oca.md` |
 | Provare l'interfaccia di un'istanza locale o di uno stage abilitato | skill `browser-test` |

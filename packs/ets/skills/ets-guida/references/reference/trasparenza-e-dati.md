@@ -1,41 +1,33 @@
 ---
 type: "Reference"
 title: "Trasparenza dell'ente e dati delle persone servite"
-description: "Che cosa un ETS pubblica sul proprio sito (compensi, contributi pubblici ricevuti, bilancio sociale) e come tratta i dati delle persone che serve, soprattutto se vulnerabili."
+description: "Che cosa un ETS pubblica sul proprio sito (compensi, contributi pubblici ricevuti, bilancio sociale) e come lavora sui dati delle persone che serve: dove leggerlo e che cosa scrivere nel hub."
 tags: ["trasparenza", "privacy", "dati-personali"]
 ---
 
 # Trasparenza dell'ente e dati delle persone servite
 
+> Metodo: soglie, scadenze e sanzioni si leggono nel testo vigente dal filo `normativa` e diventano fatti del hub,
+> con l'articolo letto, la data della verifica e una scadenza di un esercizio.
+
 ## Che cosa si pubblica
 
-| Che cosa | Chi | Fonte |
+| Che cosa | Fonte da leggere | Domande |
 |---|---|---|
-| Compensi a componenti degli organi di amministrazione e controllo, dirigenti e associati | ETS oltre la soglia di entrate di CTS, art. 14, comma 2, sul proprio sito o su quello della rete associativa | D.Lgs. 117/2017, art. 14, comma 2 |
-| Bilancio sociale | ETS oltre la soglia di entrate di CTS, art. 14, comma 1, depositato al registro e pubblicato sul sito | D.Lgs. 117/2017, art. 14, comma 1 |
-| Sovvenzioni, sussidi, vantaggi e contributi ricevuti dalle pubbliche amministrazioni | gli enti sopra la soglia annua della legge, sul sito entro la scadenza della legge | legge 4 agosto 2017, n. 124, art. 1, commi 125 e seguenti |
-| Diciture e loghi del finanziatore | ogni progetto finanziato, su ogni materiale | l'avviso e la convenzione del progetto |
+| Compensi di organi, dirigenti e associati | il codice del Terzo settore, parte sul bilancio sociale | Oltre quale soglia di entrate? Dove si pubblicano? |
+| Bilancio sociale | il codice del Terzo settore e le linee guida ministeriali | Oltre quale soglia? Si deposita e si pubblica? |
+| Contributi ricevuti dalle pubbliche amministrazioni | la legge sulla trasparenza delle erogazioni pubbliche | Sopra quale importo annuo? Entro quando? Che cosa succede se manca? |
+| Diciture e loghi del finanziatore | l'avviso e la convenzione del progetto | Su quali materiali? Con quale formula? |
+
+- Fatto nel hub: «Pubblicazioni dovute sul sito», con gli articoli letti e se l'ente vi rientra.
+- Ogni pubblicazione dovuta è un task annuale dell'organizzazione, con la data del fatto.
 
 ## I dati delle persone servite
 
-- Le informazioni sulla salute, sulla vita sessuale o sull'orientamento sessuale, sull'origine etnica e sulle
-  convinzioni religiose sono categorie particolari di dati personali (Regolamento (UE) 2016/679, art. 9); i dati
-  relativi a condanne e reati hanno una disciplina propria (art. 10). Un servizio a persone vulnerabili tratta
-  quasi sempre dati di questo tipo.
-- Le basi giuridiche, le informative, i tempi di conservazione e le misure di sicurezza del trattamento sono
-  decisioni del titolare (l'ente) e del suo responsabile della protezione dei dati, se nominato: l'agente non le
-  stabilisce e non le riassume a memoria (da verificare con chi tratta i dati nell'ente).
-- Regola di questo pacchetto, più stretta della legge: i dati delle persone servite non entrano mai nella
-  memoria, in git, nelle conversazioni con un agente né nei documenti che un agente scrive (`AGENTS.md`). Il
-  lavoro si descrive con attività, numeri aggregati ed esiti.
-- Un indirizzo protetto (una struttura di accoglienza riservata) non si scrive in nessun luogo.
-- Un numero piccolo, combinato con luogo, periodo e servizio, può rendere riconoscibile una persona: nei testi
-  per il pubblico si aggregano i numeri o si omettono.
-
-## Nella memoria
-
-- Soglie, scadenze e sanzioni si leggono nel testo vigente dal filo `normativa` e diventano il fatto «Pubblicazioni
-  dovute sul sito», con gli articoli letti, se l'ente vi rientra e la data di verifica; scadenza un anno.
-- Le pubblicazioni dovute sono task annuali dell'organizzazione, con le date del fatto.
-- Le decisioni sul trattamento dei dati sono procedure dell'organizzazione nella sezione `compliance`, scritte
-  da chi ne risponde.
+- Un servizio a persone vulnerabili tratta quasi sempre categorie particolari di dati (salute, vita sessuale,
+  origine etnica, convinzioni, condanne): il regolamento europeo sulla protezione dei dati le disciplina a parte.
+- Basi giuridiche, informative, conservazione e misure di sicurezza sono decisioni del titolare (l'ente) e del
+  suo responsabile della protezione dei dati, se c'è: non le stabilisci e non le riassumi a memoria.
+- Quelle decisioni sono procedure dell'organizzazione nella sezione `compliance`, scritte da chi ne risponde.
+- Nei testi per il pubblico chiediti se un numero piccolo, con luogo, periodo e servizio, rende riconoscibile
+  qualcuno: aggrega o ometti.

@@ -25,6 +25,20 @@ SEED_TABLES = {"lang", "activities", "sections", "rules", "project_templates"}
 PACK_ENTRIES = {"pack.toml", "seed.toml", "README.md", ".claude-plugin", "skills", "scripts", "demo", "tests"}
 LINK = re.compile(r"`(references/[^`]+\.md)`|\]\((references/[^)]+\.md)\)")
 PACKS = sorted(p for p in (ROOT / "packs").iterdir() if p.is_dir())
+# The state of a law is a fact of the hub of each organisation, never text of a pack: no article, no numbered act, no
+# date of an act, no term, amount or percentage. The deltas of a software version are the exception (a version does
+# not change after its release).
+MONTHS = "gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre"
+NUMBER_WORDS = "due|tre|quattro|cinque|sei|sette|otto|nove|dieci|quindici|venti|trenta|quarantacinque|sessanta|novanta"
+LAW = [re.compile(p, re.I) for p in (
+    r"\bartt?\.\s*\d", r"\barticol[oi]\s+\d", r"\bcomm[ai]\s+\d", r"\ballegat[oi]\s+[IVXL]+\b",
+    r"\b(?:d\.\s?lgs|d\.\s?p\.\s?r|d\.\s?m|d\.\s?l|l)\.?\s*(?:n\.\s*)?\d+\s*/\s*\d{2,4}\b",
+    r"\bn\.\s*\d+\b", r"\b(?:19|20)\d{2}/\d+\b", r"\b\d+/(?:19|20)\d{2}\b",
+    rf"\b\d{{1,2}}\s+(?:{MONTHS})\s+(?:19|20)\d{{2}}\b",
+    rf"\b(?:\d+|{NUMBER_WORDS})\s+(?:giorni|settimane|mesi|anni)\b",
+    r"€\s*\d|\b\d[\d.,]*\s*(?:euro|€)", r"\b\d+(?:,\d+)?\s*%",
+)]
+SOFTWARE_DELTAS = re.compile(r"/references/reference/v\d+/")
 
 
 def frontmatter(text):
@@ -100,6 +114,29 @@ class PacksTest(unittest.TestCase):
                 self.assertTrue(rule["body"].strip() and len(rule["name"]) <= 200, rule["key"])
             for template in seed.get("project_templates", []):
                 self.assertTrue(template["tasks"] and all(t["name"].strip() for t in template["tasks"]))
+
+    def test_a_pack_holds_method_not_the_state_of_a_law(self):
+        for pack in PACKS:
+            for path in [pack / "seed.toml", *sorted((pack / "skills").rglob("*.md"))]:
+                if SOFTWARE_DELTAS.search(path.as_posix()):
+                    continue
+                text = re.sub(r"```.*?```", "", path.read_text(), flags=re.S)
+                for number, line in enumerate(text.splitlines(), 1):
+                    hits = [p.pattern for p in LAW if p.search(line)]
+                    self.assertEqual(hits, [], f"{path.relative_to(ROOT)}:{number}: {line.strip()[:120]}")
+
+    def test_a_skill_never_restates_a_rule_of_the_seed(self):
+        def grams(text, size=7):
+            words = re.findall(r"[a-zà-ù0-9']+", text.lower())
+            return {tuple(words[i:i + size]) for i in range(len(words) - size + 1)}
+        for pack in PACKS:
+            rules = tomllib.loads((pack / "seed.toml").read_text()).get("rules") or []
+            for skill in sorted((pack / "skills").rglob("*.md")):
+                text = grams(skill.read_text())
+                for rule in rules:
+                    shared = grams(rule["body"]) & text
+                    self.assertFalse(shared, f"{skill.relative_to(ROOT)} restates the rule {rule['key']}: "
+                                             f"{' '.join(next(iter(shared))) if shared else ''}")
 
     def test_every_skill_is_portable_and_its_references_exist(self):
         for pack in PACKS:

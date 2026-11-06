@@ -52,7 +52,7 @@ Poi, nell'ordine della guida:
 3. Adattamento alla versione: bump a `<N>.0.1.0.0`, cartella `migrations/` tolta, «tasks to do» della
    guida, breaking change di `reference/v<N>/`, nomi verificati sui sorgenti nel mirror del filo
    `odoo-<N>` (`.texo/THREADS.md`).
-4. Test su un database creato per il task (`test-modulo-locale.md`), con zero warning nel log.
+4. Test e controllo del log, come chiede la regola del hub sui test: `test-modulo-locale.md`.
 5. `readme/CONTRIBUTORS.md`: aggiungersi se mancanti. Niente `README.rst`, `i18n/` o `HISTORY` a mano:
    li generano i bot dell'OCA al merge.
 6. **Un solo** commit di migrazione: `[MIG] <modulo>: Migration to <N>.0`.

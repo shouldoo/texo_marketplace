@@ -2,7 +2,7 @@
 type: "Playbook"
 title: "Decisioni e registro AI di una commessa"
 description: "Come si scrive una decisione della commessa con il documento da cui viene, e come si tiene il registro degli output prodotti con l'AI."
-tags: ["commessa", "decisioni", "registro-ai", "l132-2025"]
+tags: ["commessa", "decisioni", "registro-ai"]
 ---
 
 # Decisioni e registro AI di una commessa
@@ -21,19 +21,18 @@ quando resta valida per la commessa, come fatto del progetto che cita il documen
 | Conseguenze | che cosa cambia nel modello, negli elaborati, nei tempi, nei costi |
 
 Una decisione che cambia non si cancella: la nuova sostituisce la vecchia (stato `superseded`). Una decisione
-stabile che riguarda l'intera commessa va nella descrizione del progetto: la si propone alla persona, che la
-modifica.
+stabile che riguarda l'intera commessa va nella descrizione del progetto: la proponi alla persona, che la modifica.
 
 ## Il registro AI
 
-Ogni output prodotto con un sistema di AI che confluisce in un elaborato, un calcolo, uno script o una
-comunicazione verso l'esterno si registra. Il registro mostra la prevalenza del lavoro del professionista
-(L. 132/2025, art. 13). Si tiene come procedura del progetto, una riga per output, aggiunta con
-`texo note-append` dopo la verifica:
+Le regole del hub dicono quando un output dell'AI va registrato. Il registro è una procedura del progetto, aperta
+con la commessa: una riga per output, aggiunta con `texo note-append` dopo la verifica.
 
 | Data | Output | Sistema o modello | Per chi | Dove è confluito | Verificato da | Esito della verifica |
 |---|---|---|---|---|---|---|
 
 - «Verificato da» è il professionista che ne risponde, non l'agente.
+- Che cosa il registro deve dimostrare al committente lo dice la norma sull'uso dell'AI nelle professioni
+  intellettuali, letta nel filo `normativa` (`../reference/compliance-ai.md`).
 - Un errore rilevante dovuto all'AI si registra con l'esito «respinto» o «corretto» e diventa una lezione del hub,
   senza il committente.

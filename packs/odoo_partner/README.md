@@ -17,6 +17,12 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.3.0
+
+- The skills no longer restate the rules of the seed: they send the agent to the rules of the hub (`texo rules`,
+  the context pack), which its leads may change. The conventions of an organisation or a customer are procedures
+  of its hub, not files of the working folder.
+
 ### v1.2.0
 
 - Italian, as everything an agent reads: the skills (their descriptions too), the references, the texts of the seed

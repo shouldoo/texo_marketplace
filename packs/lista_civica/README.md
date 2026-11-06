@@ -14,6 +14,13 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.2.0
+
+- Method only: the references and playbooks say which kind of source to read, which questions to answer there and
+  which fact or task to write in the hub; no article, numbered act, summary of a provision, term or threshold.
+- The skills no longer restate the rules of the seed: they send the agent to the rules of the hub (`texo rules`,
+  the context pack), which its leads may change.
+
 ### v1.1.0
 
 - Italian, as everything an agent reads: the skills (their descriptions too), the references, the texts of the seed
