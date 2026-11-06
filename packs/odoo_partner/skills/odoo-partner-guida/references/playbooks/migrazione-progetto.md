@@ -17,7 +17,7 @@ sullo stage), senza duplicare il progetto.
 > Questo playbook copre l'**organizzazione del lavoro** (ambienti locali + memoria). Un modulo OCA che
 > manca nella versione di arrivo si porta con `migrazione-modulo-oca.md`; il salto di versione del
 > **database** si fa con OCA/OpenUpgrade (filo `openupgrade`, la sua documentazione). Le breaking change
-> per versione stanno in `reference/v<N>/` e nelle lesson del hub con il tag della versione; i modelli e
+> per versione stanno in `reference/v<N>/` e nelle lezioni del hub con il tag della versione; i modelli e
 > i campi rinominati o tolti nell'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py` genera in `.texo/ontology/`.
 
 ## Principio: un progetto, più ambienti

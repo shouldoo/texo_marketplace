@@ -1,56 +1,56 @@
 ---
 name: odoo-partner-guida
 description: >-
-  How an Odoo partner works with this pack: the rules of the sector for code and instances, the reading map of the version deltas, conventions and playbooks, the threads of the upstream code. Use it when the work touches an Odoo Community project, a module, an instance, a migration. Triggers: "modulo Odoo", "progetto Odoo", "migrazione", "istanza locale", "Odoo 19", "Odoo 20", "OCA".
+  Come lavora un partner Odoo con questo pacchetto: le regole del settore per il codice e le istanze, la mappa di lettura dei delta di versione, delle convenzioni e dei playbook, i fili del codice upstream. Usala quando il lavoro tocca un progetto Odoo Community, un modulo, un'istanza, una migrazione. Trigger: "modulo Odoo", "progetto Odoo", "migrazione", "istanza locale", "Odoo 19", "Odoo 20", "OCA", "scrivi un modulo", "modifica il modulo", "porta il modulo alla nuova versione", "che cosa cambia nella 19".
 ---
 
 # odoo-partner-guida
 
-The way of working of the pack odoo_partner. The rules every session of the organisation must follow arrive from the hub
-(the seed of this pack made them rules of the organisation): this skill adds how to work and what to read. The
-files named below are in `references/` next to this file.
+Il modo di lavorare del pacchetto odoo_partner. Le regole che ogni sessione dell'organizzazione deve seguire
+arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
+lavorare e che cosa leggere. I file citati sotto sono in `references/`, accanto a questo file.
 
-## Before writing code
+## Prima di scrivere codice
 
-- Know the Odoo version of the instance: the description of the project, the manifest `version` prefix of its
-  modules, or the person. Every reference and lesson is read for that version.
-- Read the map (below) for the area you touch, then search the lessons of the hub for that area and version
-  (`texo search "<words>" --scope lessons`, with the tags of the area). A delta of `references/reference/v<NN>/` holds only
-  what changes in that version.
-- Check every field, method, view and xmlid in the source of that version (the thread `odoo-<NN>`) or of the OCA
-  module; for a change between versions, the ontology that `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
-  writes in `.texo/ontology/` from OpenUpgrade.
-- Before creating a module, look for an existing one (OCA first) and say what you found.
-- A dependency on a module is proposable only if the description of the project lists it as installed.
-- Odoo core and the OCA repositories are third-party code: extend them by inheritance from a module of the
-  project, never by editing them.
+- Conosci la versione Odoo dell'istanza: dalla description del progetto, dal prefisso della `version` nel
+  manifest dei suoi moduli o dalla persona. Ogni reference e ogni lezione si legge per quella versione.
+- Leggi la mappa (sotto) per l'area che tocchi, poi cerca le lezioni del hub per quell'area e quella versione
+  (`texo search "<words>" --scope lessons`, con i tag dell'area). Un delta di `references/reference/v<NN>/`
+  contiene solo ciò che cambia in quella versione.
+- Controlla ogni campo, metodo, vista e xmlid nel sorgente di quella versione (il filo `odoo-<NN>`) o del modulo
+  OCA; per un cambio tra versioni, l'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
+  scrive in `.texo/ontology/` da OpenUpgrade.
+- Prima di creare un modulo, cercane uno esistente (prima OCA) e di' che cosa hai trovato.
+- Una dipendenza da un modulo si può proporre solo se la description del progetto lo elenca come installato.
+- Il core di Odoo e i repository OCA sono codice di terzi: estendili per ereditarietà da un modulo del
+  progetto, mai modificandoli.
 
-## While working
+## Durante il lavoro
 
-- Tests are mandatory after creating or changing a module: run its tests and add tests for what you changed, on
-  a test database created for the task, with zero warnings in the log (`checklog-odoo`):
+- I test sono obbligatori dopo aver creato o modificato un modulo: esegui i suoi test e aggiungi test per ciò
+  che hai cambiato, su un database di test creato per il task, con zero warning nel log (`checklog-odoo`):
   `references/playbooks/test-modulo-locale.md`.
-- Act on a database through `odoo shell` and the ORM; raw SQL only as a last resort, saying why.
-- When you propose a change to a model, say what follows: restart, `-u <module>`, tests.
-- No `print()` or debug logging in final code.
-- A copy of a production database is neutralised before an instance starts on it, and anonymised for an
-  organisation that serves vulnerable people (`$(texo where --pack odoo_partner)/scripts/neutralize-db.sh`, `$(texo where --pack odoo_partner)/scripts/anonymize-db.sh`).
-- Production is never a test target: stage first, then the customer's acceptance, then production through the
-  release of the project.
+- Agisci su un database con `odoo shell` e l'ORM; SQL diretto solo come ultima risorsa, dicendo perché.
+- Quando proponi una modifica a un modello, di' che cosa segue: riavvio, `-u <module>`, test.
+- Niente `print()` né log di debug nel codice finale.
+- Una copia di un database di produzione si neutralizza prima che un'istanza parta su di essa, e si anonimizza
+  per un'organizzazione che serve persone vulnerabili (`$(texo where --pack odoo_partner)/scripts/neutralize-db.sh`, `$(texo where --pack odoo_partner)/scripts/anonymize-db.sh`).
+- La produzione non è mai un bersaglio di test: prima lo stage, poi il collaudo del cliente, poi la produzione
+  attraverso il rilascio del progetto.
 
-## What the memory keeps for this sector
+## Che cosa tiene la memoria per questo settore
 
-- The installed modules, the version, the environments and the release flow of a project are facts of the
-  project in the hub, not files of the working folder.
-- What a project learned about Odoo becomes a lesson of the hub, tagged with the area and the version, without
-  the customer. A lesson that proves true on several projects is proposed to this pack as a reference delta,
-  rewritten and checked against the public source, through a reviewed pull request.
+- I moduli installati, la versione, gli ambienti e il flusso di rilascio di un progetto sono fatti del
+  progetto nel hub, non file della cartella di lavoro.
+- Ciò che un progetto ha imparato su Odoo diventa una lezione del hub, con i tag dell'area e della versione,
+  senza il cliente. Una lezione che si dimostra vera su più progetti si propone a questo pacchetto come delta
+  di reference, riscritta e controllata sul sorgente pubblico, con una pull request revisionata.
 
 ## Mappa di lettura
 
-> Nessun file di questo pack è precaricato: si legge quello che il compito tocca. I percorsi sono
-> relativi a questo pack (`$(texo where --pack odoo_partner)` dalla cartella di lavoro). Regola: prima di scrivere
-> codice su un'area si leggono il delta della versione del progetto, le lesson del hub di quell'area e il
+> Nessun file di questo pacchetto è precaricato: si legge quello che il compito tocca. I percorsi sono
+> relativi a questo pacchetto (`$(texo where --pack odoo_partner)` dalla cartella di lavoro). Regola: prima di scrivere
+> codice su un'area si leggono il delta della versione del progetto, le lezioni del hub di quell'area e il
 > codice upstream di quella versione.
 
 ### Prima di tutto
@@ -63,15 +63,15 @@ files named below are in `references/` next to this file.
 | Il codice upstream della versione | il mirror del filo `odoo-<NN>` (`.texo/THREADS.md`): `rg`, mai la memoria |
 | I moduli OCA in uso | i mirror dei fili `oca-<repo>`, dai `.gitmodules` dei progetti |
 
-### Aree: delta per versione, lesson e codice
+### Aree: delta per versione, lezioni e codice
 
-I reference di base delle aree non sono in questo pack: per ogni area valgono le lesson del hub con il
+I reference di base delle aree non sono in questo pacchetto: per ogni area valgono le lezioni del hub con il
 tag dell'area e della versione (`texo search "<parole>" --terms <sinonimi> --scope lessons
 --applies-to <NN>.0`) e il codice della versione nel mirror del suo filo. I reference di base si
-ricostruiscono qui nel tempo, dalle lesson verificate su fonti pubbliche (il codice di Odoo e di OCA).
+ricostruiscono qui nel tempo, dalle lezioni verificate su fonti pubbliche (il codice di Odoo e di OCA).
 I delta dicono che cosa cambia in una versione rispetto alla precedente.
 
-| Area (modelli toccati) | Tag delle lesson | Odoo 18 | Odoo 19 | Odoo 20 |
+| Area (modelli toccati) | Tag delle lezioni | Odoo 18 | Odoo 19 | Odoo 20 |
 |---|---|---|---|---|
 | Modelli, ORM, campi, CRUD | `models` | `references/reference/v18/models.md` | `references/reference/v19/models.md` | `references/reference/v20/README.md` |
 | Viste XML | `views` | `references/reference/v18/views.md` | `references/reference/v19/views.md` | `references/reference/v20/README.md` |
@@ -106,8 +106,8 @@ nell'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
 
 | Skill | Da dove | Quando |
 |---|---|---|
-| `odoo-progetto` | questo pack | dopo `texo-sessione`, su ogni progetto Odoo |
-| `browser-test` | questo pack | prova della UI dopo JavaScript, Owl, viste, azioni |
+| `odoo-progetto` | questo pacchetto | dopo `texo-sessione`, su ogni progetto Odoo |
+| `browser-test` | questo pacchetto | prova della UI dopo JavaScript, Owl, viste, azioni |
 | `odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git` | le skill ufficiali di Odoo, dal filo `odoo-skills` che il pacchetto porta (mirror di `odoo/odoo`, cartella `skills/`), collegate da `texo mount` | scrittura e revisione di codice, sicurezza, git |
 | `texo-sessione`, `memoria-consolidamento`, `memoria-ingestione`, `memoria-fonti` | il core | la sessione, la revisione della memoria, i documenti, le fonti |
 

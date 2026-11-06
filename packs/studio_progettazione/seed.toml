@@ -1,106 +1,107 @@
-# The seed of the design studio pack into the hub (core: texo seed, route admin/seed). Every item has a stable
-# code or key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
-lang = "en_US"
+# Il seed del pacchetto dello studio di progettazione nel hub (core: texo seed, route admin/seed). Ogni voce ha un
+# code o una key stabile: una nuova versione del seed aggiorna ciò che un lead non ha cambiato e tiene ciò che un
+# lead ha cambiato.
+lang = "it_IT"
 
 [[activities]]
 code = "design"
-name = "Design"
+name = "Progettazione"
 sequence = 30
-description = "Design at every level: feasibility, final and executive design, calculations, drawings, reports."
+description = "Progettazione a ogni livello: fattibilità, progetto definitivo ed esecutivo, calcoli, elaborati, relazioni."
 
 [[activities]]
 code = "site"
-name = "Works direction and safety"
+name = "Direzione lavori e sicurezza"
 sequence = 40
-description = "Works direction, site accounting, safety coordination in design and execution, testing."
+description = "Direzione dei lavori, contabilità di cantiere, coordinamento della sicurezza in progettazione ed esecuzione, collaudo."
 
 [[activities]]
 code = "tender"
-name = "Tenders and offers"
+name = "Gare e offerte"
 sequence = 50
-description = "Public tenders and private offers: requirements, documents, fees, technical offer."
+description = "Gare pubbliche e offerte private: requisiti, documenti, corrispettivi, offerta tecnica."
 
 [[activities]]
 code = "bim"
-name = "Information management (BIM)"
+name = "Gestione informativa (BIM)"
 sequence = 60
-description = "Models, information requirements, the information management plan, the common data environment."
+description = "Modelli, capitolato informativo, il piano di gestione informativa, l'ambiente di condivisione dei dati."
 
 [[rules]]
 key = "the_professional_signs"
-name = "The professional signs and sends"
+name = "Il professionista firma e invia"
 severity = "never"
 activities = ["design", "site", "tender", "communication"]
 section = "compliance"
 keywords = "firma, timbro, invio, PEC, deposito, sign, stamp, send"
-body = "Never sign, stamp, file or send a document to a public body, a client or a contractor: the agent prepares it, the responsible professional checks, signs and sends it."
+body = "Non firmare, timbrare, depositare o inviare mai un documento a un ente pubblico, a un committente o a un'impresa: l'agente lo prepara, il professionista responsabile lo controlla, lo firma e lo invia."
 
 [[rules]]
 key = "calculations_checked"
-name = "Calculations and safety judgements are proposals"
+name = "Calcoli e giudizi sulla sicurezza sono proposte"
 severity = "must"
 activities = ["design", "site"]
 section = "operations"
 keywords = "calcolo, verifica, strutture, sicurezza, calculation, check"
-body = "A calculation, a structural or energy check and a safety judgement written by the agent are proposals: the responsible professional verifies them before they enter a drawing, a report or a decision."
+body = "Un calcolo, una verifica strutturale o energetica e un giudizio sulla sicurezza scritti dall'agente sono proposte: il professionista responsabile li verifica prima che entrino in un elaborato, in una relazione o in una decisione."
 
 [[rules]]
 key = "cite_the_standard"
-name = "Cite the standard read"
+name = "Cita la norma letta"
 severity = "must"
 activities = ["design", "site", "tender"]
 section = "operations"
-keywords = "norma, articolo, decreto, codice, standard, citation"
-body = "A requirement taken from a code, a decree or a technical standard is cited with act, article and the day the text in force was read; a rule recalled from memory is not a source."
+keywords = "norma, articolo, decreto, codice, norma tecnica, citazione, standard, citation"
+body = "Un requisito preso da un codice, un decreto o una norma tecnica si cita con atto, articolo e il giorno in cui si è letto il testo vigente; una regola ricordata a memoria non è una fonte."
 
 [[rules]]
 key = "documents_stay_in_the_archive"
-name = "Documents stay in the archive"
+name = "I documenti restano nell'archivio"
 severity = "must"
 activities = ["design", "bim", "site"]
 section = "operations"
 keywords = "archivio, CDE, ACDat, modello, elaborato, revisione"
-body = "Models, drawings and reports stay in the archive or the common data environment of the studio: the memory keeps their reference (container, revision, state) and the facts and decisions taken from them, never a copy."
+body = "Modelli, elaborati e relazioni restano nell'archivio o nell'ambiente di condivisione dei dati dello studio: la memoria tiene il loro riferimento (contenitore, revisione, stato) e i fatti e le decisioni presi da essi, mai una copia."
 
 [[rules]]
 key = "ai_register"
-name = "AI output recorded in the commission"
+name = "Output dell'AI registrato nella commessa"
 severity = "must"
 activities = ["design", "site", "tender", "bim", "communication"]
 section = "compliance"
 keywords = "registro AI, intelligenza artificiale, L. 132/2025, trasparenza, AI register"
-body = "Every output of an AI system that reaches a drawing, a calculation, a script or a communication outside the studio is recorded in the AI register of the commission, with who verified it: the intellectual work stays the professional's and the client is informed."
+body = "Ogni output di un sistema di AI che arriva in un elaborato, un calcolo, uno script o una comunicazione fuori dallo studio si registra nel registro AI della commessa, con chi l'ha verificato: l'opera intellettuale resta del professionista e il committente è informato."
 
 [[rules]]
 key = "client_data_in_the_hub"
-name = "Client and site data only in the hub"
+name = "Dati di committenti e cantiere solo nel hub"
 severity = "never"
 activities = []
 section = "compliance"
-keywords = "dati personali, committente, cantiere, indirizzo, privacy"
-body = "Never write the personal data of private clients, of people on site or of the people of a contractor in files of the working folder: they live in the hub, on the record of the commission, and only as much as the commission needs."
+keywords = "dati personali, committente, cantiere, indirizzo, impresa, privacy"
+body = "Non scrivere mai i dati personali dei committenti privati, delle persone in cantiere o delle persone di un'impresa in file della cartella di lavoro: stanno nel hub, sul record della commessa, e solo quanto serve alla commessa."
 
 [[project_templates]]
 key = "commission"
-name = "Commission (template)"
-description = "<p>The phases of a commission, from the offer to the closing; drop the ones the assignment does not include.</p>"
+name = "Commessa (template)"
+description = "<p>Le fasi di una commessa, dall'offerta alla chiusura; togli quelle che l'incarico non comprende.</p>"
 tasks = [
-    {name = "Offer and assignment", description = "<p>Scope, fee, deadlines, the information to the client on the use of AI.</p>"},
-    {name = "Feasibility design", description = "<p>Survey, constraints, alternatives, the technical and economic feasibility.</p>"},
-    {name = "Final and executive design", description = "<p>Drawings, calculations, specifications, estimate, safety plan.</p>"},
-    {name = "Permits", description = "<p>Building, seismic, landscape and fire permits the works need.</p>"},
-    {name = "Works direction", description = "<p>Delivery of the works, site accounting, orders, variants, safety coordination.</p>"},
-    {name = "Testing and closing", description = "<p>Testing, certificates, the as-built documents, the closing of the commission.</p>"},
+    {name = "Offerta e incarico", description = "<p>Oggetto, corrispettivo, scadenze, l'informativa al committente sull'uso dell'AI.</p>"},
+    {name = "Progetto di fattibilità", description = "<p>Rilievo, vincoli, alternative, la fattibilità tecnica ed economica.</p>"},
+    {name = "Progetto definitivo ed esecutivo", description = "<p>Elaborati, calcoli, capitolati, computo, piano di sicurezza.</p>"},
+    {name = "Titoli abilitativi", description = "<p>I titoli edilizi, sismici, paesaggistici e antincendio che servono ai lavori.</p>"},
+    {name = "Direzione dei lavori", description = "<p>Consegna dei lavori, contabilità di cantiere, ordini di servizio, varianti, coordinamento della sicurezza.</p>"},
+    {name = "Collaudo e chiusura", description = "<p>Collaudo, certificati, i documenti as-built, la chiusura della commessa.</p>"},
 ]
 
 [[project_templates]]
 key = "public_tender"
-name = "Public tender (template)"
-description = "<p>Taking part in a tender for engineering and architecture services.</p>"
+name = "Gara pubblica (template)"
+description = "<p>La partecipazione a una gara per servizi di ingegneria e architettura.</p>"
 tasks = [
-    {name = "Go / no go", description = "<p>Requirements, fee, workload, partners: the decision to take part.</p>"},
-    {name = "Grouping and requirements", description = "<p>The grouping of professionals, the commitment, the declarations.</p>"},
-    {name = "Technical offer", description = "<p>Reports, references, the information management offer when asked.</p>"},
-    {name = "Economic offer"},
-    {name = "Submission and follow-up", description = "<p>Submission on the platform, requests for clarification, the outcome.</p>"},
+    {name = "Partecipare o no", description = "<p>Requisiti, corrispettivo, carico di lavoro, partner: la decisione di partecipare.</p>"},
+    {name = "Raggruppamento e requisiti", description = "<p>Il raggruppamento di professionisti, l'impegno, le dichiarazioni.</p>"},
+    {name = "Offerta tecnica", description = "<p>Relazioni, referenze, l'offerta di gestione informativa quando richiesta.</p>"},
+    {name = "Offerta economica"},
+    {name = "Presentazione e seguito", description = "<p>Presentazione sulla piattaforma, richieste di chiarimento, l'esito.</p>"},
 ]

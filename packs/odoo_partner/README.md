@@ -5,7 +5,7 @@ A Texo skill pack. Odoo Community partners: the way of working on Odoo projects,
 | Part | What |
 |---|---|
 | Skills | `browser-test`, `odoo-partner-guida`, `odoo-progetto` |
-| Seed (`seed.toml`) | activities `code`, `deploy`, `data`, `migration`; sections none; 6 rules of the organisation; templates: Odoo project (template), Odoo version migration (template) |
+| Seed (`seed.toml`) | activities `code`, `deploy`, `data`, `migration`; sections none; 6 rules of the organisation; templates: Progetto Odoo (template), Migrazione di versione Odoo (template) |
 | Threads it carries | `odoo-skills`: the official skills of Odoo, at a pinned commit of `odoo/odoo` |
 | Suggested threads | `odoo-20`, `openupgrade-20` |
 | Working folders | `progetti/`, `modules/V17/`, `modules/V18/`, `modules/V19/`, `modules/V20/`, `odoo/odoo-clients/` |
@@ -16,6 +16,11 @@ The rules that must always hold arrive in the hub through the seed; the guide sk
 map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
+
+### v1.2.0
+
+- Italian, as everything an agent reads: the skills (their descriptions too), the references, the texts of the seed
+  (`lang = "it_IT"`) and the guides of the threads.
 
 ### v1.1.0
 

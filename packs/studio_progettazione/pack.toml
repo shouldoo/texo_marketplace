@@ -1,32 +1,32 @@
-# The contract of this pack with the texo CLI (texo/packs.py of the core).
+# Il contratto di questo pacchetto con la CLI texo (texo/packs.py del core).
 [pack]
 name = "studio_progettazione"
-version = "v1.0.0"
+version = "v1.1.0"
 core = ">=2.0, <3"
 hub = ">=20.0.1.0.0"
 work_dirs = []
 
-# The kinds of thread a studio mounts: texo mount says which are missing. The customer declares each one in the
-# [[thread]] list of the threads of the hub with the driver, the address and the ref of its own choice.
+# I tipi di filo che uno studio monta: texo mount dice quali mancano. Il cliente dichiara ciascuno nella lista
+# [[thread]] dei fili del hub con il driver, l'indirizzo e il ref che sceglie.
 [[suggested_thread]]
 id = "normativa"
-why = "the codes, decrees and technical rules the studio applies, read and cited, never quoted from memory"
+why = "i codici, i decreti e le norme tecniche che lo studio applica, letti e citati, mai riportati a memoria"
 type = "source"
 data_class = "public"
-guide = "Codes, decrees, technical standards: search, read the article in force, cite act, article and date read."
+guide = "Codici, decreti, norme tecniche: cerca, leggi l'articolo vigente, cita atto, articolo e data di lettura."
 
 [[suggested_thread]]
 id = "progettazione"
-why = "the design and BIM software or the common data environment of the studio, through an adapter in threads/<id>/"
+why = "il software di progettazione e BIM o l'ambiente di condivisione dei dati dello studio, attraverso un adattatore in threads/<id>/"
 type = "connector"
 data_class = "customer"
 writes = "confirm"
-guide = "Models and containers of the commissions: read revision and state; never change a model without the person."
+guide = "Modelli e contenitori delle commesse: leggi revisione e stato; non modificare mai un modello senza la persona."
 
 [[suggested_thread]]
 id = "documenti"
-why = "the archive of the commissions: drawings, reports, contracts, minutes"
+why = "l'archivio delle commesse: elaborati, relazioni, contratti, verbali"
 type = "connector"
 data_class = "customer"
 writes = "confirm"
-guide = "Documents of the commissions: read, never copy them locally; record in the hub the card of a document."
+guide = "Documenti delle commesse: leggili, non copiarli mai in locale; registra nel hub la scheda di un documento."

@@ -1,102 +1,99 @@
 ---
 name: odoo-progetto
 description: >-
-  The Odoo part of starting and closing work on an Odoo Community project, after the
-  core skill texo-sessione (role, task, context pack, rules, threads, search, closing):
-  locate the project repository in `progetti/<slug>/` and its submodules, the Odoo
-  version of the instance from the project description, the references and the lessons
-  of the area, the upstream code of that version in the threads (field, method and view
-  names checked there, never from memory), the local instance and the tests with zero
-  warnings; a dependency only on a module the description lists as installed. Use with
-  texo-sessione at the start of every session on an Odoo project. Triggers:
-  "lavoriamo su <progetto>", "task <n>", "apri il progetto", "start work on <project>",
-  "modifica il modulo", "il modulo non installa".
+  La parte Odoo dell'avvio e della chiusura del lavoro su un progetto Odoo Community, dopo la
+  skill del core texo-sessione (ruolo, task, pacchetto di contesto, regole, fili, ricerca,
+  chiusura): trova il repository del progetto in `progetti/<slug>/` e i suoi submodule, la
+  versione Odoo dell'istanza dalla description del progetto, i reference e le lezioni
+  dell'area, il codice upstream di quella versione nei fili (nomi di campi, metodi e viste
+  controllati lì, mai a memoria), l'istanza locale e i test con zero warning; una dipendenza
+  solo da un modulo che la description elenca come installato. Usala con texo-sessione
+  all'inizio di ogni sessione su un progetto Odoo. Trigger: "lavoriamo su <progetto>",
+  "task <n>", "apri il progetto", "start work on <project>", "modifica il modulo",
+  "il modulo non installa", "riprendiamo il progetto Odoo", "cosa c'è da fare sul modulo".
 ---
 
 # odoo-progetto
 
-The session itself — who you are, the task, the context pack, the rules, the threads, the
-search, the summary, and at the end the note, the hours, the update, facts, procedures,
-lessons and rules — is the core skill `texo-sessione`: follow it first. This skill adds
-what an Odoo project needs between the summary and the first edit, and at the end.
+La sessione in sé (chi sei, il task, il pacchetto di contesto, le regole, i fili, la ricerca,
+il riepilogo, e alla fine la nota, le ore, l'aggiornamento, fatti, procedure, lezioni e regole)
+è la skill del core `texo-sessione`: seguila per prima. Questa skill aggiunge ciò che serve a
+un progetto Odoo tra il riepilogo e la prima modifica, e alla fine.
 
-```bash
-CTX="texo"      # from the working folder
-```
+I comandi `texo` si lanciano dalla cartella di lavoro. I percorsi `odoo-partner-guida/...` sono quelli della skill guida
+del pacchetto, collegata in `.agents/skills/` e `.claude/skills/` della cartella.
 
-| What | Where | How |
+| Che cosa | Dove | Come |
 |---|---|---|
-| The project repository: code, OCA and vendor submodules, deploy workflows | `progetti/<slug>/` (a working folder: `texo mount` creates it, out of git) | git |
-| Standalone module repositories | `modules/V<N>/<repo>/` | git |
-| Local instances | `odoo/odoo-clients/<slug>/` | Docker |
-| The upstream code of a version, OCA, OpenUpgrade | the mirrors of the threads `odoo-<NN>`, `oca-<repo>`, `openupgrade` | `rg`, paths in `.texo/THREADS.md` |
-| The official Odoo skills (`odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git`) | the thread `odoo-skills`, carried by the pack | linked by `texo mount` |
-| What changed between versions | `reference/v<N>/`; the lessons of the hub tagged with the version and the area; `.texo/ontology/` | read |
+| Il repository del progetto: codice, submodule OCA e dei fornitori, workflow di deploy | `progetti/<slug>/` (una cartella di lavoro: la crea `texo mount`, fuori da git) | git |
+| I repository di moduli autonomi | `modules/V<N>/<repo>/` | git |
+| Le istanze locali | `odoo/odoo-clients/<slug>/` | Docker |
+| Il codice upstream di una versione, OCA, OpenUpgrade | i mirror dei fili `odoo-<NN>`, `oca-<repo>`, `openupgrade` | `rg`, percorsi in `.texo/THREADS.md` |
+| Le skill ufficiali di Odoo (`odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git`) | il filo `odoo-skills`, portato dal pacchetto | collegate da `texo mount` |
+| Che cosa è cambiato tra versioni | `odoo-partner-guida/references/reference/v<N>/`; le lezioni del hub con i tag della versione e dell'area; `.texo/ontology/` | lettura |
 
-## 1. The version of the instance
+## 1. La versione dell'istanza
 
-The project description says the Odoo version and edition, the environments and the
-installed modules (custom, OCA, vendor, with their repositories and branches). If the
-version is missing, ask: everything below depends on it. Say it in the summary.
+La description del progetto dice la versione e l'edizione di Odoo, gli ambienti e i moduli
+installati (custom, OCA, dei fornitori, con i loro repository e branch). Se la versione manca,
+chiedila: tutto quello che segue dipende da lei. Dilla nel riepilogo.
 
-## 2. Repository and submodules
+## 2. Repository e submodule
 
-1. If `progetti/<slug>/` is missing: ask for the repository URL and **propose**
-   `git clone --recurse-submodules <url> progetti/<slug>` and
-   `bash <core>/setup/install-git-hooks.sh progetti/<slug>` (do not run without OK).
-2. Note the current branch and uncommitted changes
-   (`git -C progetti/<slug> status --short --branch`): never work on someone else's
-   uncommitted changes without asking.
-3. The submodules (`git -C progetti/<slug> submodule status`) are the OCA and vendor
-   repositories of the instance: a module comes from there, never from a copy elsewhere.
+1. Se `progetti/<slug>/` manca: chiedi l'URL del repository e **proponi**
+   `git clone --recurse-submodules <url> progetti/<slug>` e
+   `bash <core>/setup/install-git-hooks.sh progetti/<slug>` (non eseguirli senza OK).
+2. Annota il branch corrente e le modifiche non committate
+   (`git -C progetti/<slug> status --short --branch`): non lavorare mai sulle modifiche non
+   committate di qualcun altro senza chiedere.
+3. I submodule (`git -C progetti/<slug> submodule status`) sono i repository OCA e dei
+   fornitori dell'istanza: un modulo viene da lì, mai da una copia altrove.
 
-## 3. Upstream code and references
+## 3. Codice upstream e reference
 
-1. `.texo/THREADS.md` lists the thread `odoo-<NN>` of the project's version and its mirror.
-   If it is missing, say so and propose the thread for the configuration in the hub (the pack suggests
-   it); `texo doctor` says whether the mirror is at its pinned ref. Field, method
-   and view names are checked with `rg` in that mirror and in the `oca-<repo>` mirrors,
-   never from memory.
-2. Read `INDEX.md`: the conventions, the delta of the version for
-   the area, the playbook of the operation. Search the lessons of the area before writing
-   code: `$CTX search "<words>" --terms <synonyms> --scope lessons --applies-to <NN>.0`.
-3. For a name that may have changed between versions, the ontology generated by
-   `$(texo where --pack odoo_partner)/scripts/build_ontology.py` in `.texo/ontology/`.
-4. A dependency on another module is proposable only if the project description lists it
-   as installed; otherwise say so and ask.
-5. Before creating a module, look for one that already exists (the project, the OCA
-   mirrors, the modules OCA publishes for the version): ask whether to extend it.
+1. `.texo/THREADS.md` elenca il filo `odoo-<NN>` della versione del progetto e il suo mirror.
+   Se manca, dillo e proponi il filo per la configurazione nel hub (il pacchetto lo suggerisce);
+   `texo doctor` dice se il mirror è al ref fissato. I nomi di campi, metodi e viste si
+   controllano con `rg` in quel mirror e nei mirror `oca-<repo>`, mai a memoria.
+2. Leggi la «Mappa di lettura» della skill `odoo-partner-guida`: le convenzioni, il delta della
+   versione per l'area, il playbook dell'operazione. Cerca le lezioni dell'area prima di
+   scrivere codice: `texo search "<words>" --terms <synonyms> --scope lessons --applies-to <NN>.0`.
+3. Per un nome che può essere cambiato tra versioni, l'ontologia che
+   `$(texo where --pack odoo_partner)/scripts/build_ontology.py` genera in `.texo/ontology/`.
+4. Una dipendenza da un altro modulo si può proporre solo se la description del progetto lo
+   elenca come installato; altrimenti dillo e chiedi.
+5. Prima di creare un modulo, cercane uno che esiste già (il progetto, i mirror OCA, i moduli
+   che OCA pubblica per la versione): chiedi se estenderlo.
 
-## 4. Work and tests
+## 4. Lavoro e test
 
-- Code follows `conventions/core-conventions.md` and the official
-  skills; the conventions of the customer (`conventions/` at the root) win over them.
-- After every change to a module: its tests on a database created for the task, zero
-  warnings in the log (`checklog-odoo`):
-  `playbooks/test-modulo-locale.md`.
-- Database actions, reads included, through `odoo shell` and the ORM; SQL only as a last
-  resort, saying why.
-- UI changes (JavaScript, Owl, views, actions): skill `browser-test`, local instance only
-  unless an active rule of the project enables a stage host.
+- Il codice segue `odoo-partner-guida/references/conventions/core-conventions.md`
+  e le skill ufficiali; le convenzioni del cliente (`references/conventions/` alla radice della
+  cartella di lavoro) vincono su di esse.
+- Dopo ogni modifica a un modulo: i suoi test su un database creato per il task, zero warning
+  nel log (`checklog-odoo`): `odoo-partner-guida/references/playbooks/test-modulo-locale.md`.
+- Azioni sul database, letture comprese, con `odoo shell` e l'ORM; SQL solo come ultima
+  risorsa, dicendo perché.
+- Modifiche alla UI (JavaScript, Owl, viste, azioni): skill `browser-test`, solo istanza locale
+  a meno che una regola attiva del progetto abiliti un host di stage.
 
-## 5. At the end
+## 5. Alla fine
 
-Beyond the closing of `texo-sessione`:
+Oltre alla chiusura di `texo-sessione`:
 
-- The note on the task names the technical cause in Odoo terms (module, model, field,
-  flow, error) and the commits; the keywords add the Italian and English names of the
-  feature.
-- A lesson carries the version in `--applies-to` (`<NN>.0`) and the module or area in its
-  tags, with the words the projects are tagged with.
-- Remind to cite the task id in the commits and the PR body; commits, pushes and PR
-  creation only after the person's confirmation.
+- La nota sul task nomina la causa tecnica in termini Odoo (modulo, modello, campo, flusso,
+  errore) e i commit; le parole chiave aggiungono i nomi italiani e inglesi della funzione.
+- Una lezione porta la versione in `--applies-to` (`<NN>.0`) e il modulo o l'area nei suoi
+  tag, con le parole con cui sono etichettati i progetti.
+- Ricorda di citare l'id del task nei commit e nel corpo della PR; commit, push e creazione
+  della PR solo dopo la conferma della persona.
 
-## Safety
+## Sicurezza
 
-- Never target production: no writes, module upgrades or test runs against a production
-  database or URL. Stage first, then the customer tests, then production through the
-  deploy workflow of the project.
-- Never edit Odoo core or the OCA submodules of a project: extend them from a module of
-  the project.
-- Nothing of the project goes into the Texo repositories or into the project repository
-  beyond its code: facts, decisions and lessons live in the hub.
+- Mai la produzione come bersaglio: niente scritture, aggiornamenti di moduli o test su un
+  database o un URL di produzione. Prima lo stage, poi i test del cliente, poi la produzione
+  attraverso il workflow di deploy del progetto.
+- Non modificare mai il core di Odoo né i submodule OCA di un progetto: estendili da un modulo
+  del progetto.
+- Niente del progetto va nei repository di Texo o nel repository del progetto oltre al suo
+  codice: fatti, decisioni e lezioni vivono nel hub.

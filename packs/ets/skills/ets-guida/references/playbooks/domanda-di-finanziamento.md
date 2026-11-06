@@ -7,8 +7,8 @@ tags: ["bandi", "finanziamento", "domanda"]
 
 # Playbook: una domanda di finanziamento, dall'avviso all'invio
 
-> Il riferimento è `reference/bandi-e-rendicontazione.md`. Il progetto nel hub parte dal template «Grant
-> application (template)» del seed di questo pack. L'agente prepara, verifica e ricorda; firma e invio
+> Il riferimento è `reference/bandi-e-rendicontazione.md`. Il progetto nel hub parte dal template «Domanda di finanziamento
+> (template)» del seed di questo pacchetto. L'agente prepara, verifica e ricorda; firma e invio
 > sono della persona.
 
 ## 1. L'avviso

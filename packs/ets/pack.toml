@@ -1,30 +1,30 @@
-# The contract of this pack with the texo CLI (texo/packs.py of the core).
+# Il contratto di questo pacchetto con la CLI texo (texo/packs.py del core).
 [pack]
 name = "ets"
-version = "v1.0.1"
+version = "v1.1.0"
 core = ">=2.0, <3"
 hub = ">=20.0.1.0.0"
 work_dirs = []
 
-# The threads this pack suggests: texo mount says which are missing. The organisation chooses the provider
-# of each and declares it in the threads of the hub with its driver, address and pinned version (docs/fili.md of the core).
+# I fili che questo pacchetto suggerisce: texo mount dice quali mancano. L'organizzazione sceglie il fornitore
+# di ciascuno e lo dichiara nei fili del hub con il suo driver, l'indirizzo e la versione fissata (docs/fili.md del core).
 [[suggested_thread]]
 id = "normativa"
-why = "the texts of the laws and decrees the sector applies: the Code of the Third Sector, the decrees on the registry and on the financial statements"
+why = "i testi delle leggi e dei decreti che il settore applica: il Codice del Terzo settore, i decreti sul registro e sui bilanci"
 type = "source"
 data_class = "public"
-guide = "Before an answer on an obligation: search the act, read the article in force, cite it with act and article."
+guide = "Prima di rispondere su un obbligo: cerca l'atto, leggi l'articolo vigente, citalo con atto e articolo."
 
 [[suggested_thread]]
 id = "bandi"
-why = "the channels where the calls for funding the organisation may apply to are published"
+why = "i canali dove si pubblicano gli avvisi di finanziamento a cui l'organizzazione può partecipare"
 type = "source"
 data_class = "public"
-guide = "Calls for funding: follow the channels as external sources of the hub (hub_channel), never apply without the person."
+guide = "Avvisi di finanziamento: segui i canali come fonti esterne del hub (hub_channel), non presentare mai una domanda senza la persona."
 
 [[suggested_thread]]
 id = "documenti"
-why = "the archive where the organisation keeps its documents: statute, minutes, applications, reports"
+why = "l'archivio dove l'organizzazione tiene i suoi documenti: statuto, verbali, domande, rendiconti"
 type = "connector"
 data_class = "customer"
-guide = "Read the documents the work needs, never copy them locally; a document about the people served is never read."
+guide = "Leggi i documenti che servono al lavoro, non copiarli mai in locale; un documento sulle persone servite non si legge mai."

@@ -1,22 +1,27 @@
 ---
 type: "Reference"
-title: "Inventory — Delta Odoo 18"
-description: "Inventory — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lesson del tag inventory e con il codice della versione."
+title: "Magazzino — Delta Odoo 18"
+description: "Magazzino — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lezioni del tag inventory e con il codice della versione."
 tags: ["inventory", "v18"]
 ---
 
-# Inventory — Delta Odoo 18
+# Magazzino — Delta Odoo 18
 
-> Per i progetti su Odoo 18, insieme alle lesson del hub con il tag `inventory` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
+> Per i progetti su Odoo 18, insieme alle lezioni del hub con il tag `inventory` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
 
-## Changed in 18.0
+## Cambiato in 18.0
 
-- `stock.move` field `quantity_done` renamed to `quantity`. Use `quantity` for Odoo 18.0+.
-- `stock.move.line` field `qty_done` renamed to `quantity`. Use `quantity` for Odoo 18.0+.
-- `stock.move.line` field `reserved_uom_qty` **removed**. In V17 this was the reserved/demanded quantity on a move line, separate from `qty_done`. In V18 the two concepts are merged into `quantity`: after `action_assign()`, `quantity` already holds the reserved amount. Any code that copied `ml.reserved_uom_qty` into `ml.qty_done` before calling `button_validate()` must drop the loop entirely.
-- `stock.immediate.transfer` wizard removed: Odoo 18.0 no longer prompts to fill done quantities before validation. The `skip_immediate` context key is ignored — remove it from `button_validate()` calls. Use `skip_backorder=True` instead to suppress the backorder wizard.
+- Il campo `quantity_done` di `stock.move` è rinominato `quantity`. Usare `quantity` da Odoo 18.0 in poi.
+- Il campo `qty_done` di `stock.move.line` è rinominato `quantity`. Usare `quantity` da Odoo 18.0 in poi.
+- Il campo `reserved_uom_qty` di `stock.move.line` è **rimosso**. In V17 era la quantità riservata/richiesta su una
+  move line, distinta da `qty_done`. In V18 i due concetti sono fusi in `quantity`: dopo `action_assign()`,
+  `quantity` contiene già la quantità riservata. Il codice che copiava `ml.reserved_uom_qty` in `ml.qty_done`
+  prima di chiamare `button_validate()` deve eliminare del tutto il ciclo.
+- Il wizard `stock.immediate.transfer` è rimosso: Odoo 18.0 non chiede più di compilare le quantità fatte prima
+  della validazione. La chiave di context `skip_immediate` viene ignorata: toglierla dalle chiamate a
+  `button_validate()`. Per sopprimere il wizard del backorder usare invece `skip_backorder=True`.
 
-### Package model: nessun cambiamento in 18.0
+### Modello dei colli (package): nessun cambiamento in 18.0
 
 Verificato sulla sorgente 18: il modello resta `stock.quant.package`, `stock.package_level`
 esiste ancora (`stock_package_level.py`) e `move_ids_without_package` è ancora su
@@ -24,17 +29,17 @@ esiste ancora (`stock_package_level.py`) e `move_ids_without_package` è ancora 
 `move_ids_without_package` sono cambiamenti della **19.0** — vedi `reference/v19/inventory.md`.
 `product_packaging_id` su `stock.move`/SO/PO è ancora presente in 18 (rimosso in 19, fuso nelle UoM).
 
-### Auto-validation pattern for fully-assigned pickings (V18)
+### Pattern di validazione automatica dei picking interamente riservati (V18)
 
-**WRONG (V17 pattern — crashes in V18):**
+**SBAGLIATO (pattern V17 — va in errore in V18):**
 ```python
 for ml in picking.move_line_ids:
-    ml.quantity = ml.reserved_uom_qty   # AttributeError: no such field
+    ml.quantity = ml.reserved_uom_qty   # AttributeError: campo inesistente
 result = picking.with_context(skip_backorder=True, skip_immediate=True).button_validate()
 ```
 
-**CORRECT (V18):**
+**CORRETTO (V18):**
 ```python
-# quantity on move lines is already the reserved amount after action_assign()
+# dopo action_assign() quantity sulle move line è già la quantità riservata
 result = picking.with_context(skip_backorder=True).button_validate()
 ```

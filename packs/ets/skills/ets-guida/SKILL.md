@@ -1,54 +1,54 @@
 ---
 name: ets-guida
 description: >-
-  How a third sector organisation (ETS: APS, ODV) works with this pack: the rules for the people served, members and volunteers, funding and reporting, the registry, and the reading map of the method references and playbooks. Use it for calls, reports, RUNTS duties, volunteers, financial statements of an ETS. Triggers: "bando", "rendicontazione", "RUNTS", "bilancio ETS", "volontari", "5 per mille".
+  Come lavora con questo pacchetto un ente del Terzo settore (ETS: APS, ODV): le regole sulle persone servite, su associati e volontari, su finanziamenti e rendicontazione e sul registro, e la mappa di lettura dei reference di metodo e dei playbook. Usala per bandi, rendiconti, adempimenti RUNTS, volontari e bilanci di un ETS. Trigger: "bando", "rendicontazione", "RUNTS", "bilancio ETS", "volontari", "5 per mille", "prepara la domanda per il bando", "cosa dobbiamo depositare al RUNTS", "rendiconta il progetto", "registro dei volontari", "relazione di missione".
 ---
 
 # ets-guida
 
-The way of working of the pack ets. The rules every session of the organisation must follow arrive from the hub
-(the seed of this pack made them rules of the organisation): this skill adds how to work and what to read. The
-files named below are in `references/` next to this file.
+Il modo di lavorare del pacchetto ets. Le regole che ogni sessione dell'organizzazione deve seguire arrivano dal
+hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come lavorare e che
+cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
 
-## The people served
+## Le persone servite
 
-- Never write data about the people the organisation serves (people helped, hosted, assisted, their families)
-  in the memory, in git, in a commit, in a conversation or in a document you draft: not their names, stories,
-  situations or contacts, not even an invented example. The work is described by activities, numbers and
-  outcomes, never by persons.
-- The address of a protected facility (a shelter, a safe house) is never written anywhere: not in the memory,
-  not in a project, not in a text for the public.
-- A document that concerns a person served is never read or brought into the memory; if one reaches you, stop
-  and say so.
-- Communication about the services (a report, a post, a press release, a call for volunteers) never makes a
-  person recognisable, directly or by the combination of details.
+- Non scrivere mai dati delle persone che l'organizzazione serve (persone aiutate, accolte, assistite, le loro
+  famiglie) nella memoria, in git, in un commit, in una conversazione o in un documento che redigi: né nomi, né
+  storie, né situazioni, né contatti, neppure in un esempio inventato. Il lavoro si descrive con attività, numeri
+  ed esiti, mai con persone.
+- L'indirizzo di una struttura protetta (una casa rifugio, un alloggio protetto) non si scrive mai da nessuna
+  parte: né nella memoria, né in un progetto, né in un testo per il pubblico.
+- Un documento che riguarda una persona servita non si legge e non entra nella memoria; se ti arriva, fermati e
+  dillo.
+- La comunicazione sui servizi (un report, un post, un comunicato stampa, un appello per volontari) non rende mai
+  riconoscibile una persona, né direttamente né per la combinazione dei dettagli.
 
-## Members, volunteers, staff
+## Associati, volontari, personale
 
-- Personal data of members, volunteers and staff live only in the hub, on the records Odoo protects with its
-  permissions, never in git or in a text you draft for others.
-- What the law requires of them (the register of volunteers, their insurance, the reimbursement of expenses) is
-  a procedure of the organisation in the hub; the reference says what the law requires.
+- I dati personali di associati, volontari e personale stanno solo nel hub, sui record che Odoo protegge con i suoi
+  permessi; mai in git o in un testo che redigi per altri.
+- Ciò che la legge chiede per loro (il registro dei volontari, la loro assicurazione, il rimborso delle spese) è una
+  procedura dell'organizzazione nel hub; il reference dice che cosa chiede la legge.
 
-## Funding and reporting
+## Finanziamenti e rendicontazione
 
-- The rules of a funder (eligible costs, co-financing, deadlines, reporting format, publicity obligations) are
-  facts of the project they fund, taken from the call or the agreement and citing it.
-- The deadlines of the registry and of each grant are tasks or facts of the hub with their date; never rely on
-  remembering them.
-- Figures in an application or a report come from the accounting and the documents of the organisation, never
-  estimated or rounded to fit; a missing figure is asked to the person.
-- An application or a report is submitted by the person, never by the agent.
+- Le regole di un finanziatore (costi ammissibili, cofinanziamento, scadenze, formato della rendicontazione, obblighi
+  di pubblicità) sono fatti del progetto che finanzia, presi dall'avviso o dalla convenzione e con la loro citazione.
+- Le scadenze del registro e di ogni contributo sono task o fatti del hub con la loro data; non affidarti mai al
+  ricordo.
+- Le cifre di una domanda o di un rendiconto vengono dalla contabilità e dai documenti dell'organizzazione, mai
+  stimate o arrotondate per farle tornare; una cifra che manca si chiede alla persona.
+- Una domanda o un rendiconto li presenta la persona, mai l'agente.
 
-## The law
+## La norma
 
-- An answer on an obligation cites the act and the article read in the thread `normativa`, in force on the day;
-  a reference of this pack is a map, not a substitute for the text.
-- What a reference marks «da verificare sul testo vigente» is checked on the text before relying on it.
+- Una risposta su un obbligo cita l'atto e l'articolo letti nel filo `normativa`, vigenti alla data; un reference di
+  questo pacchetto è una mappa, non sostituisce il testo.
+- Ciò che un reference segna «da verificare sul testo vigente» si controlla sul testo prima di farci affidamento.
 
 ## Mappa di lettura
 
-> Nessun file è precaricato: si legge quello che il compito tocca. I percorsi sono relativi a questo pack
+> Nessun file è precaricato: si legge quello che il compito tocca. I percorsi sono relativi a questo pacchetto
 > (`$(texo where --pack ets)` dalla cartella di lavoro). Prima di rispondere su un obbligo: il reference, poi l'articolo
 > vigente nel filo `normativa`, poi le lezioni del hub con lo stesso tag.
 
@@ -74,5 +74,5 @@ files named below are in `references/` next to this file.
 
 ### Skill
 
-questo pack non ha skill proprie: valgono quelle del core (`texo-sessione`, `memoria-consolidamento`,
+questo pacchetto non ha skill proprie: valgono quelle del core (`texo-sessione`, `memoria-consolidamento`,
 `memoria-ingestione`, `memoria-fonti`).

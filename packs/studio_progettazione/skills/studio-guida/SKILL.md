@@ -1,52 +1,52 @@
 ---
 name: studio-guida
 description: >-
-  How an engineering and architecture firm works with this pack: the professional decides and signs, commissions and their documents, AI use and data, and the reading map of glossary, BIM, public contracts, site safety and playbooks. Use it for a commission, a tender, works accounting, BIM, safety coordination. Triggers: "commessa", "gara", "SAL", "BIM", "CSE", "PSC", "progetto esecutivo".
+  Come lavora con questo pacchetto uno studio di ingegneria e architettura: il professionista decide e firma, le commesse e i loro documenti, l'uso dell'AI e i dati, e la mappa di lettura di glossario, BIM, contratti pubblici, sicurezza nei cantieri e playbook. Usala per una commessa, una gara, la contabilità dei lavori, il BIM, il coordinamento della sicurezza. Trigger: "commessa", "gara", "SAL", "BIM", "CSE", "PSC", "progetto esecutivo", "apri una commessa", "prepariamo l'offerta per la gara", "registra l'output dell'AI", "capitolato informativo", "direzione dei lavori".
 ---
 
 # studio-guida
 
-The way of working of the pack studio_progettazione. The rules every session of the organisation must follow arrive from the hub
-(the seed of this pack made them rules of the organisation): this skill adds how to work and what to read. The
-files named below are in `references/` next to this file.
+Il modo di lavorare del pacchetto studio_progettazione. Le regole che ogni sessione dell'organizzazione deve seguire
+arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
+lavorare e che cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
 
-## The professional decides, signs and sends
+## Il professionista decide, firma e invia
 
-- The agent prepares, checks and proposes; the responsible professional decides, signs and sends. Never sign,
-  stamp, file or send anything to a public body, a client or a contractor.
-- A calculation, a structural, energy or acoustic check and a safety judgement written by the agent are proposals
-  until the responsible professional has verified them.
-- A requirement taken from a code, a decree or a technical standard is cited with act, article and the day the
-  text in force was read. A rule recalled from memory is not a source; if the text cannot be read, say so.
+- L'agente prepara, controlla e propone; il professionista responsabile decide, firma e invia. Non firmare, timbrare,
+  depositare o inviare mai nulla a un ente pubblico, a un committente o a un'impresa.
+- Un calcolo, una verifica strutturale, energetica o acustica e un giudizio sulla sicurezza scritti dall'agente sono
+  proposte finché il professionista responsabile non li ha verificati.
+- Un requisito preso da un codice, un decreto o una norma tecnica si cita con atto, articolo e il giorno in cui si è
+  letto il testo vigente. Una regola ricordata a memoria non è una fonte; se il testo non si può leggere, dillo.
 
-## A commission and its documents
+## Una commessa e i suoi documenti
 
-- Models, drawings and reports stay in the archive or in the common data environment. The memory keeps their
-  reference (container, discipline, revision, state) and what the archive does not have: why, who decided, what
-  was learned, what the AI produced.
-- A decision of a commission is written as a note that cites the document and the revision it comes from; a newer
-  decision supersedes it, nothing is deleted.
-- Versions and revisions of documents, the phase of the design, the permits obtained and the deadlines of the
-  contract are facts of the commission in the hub.
-- The documents a client or a public body sends are documents of the memory with their summary; their text is
-  kept only when the commission allows it.
+- Modelli, elaborati e relazioni restano nell'archivio o nell'ambiente di condivisione dei dati. La memoria tiene il
+  loro riferimento (contenitore, disciplina, revisione, stato) e ciò che l'archivio non ha: perché, chi ha deciso, che
+  cosa si è imparato, che cosa ha prodotto l'AI.
+- Una decisione di una commessa si scrive come nota che cita il documento e la revisione da cui viene; una decisione
+  più recente la sostituisce, non si cancella nulla.
+- Versioni e revisioni dei documenti, la fase della progettazione, i titoli abilitativi ottenuti e le scadenze del
+  contratto sono fatti della commessa nel hub.
+- I documenti che manda un committente o un ente pubblico sono documenti della memoria con il loro riassunto; il loro
+  testo si tiene solo quando la commessa lo consente.
 
-## AI and data
+## AI e dati
 
-- Every output of an AI system that reaches a drawing, a calculation, a script or a communication outside the
-  studio is recorded in the AI register of the commission with who verified it (`references/playbooks/registro-decisioni-e-ai.md`):
-  the use of AI is instrumental and the intellectual work stays the professional's, and the client is informed of
-  the systems used (`references/reference/compliance-ai.md`).
-- Personal data of private clients, of people on site and of the people of contractors live only in the hub, on
-  the commission, and only as much as the commission needs; special categories (health, disability for the
-  accessibility of a home) never enter the memory.
-- Data of a commission never leave it: what the studio learns becomes a lesson without the client.
-- The memory and the registers serve the commission, never to evaluate the people who work in the studio.
+- Ogni output di un sistema di AI che arriva in un elaborato, un calcolo, uno script o una comunicazione fuori dallo
+  studio si registra nel registro AI della commessa con chi l'ha verificato
+  (`references/playbooks/registro-decisioni-e-ai.md`): l'uso dell'AI è strumentale e l'opera intellettuale resta del
+  professionista, e il committente è informato dei sistemi usati (`references/reference/compliance-ai.md`).
+- I dati personali dei committenti privati, delle persone in cantiere e delle persone delle imprese stanno solo nel
+  hub, sulla commessa, e solo quanto serve alla commessa; le categorie particolari (salute, disabilità per
+  l'accessibilità di un'abitazione) non entrano mai nella memoria.
+- I dati di una commessa non ne escono mai: ciò che lo studio impara diventa una lezione senza il cliente.
+- La memoria e i registri servono la commessa, mai a valutare le persone che lavorano nello studio.
 
 ## Mappa di lettura
 
 > Le regole del settore sono sopra e nel hub. Prima di un lavoro si legge il file della riga, poi si cercano le
-> lesson del hub sull'argomento (`texo search "<parole>" --scope lessons`, con i termini del glossario).
+> lezioni del hub sull'argomento (`texo search "<parole>" --scope lessons`, con i termini del glossario).
 
 ### Per lavoro
 

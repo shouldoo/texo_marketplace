@@ -1,34 +1,34 @@
 ---
 type: "Reference"
-title: "Data Files — Delta Odoo 19"
-description: "Data Files — Delta Odoo 19: i cambi di Odoo 19 rispetto alla versione prima, da leggere con le lesson del tag data e con il codice della versione."
+title: "File dati — Delta Odoo 19"
+description: "File dati — Delta Odoo 19: i cambi di Odoo 19 rispetto alla versione prima, da leggere con le lezioni del tag data e con il codice della versione."
 tags: ["data", "v19"]
 ---
 
-# Data Files — Delta Odoo 19
+# File dati — Delta Odoo 19
 
-> Per i progetti su Odoo 19, insieme alle lesson del hub con il tag `data` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-19` (`.texo/THREADS.md`). Breaking change 18→19 ed errori specifici della versione.
+> Per i progetti su Odoo 19, insieme alle lezioni del hub con il tag `data` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-19` (`.texo/THREADS.md`). Breaking change 18→19 ed errori specifici della versione.
 
-## Changed in 19.0
+## Cambiato in 19.0
 
-The plain data file *format* (XML/CSV, `noupdate`, `ref=`, `eval=`) is unchanged, but
-several record types that live in data files had **field/model changes** in 19.0:
+Il *formato* dei file dati in sé (XML/CSV, `noupdate`, `ref=`, `eval=`) non cambia, ma diversi tipi di record
+che vivono nei file dati hanno avuto **cambi di campi/modelli** in 19.0:
 
-| What Changed | Before (18.0) | Now (19.0) | Impact |
+| Cosa cambia | Prima (18.0) | Ora (19.0) | Impatto |
 |-------------|---------------|------------|--------|
-| `<report>` shortcut element | Valid | **Removed** | **Breaking** -- `Element odoo has extra content: report`; use `<record model="ir.actions.report">` |
-| `ir.cron.numbercall` / `doall` | `numbercall` already gone in 18.0 | `doall` also **removed** | **Breaking** -- drop both fields from cron data |
-| `mail.template.report_name` | Field present | **Removed** | **Breaking** -- drop field |
-| `mail.template.report_template` (M2o) | Single report | **Renamed** to `report_template_ids` (M2m) | **Breaking** |
-| `mail.template` body Jinja `${expr}` | Jinja2 | QWeb `{{ expr }}` | **Breaking** -- old `${...}` no longer interpolated |
-| `base.automation` `state` / `code` | Fields on `base.automation` | **Split out** to separate `ir.actions.server` records, linked via M2m `action_server_ids` | **Breaking** -- `Invalid field 'state' in 'base.automation'` |
-| `res.config.settings` view | `<div id="X">` anchors | `<setting id="X">` blocks (new settings layout) | **Breaking** -- old anchors fail xpath |
-| `documents.document` folder records | Model `documents.folder` | Unificato in `documents.document` (`type='folder'`); richiede `<field name="access_internal">edit</field>` | **Breaking** -- senza `access_internal`, default `'none'` blocca lettura/scrittura a tutti gli utenti interni (`global read rule`) |
+| Elemento abbreviato `<report>` | Valido | **Rimosso** | **Incompatibile** -- `Element odoo has extra content: report`; usare `<record model="ir.actions.report">` |
+| `ir.cron.numbercall` / `doall` | `numbercall` già sparito in 18.0 | **Rimosso** anche `doall` | **Incompatibile** -- togliere entrambi i campi dai dati dei cron |
+| `mail.template.report_name` | Campo presente | **Rimosso** | **Incompatibile** -- togliere il campo |
+| `mail.template.report_template` (M2o) | Un solo report | **Rinominato** `report_template_ids` (M2m) | **Incompatibile** |
+| Corpo Jinja `${expr}` di `mail.template` | Jinja2 | QWeb `{{ expr }}` | **Incompatibile** -- il vecchio `${...}` non viene più interpolato |
+| `state` / `code` di `base.automation` | Campi su `base.automation` | **Separati** in record `ir.actions.server` distinti, collegati tramite il M2m `action_server_ids` | **Incompatibile** -- `Invalid field 'state' in 'base.automation'` |
+| Vista di `res.config.settings` | Ancore `<div id="X">` | Blocchi `<setting id="X">` (nuovo layout delle impostazioni) | **Incompatibile** -- gli xpath sulle vecchie ancore falliscono |
+| Record cartella di `documents.document` | Modello `documents.folder` | Unificato in `documents.document` (`type='folder'`); richiede `<field name="access_internal">edit</field>` | **Incompatibile** -- senza `access_internal`, il default `'none'` blocca lettura/scrittura a tutti gli utenti interni (`global read rule`) |
 
-### `base.automation` model split
+### Separazione del modello `base.automation`
 
-In 19.0 the automation rule no longer carries `state`/`code` directly. Create the
-server action separately and link it:
+In 19.0 la regola di automazione non porta più direttamente `state`/`code`. Creare a parte l'azione server e
+collegarla:
 
 ```xml
 <record id="server_action_x" model="ir.actions.server">
@@ -45,8 +45,8 @@ server action separately and link it:
 </record>
 ```
 
-### `static/description/index.html` must not start with an XML declaration
+### `static/description/index.html` non deve iniziare con una dichiarazione XML
 
-A leading `<?xml version="1.0"?>` in `static/description/index.html` makes lxml raise
-`Unicode strings with encoding declaration are not supported`. Drop the declaration —
-start the file with the HTML content directly.
+Un `<?xml version="1.0"?>` iniziale in `static/description/index.html` fa sollevare a lxml
+`Unicode strings with encoding declaration are not supported`. Togliere la dichiarazione e iniziare il file
+direttamente con il contenuto HTML.
