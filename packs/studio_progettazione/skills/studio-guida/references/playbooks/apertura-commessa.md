@@ -9,8 +9,8 @@ tags: ["commessa", "apertura", "progetto"]
 
 > Lo esegue l'agente con la persona responsabile della commessa; ogni scrittura nel hub dopo il suo sì.
 
-1. **Il progetto nel hub.** Una commessa è un progetto, creato dal template «Commission (template)» (seed
-   del pack); le fasi che l'incarico non comprende si archiviano. Il partner del progetto è il committente.
+1. **Il progetto nel hub.** Una commessa è un progetto, creato dal template «Commessa (template)» (seed
+   del pacchetto); le fasi che l'incarico non comprende si archiviano. Il partner del progetto è il committente.
 2. **La descrizione del progetto** dice in poche righe che cosa si progetta, per chi, in quale fase si entra (PFTE,
    esecutivo, direzione dei lavori, esercizio) e i vincoli del contratto (scadenze, importo per le soglie della
    gestione informativa, requisiti del capitolato informativo). Le milestone sono le scadenze del contratto.

@@ -1,13 +1,13 @@
 ---
 type: "Reference"
-title: "Manufacturing — Delta Odoo 18"
-description: "Manufacturing — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lesson del tag manufacturing e con il codice della versione."
+title: "Produzione — Delta Odoo 18"
+description: "Produzione — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lezioni del tag manufacturing e con il codice della versione."
 tags: ["manufacturing", "v18"]
 ---
 
-# Manufacturing — Delta Odoo 18
+# Produzione — Delta Odoo 18
 
-> Per i progetti su Odoo 18, insieme alle lesson del hub con il tag `manufacturing` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
+> Per i progetti su Odoo 18, insieme alle lezioni del hub con il tag `manufacturing` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
 
 ## V18 — breaking changes nell'area
 
@@ -25,7 +25,7 @@ generati dalla produzione — vedi `reference/v18/inventory.md`.
 **Causa:** `reserved_uom_qty` è stato rimosso in V18. Dopo `action_assign()`,
 `quantity` sulla move line contiene già la quantità riservata.
 
-**Fix:** eliminare il loop e rimuovere `skip_immediate=True`:
+**Soluzione:** eliminare il loop e rimuovere `skip_immediate=True`:
 
 ```python
 # SBAGLIATO (V17):
@@ -55,7 +55,7 @@ Con dual-route la selezione nativa sceglie per priorità rotta → Buy → `_run
 errore — semplicemente non scatta. Può sembrare funzionante finché i prodotti
 hanno una rotta singola; emerge solo sul primo prodotto dual-route.
 
-**Fix:** ereditare il modello giusto:
+**Soluzione:** ereditare il modello giusto:
 
 ```python
 class ProcurementGroup(models.Model):
@@ -81,14 +81,14 @@ convenzione Odoo per i procurement values è l'**id** (`project_mrp` stesso fa
 a valle. Mascherato quando il top MO riceve `project_id` come int dal context del
 wizard (`with_context(project_id=project.id)`): il recordset emerge solo nel cascade.
 
-**Fix:** sempre `.id`:
+**Soluzione:** sempre `.id`:
 
 ```python
 if project:
     values['project_id'] = project.id   # NON: project
 ```
 
-Difensivamente, coercere recordset→id in ogni helper che riceve `project_id` dai
+Per difesa, convertire recordset→id in ogni helper che riceve `project_id` dai
 values e lo usa in un domain (`if hasattr(project_id, 'id'): project_id = project_id.id`).
 
 ### Rotta MTO a livello prodotto → buy-to-stock non agganciato al confirm (V18)
@@ -107,9 +107,9 @@ un rifornimento buy-to-stock **non agganciato** che **ignora sia lo stock sia l'
 (ordina il fabbisogno pieno). Accade anche se il PO di approvvigionamento è già **confermato**
 con ricezione attesa: l'MTO non netta contro l'incoming.
 
-**Fix:** non forzare `make_to_stock` sulla *raw move* (vedi voce sotto). Riconciliazione a
+**Soluzione:** non forzare `make_to_stock` sulla *raw move* (vedi voce sotto). Riconciliazione a
 valle: al confirm, per le sole foglie consumate (decisione non make/subcontract) over-coperte,
-annullare l'eccesso prendendo **solo PO `draft`**, newest-first (così cade il duplicato appena
+annullare l'eccesso prendendo **solo PO `draft`**, dal più recente (così cade il duplicato appena
 creato dal cascade, non il PO precedente), mai PO confermati/ricevuti.
 
 ### Forzare `make_to_stock` sulla raw move di un MO rompe il PBM (V18)
@@ -125,7 +125,7 @@ override `stock.move._adjust_procure_method` forzando `procure_method='make_to_s
 `make_to_order`: è il suo MTO che **tira** il Pick Components (`stock → pre-production`).
 Forzandola `make_to_stock` il pull non parte.
 
-**Fix:** la raw move resta MTO. La neutralizzazione dell'acquisto va fatta a livello di
+**Soluzione:** la raw move resta MTO. La neutralizzazione dell'acquisto va fatta a livello di
 **selezione regola / pick** o per **riconciliazione a valle** (annullo dell'eccesso), mai
 sulla raw.
 
@@ -137,5 +137,5 @@ accantonare i materiali da inviare al terzista).
 **Nota:** `_bom_subcontract_find(product, …, bom_type='subcontract')` passa per
 `_bom_find_domain`, che `bom_find_project` (override #1) rende project-aware. Quindi
 `self.env['mrp.bom'].with_context(project_id=<id>)._bom_subcontract_find(product)` restituisce
-la BOM subcontract **del progetto**, coerente col lookup del cascade. Utile per un walk di
-esplosione che ricorre anche sui nodi subcontract.
+la BOM subcontract **del progetto**, coerente con la ricerca fatta dal cascade. Utile per una visita
+dell'esplosione che ricorre anche sui nodi subcontract.

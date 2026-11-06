@@ -1,15 +1,16 @@
 ---
 name: browser-test
 description: >-
-  Drive the Odoo web client of a LOCAL instance or of a stage host explicitly enabled by an
-  active rule of the project (the hub, `texo context`) with a headless Chromium
-  (Playwright, open source) to verify what a change does in the real UI: log in,
-  open records, click buttons, capture screenshots and collect JS/console/HTTP
-  errors. Use after changing JavaScript, Owl templates, views or actions of a
-  module (e.g. a new smart button or client action), or when the user asks to
+  Guida il client web di Odoo di un'istanza LOCALE o di un host di stage abilitato in modo
+  esplicito da una regola attiva del progetto (il hub, `texo context`) con un Chromium
+  headless (Playwright, open source) per verificare che cosa fa una modifica nella UI vera:
+  accedi, apri record, clicca pulsanti, cattura screenshot e raccogli gli errori
+  JS/console/HTTP. Usala dopo aver modificato JavaScript, template Owl, viste o azioni di un
+  modulo (per esempio un nuovo smart button o una client action), o quando l'utente chiede
   "provalo nel browser", "verifica l'interfaccia", "screenshot della vista",
-  "controlla errori JS". Read-only by intent: it never touches hosts outside
-  localhost unless it is an enabled stage host. Never for production hosts.
+  "controlla errori JS", "fammi vedere la vista", "il pulsante funziona?". Per intenzione
+  solo lettura: non tocca mai host fuori da localhost, salvo un host di stage abilitato. Mai
+  per host di produzione.
 ---
 
 # Browser test — provare la UI di un'istanza locale o di stage
@@ -26,7 +27,7 @@ python3 -m venv ~/.local/share/texo/browser
 
 Se la verifica fallisce, proponi l'installazione all'utente prima di procedere.
 
-## Safety gate
+## Cancello di sicurezza
 
 - Di default solo istanze **locali**: ogni scenario installa il filtro di rete
   qui sotto, che aborta le richieste verso host diversi da `localhost`,

@@ -1,106 +1,106 @@
-# The seed of the Odoo partner pack into the hub (core: texo seed, route admin/seed). Every item has a stable
-# code or key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
-lang = "en_US"
+# Il seed del pacchetto partner Odoo nel hub (core: texo seed, route admin/seed). Ogni voce ha un code o una key
+# stabile: una nuova versione del seed aggiorna ciò che un lead non ha cambiato e tiene ciò che un lead ha cambiato.
+lang = "it_IT"
 
 [[activities]]
 code = "code"
-name = "Code"
+name = "Codice"
 sequence = 30
-description = "Writing, reviewing or testing code: modules, scripts, configuration in a repository."
+description = "Scrivere, revisionare o testare codice: moduli, script, configurazione in un repository."
 
 [[activities]]
 code = "deploy"
-name = "Deploy and environments"
+name = "Deploy e ambienti"
 sequence = 40
-description = "Instances, databases, servers and releases: local, stage and production."
+description = "Istanze, database, server e rilasci: locale, stage e produzione."
 
 [[activities]]
 code = "data"
-name = "Customer data"
+name = "Dati del cliente"
 sequence = 50
-description = "Reading, copying, importing or converting the data and documents of a customer."
+description = "Leggere, copiare, importare o convertire i dati e i documenti di un cliente."
 
 [[activities]]
 code = "migration"
-name = "Migration"
+name = "Migrazione"
 sequence = 60
-description = "Moving an instance or a module to another version of Odoo."
+description = "Portare un'istanza o un modulo a un'altra versione di Odoo."
 
 [[rules]]
 key = "production_never_a_test"
-name = "Production is never a test target"
+name = "La produzione non è mai un bersaglio di test"
 severity = "never"
 activities = ["deploy", "data"]
 section = "operations"
 keywords = "produzione, production, test, stage, collaudo"
-body = "Never write to, upgrade a module on or run tests against a production database or URL: changes reach production through the release of the project, after the stage and the customer's acceptance."
+body = "Non scrivere mai su un database o un URL di produzione, non aggiornarvi moduli e non eseguirvi test: le modifiche arrivano in produzione con il rilascio del progetto, dopo lo stage e il collaudo del cliente."
 
 [[rules]]
 key = "copies_neutralised"
-name = "A copy of production is neutralised first"
+name = "Una copia di produzione si neutralizza prima"
 severity = "never"
 activities = ["data", "deploy"]
 section = "compliance"
 keywords = "neutralizzazione, anonimizzazione, copia di produzione, neutralize, anonymize"
-body = "Never start an instance on a copy of a production database before neutralising it (the script neutralize-db.sh of the pack odoo_partner); for an organisation that serves vulnerable people, anonymise it too (anonymize-db.sh)."
+body = "Non avviare mai un'istanza su una copia di un database di produzione prima di averla neutralizzata (lo script neutralize-db.sh del pacchetto odoo_partner); per un'organizzazione che serve persone vulnerabili, anonimizzala anche (anonymize-db.sh)."
 
 [[rules]]
 key = "names_from_the_source"
-name = "Names checked in the source of the version"
+name = "Nomi controllati nel sorgente della versione"
 severity = "must"
 activities = ["code", "migration"]
 section = "operations"
 keywords = "campo, metodo, vista, nome, sorgente, field, method, view, source"
-body = "Before using a field, method, view or xmlid, find it in the source of the Odoo version of the instance (the thread odoo-<NN>) or of the OCA module; a name from memory is a guess."
+body = "Prima di usare un campo, un metodo, una vista o un xmlid, trovalo nel sorgente della versione Odoo dell'istanza (il filo odoo-<NN>) o del modulo OCA; un nome a memoria è un'ipotesi."
 
 [[rules]]
 key = "tests_with_a_clean_log"
-name = "Tests and a clean log after every change"
+name = "Test e log pulito dopo ogni modifica"
 severity = "must"
 activities = ["code"]
 section = "operations"
-keywords = "test, checklog, warning, log, modulo, module"
-body = "After creating or changing a module, run its tests on a database created for the task and check the log with checklog-odoo: a warning fails the change like a failed test."
+keywords = "test, checklog, warning, avviso, log, modulo, module"
+body = "Dopo aver creato o modificato un modulo, esegui i suoi test su un database creato per il task e controlla il log con checklog-odoo: un warning fa fallire la modifica come un test fallito."
 
 [[rules]]
 key = "database_through_the_orm"
-name = "Databases through the ORM"
+name = "Database attraverso l'ORM"
 severity = "prefer"
 activities = ["code", "data"]
 section = "operations"
-keywords = "odoo shell, ORM, SQL, database, query"
-body = "Read and change an Odoo database through odoo shell and the ORM, so access rules, computed fields and constraints apply; raw SQL only when the ORM cannot do it, saying why."
+keywords = "odoo shell, ORM, SQL, database, query, interrogazione"
+body = "Leggi e modifica un database Odoo con odoo shell e l'ORM, così si applicano regole di accesso, campi calcolati e vincoli; SQL diretto solo quando l'ORM non può farlo, dicendo perché."
 
 [[rules]]
 key = "dependency_installed"
-name = "A dependency only on an installed module"
+name = "Una dipendenza solo da un modulo installato"
 severity = "must"
 activities = ["code"]
 section = "operations"
 keywords = "dipendenza, depends, modulo installato, dependency"
-body = "Propose a dependency on a module only when the description of the project lists it as installed on the instance; otherwise say so and ask."
+body = "Proponi una dipendenza da un modulo solo quando la description del progetto lo elenca come installato sull'istanza; altrimenti dillo e chiedi."
 
 [[project_templates]]
 key = "odoo_project"
-name = "Odoo project (template)"
-description = "<p>The phases of a new Odoo Community project, from the analysis to the support after go-live.</p>"
+name = "Progetto Odoo (template)"
+description = "<p>Le fasi di un nuovo progetto Odoo Community, dall'analisi all'assistenza dopo l'avvio in produzione.</p>"
 tasks = [
-    {name = "Process analysis", description = "<p>The processes of the customer, the gaps against the standard and the OCA modules that cover them.</p>"},
-    {name = "Instance and repositories", description = "<p>The repository of the instance, its submodules, the local and stage environments.</p>"},
-    {name = "Configuration and development", description = "<p>Configuration first, then the custom modules, each with its tests.</p>"},
-    {name = "Acceptance on stage", description = "<p>The customer tests on stage with users that copy the real roles.</p>"},
-    {name = "Go-live", description = "<p>Data import, the release to production, the checks of the first day.</p>"},
-    {name = "Support after go-live"},
+    {name = "Analisi dei processi", description = "<p>I processi del cliente, gli scostamenti dallo standard e i moduli OCA che li coprono.</p>"},
+    {name = "Istanza e repository", description = "<p>Il repository dell'istanza, i suoi submodule, gli ambienti locale e di stage.</p>"},
+    {name = "Configurazione e sviluppo", description = "<p>Prima la configurazione, poi i moduli custom, ciascuno con i suoi test.</p>"},
+    {name = "Collaudo sullo stage", description = "<p>Il cliente prova sullo stage con utenti che ricalcano i ruoli reali.</p>"},
+    {name = "Avvio in produzione", description = "<p>Importazione dei dati, rilascio in produzione, controlli del primo giorno.</p>"},
+    {name = "Assistenza dopo l'avvio"},
 ]
 
 [[project_templates]]
 key = "odoo_migration"
-name = "Odoo version migration (template)"
-description = "<p>Moving an instance to a new Odoo version: assessment, modules, database, acceptance, production.</p>"
+name = "Migrazione di versione Odoo (template)"
+description = "<p>Portare un'istanza a una nuova versione di Odoo: analisi, moduli, database, collaudo, produzione.</p>"
 tasks = [
-    {name = "Assessment", description = "<p>Installed modules, their target branches, the OCA dependencies, the version changes that touch them.</p>"},
-    {name = "Custom modules on the target version"},
-    {name = "Trial migration of the database", description = "<p>On a neutralised copy, with the log of the upgrade clean.</p>"},
-    {name = "Acceptance by the customer"},
-    {name = "Production migration"},
+    {name = "Analisi", description = "<p>Moduli installati, i loro branch di destinazione, le dipendenze OCA, i cambi di versione che li toccano.</p>"},
+    {name = "Moduli custom sulla versione di destinazione"},
+    {name = "Migrazione di prova del database", description = "<p>Su una copia neutralizzata, con il log dell'aggiornamento pulito.</p>"},
+    {name = "Collaudo del cliente"},
+    {name = "Migrazione in produzione"},
 ]

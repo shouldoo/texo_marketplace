@@ -1,24 +1,24 @@
 ---
 type: "Reference"
-title: "Views — Delta Odoo 18"
-description: "Views — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lesson del tag views e con il codice della versione."
+title: "Viste — Delta Odoo 18"
+description: "Viste — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lezioni del tag views e con il codice della versione."
 tags: ["views", "v18"]
 ---
 
-# Views — Delta Odoo 18
+# Viste — Delta Odoo 18
 
-> Per i progetti su Odoo 18, insieme alle lesson del hub con il tag `views` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
+> Per i progetti su Odoo 18, insieme alle lezioni del hub con il tag `views` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
 
-| What Changed | Before (17.0) | Now (18.0) | Impact |
+| Cosa cambia | Prima (17.0) | Ora (18.0) | Impatto |
 |-------------|---------------|------------|--------|
-| `<tree>` tag | Valid for list views | **REMOVED** -- use `<list>` exclusively | **Breaking** -- `ValueError: Wrong value for ir.ui.view.type: 'tree'` |
-| `view_mode="tree,form"` | Correct for actions | Use `view_mode="list,form"` | **Breaking** -- action windows show no list view |
-| `<chatter/>` shorthand | Works (verbose form also works) | **Preferred** (verbose form still works) | **Style** -- verbose form is unnecessary |
-| `ir.ui.view` type `tree` | Valid view type | **REMOVED** from the registry | **Breaking** -- cannot create views with type `tree` |
+| Tag `<tree>` | Valido per le viste lista | **RIMOSSO** -- usare solo `<list>` | **Incompatibile** -- `ValueError: Wrong value for ir.ui.view.type: 'tree'` |
+| `view_mode="tree,form"` | Corretto per le azioni | Usare `view_mode="list,form"` | **Incompatibile** -- le azioni finestra non mostrano la vista lista |
+| Forma breve `<chatter/>` | Funziona (funziona anche la forma estesa) | **Preferita** (la forma estesa funziona ancora) | **Stile** -- la forma estesa non serve |
+| Tipo `tree` di `ir.ui.view` | Tipo di vista valido | **RIMOSSO** dal registro | **Incompatibile** -- non si possono creare viste di tipo `tree` |
 
-### `<tree>` tag REMOVED -- use `<list>`
+### Tag `<tree>` RIMOSSO -- usare `<list>`
 
-**WRONG (causes hard error in 18.0):**
+**SBAGLIATO (errore bloccante in 18.0):**
 ```xml
 <record id="my_model_view_tree" model="ir.ui.view">
     <field name="name">my.model.tree</field>
@@ -32,7 +32,7 @@ tags: ["views", "v18"]
 </record>
 ```
 
-**CORRECT (18.0):**
+**CORRETTO (18.0):**
 ```xml
 <record id="my_model_view_list" model="ir.ui.view">
     <field name="name">my.model.list</field>
@@ -46,25 +46,27 @@ tags: ["views", "v18"]
 </record>
 ```
 
-**Why:** Odoo 18 completely removed the `tree` view type from the registry. Using `<tree>` causes `ValueError: Wrong value for ir.ui.view.type: 'tree'`. This is a hard error, not a warning.
+**Perché:** Odoo 18 ha rimosso del tutto il tipo di vista `tree` dal registro. Usare `<tree>` causa
+`ValueError: Wrong value for ir.ui.view.type: 'tree'`. È un errore bloccante, non un avviso.
 
-### `view_mode` in actions must also change
+### Va cambiato anche `view_mode` nelle azioni
 
-**WRONG (18.0):**
+**SBAGLIATO (18.0):**
 ```xml
 <field name="view_mode">tree,form</field>
 ```
 
-**CORRECT (18.0):**
+**CORRETTO (18.0):**
 ```xml
 <field name="view_mode">list,form</field>
 ```
 
-**Why:** The `tree` value in `view_mode` is no longer recognized. Actions will not display a list view if `tree` is used.
+**Perché:** il valore `tree` in `view_mode` non è più riconosciuto. Se si usa `tree`, le azioni non mostrano
+la vista lista.
 
-### `<chatter/>` shorthand preferred
+### Forma breve `<chatter/>` preferita
 
-**17.0 verbose form (still works in 18.0 but unnecessary):**
+**Forma estesa 17.0 (funziona ancora in 18.0 ma non serve):**
 ```xml
 <div class="oe_chatter">
     <field name="message_follower_ids"/>
@@ -73,9 +75,10 @@ tags: ["views", "v18"]
 </div>
 ```
 
-**18.0 preferred form:**
+**Forma preferita in 18.0:**
 ```xml
 <chatter/>
 ```
 
-**Why:** The `<chatter/>` shorthand renders all mail components automatically. In 18.0, the verbose form is unnecessary and adds XML noise.
+**Perché:** la forma breve `<chatter/>` mostra automaticamente tutti i componenti di mail. In 18.0 la forma
+estesa non serve e aggiunge solo rumore all'XML.

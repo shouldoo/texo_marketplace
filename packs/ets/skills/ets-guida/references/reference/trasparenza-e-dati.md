@@ -25,7 +25,7 @@ tags: ["trasparenza", "privacy", "dati-personali"]
 - Le basi giuridiche, le informative, i tempi di conservazione e le misure di sicurezza del trattamento sono
   decisioni del titolare (l'ente) e del suo responsabile della protezione dei dati, se nominato: l'agente non le
   stabilisce e non le riassume a memoria (da verificare con chi tratta i dati nell'ente).
-- Regola di questo pack, più stretta della legge: i dati delle persone servite non entrano mai nella
+- Regola di questo pacchetto, più stretta della legge: i dati delle persone servite non entrano mai nella
   memoria, in git, nelle conversazioni con un agente né nei documenti che un agente scrive (`AGENTS.md`). Il
   lavoro si descrive con attività, numeri aggregati ed esiti.
 - Un indirizzo protetto (una struttura di accoglienza riservata) non si scrive in nessun luogo.

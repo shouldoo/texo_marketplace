@@ -1,23 +1,23 @@
 ---
 type: "Reference"
-title: "Accounting — Delta Odoo 18"
-description: "Accounting — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lesson del tag accounting e con il codice della versione."
+title: "Contabilità — Delta Odoo 18"
+description: "Contabilità — Delta Odoo 18: i cambi di Odoo 18 rispetto alla versione prima, da leggere con le lezioni del tag accounting e con il codice della versione."
 tags: ["accounting", "v18"]
 ---
 
-# Accounting — Delta Odoo 18
+# Contabilità — Delta Odoo 18
 
-> Per i progetti su Odoo 18, insieme alle lesson del hub con il tag `accounting` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
+> Per i progetti su Odoo 18, insieme alle lezioni del hub con il tag `accounting` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-18` (`.texo/THREADS.md`). Breaking change 17→18 ed errori specifici della versione.
 
-## Changed in 18.0
+## Cambiato in 18.0
 
-| What Changed | Before (17.0) | Now (18.0) | Impact |
+| Cosa cambia | Prima (17.0) | Ora (18.0) | Impatto |
 |-------------|---------------|------------|--------|
-| `analytic_distribution` | JSON field on `account.move.line` | Extended with analytic plan validation | **Enhancement** -- plans are now enforced |
-| `account.payment` fields | `payment_method_id` used directly | `payment_method_line_id` replaces it as primary field | **Breaking** -- code using `payment_method_id` for creation may fail |
-| Tax computation | `compute_all()` returns dict | Same API, but repartition lines now include `tax_tag_invert` | **Silent change** -- custom tax processing must handle new keys |
-| Bank reconciliation | Widget-based reconciliation | Refactored reconciliation model with `account.bank.statement.line` as primary | **Enhancement** -- statement lines are now the core entity |
-| `account.move` `state` | `draft` / `posted` / `cancel` | Same values, but `cancel` flow uses `button_draft()` then re-post | **Workflow change** -- cancellation is now a two-step process |
+| `analytic_distribution` | Campo JSON su `account.move.line` | Esteso con la validazione dei piani analitici | **Miglioria** -- i piani ora sono imposti |
+| Campi di `account.payment` | `payment_method_id` usato direttamente | `payment_method_line_id` lo sostituisce come campo principale | **Incompatibile** -- il codice che usa `payment_method_id` in creazione può fallire |
+| Calcolo delle imposte | `compute_all()` restituisce un dict | Stessa API, ma le righe di ripartizione ora includono `tax_tag_invert` | **Cambio silenzioso** -- l'elaborazione custom delle imposte deve gestire le nuove chiavi |
+| Riconciliazione bancaria | Riconciliazione basata su widget | Modello di riconciliazione rifatto, con `account.bank.statement.line` come entità principale | **Miglioria** -- le righe di estratto conto ora sono l'entità centrale |
+| `state` di `account.move` | `draft` / `posted` / `cancel` | Stessi valori, ma il flusso di `cancel` usa `button_draft()` e poi una nuova registrazione | **Cambio di flusso** -- l'annullamento ora avviene in due passi |
 
 ## Localizzazione italiana: shift OCA → nativo Enterprise
 
@@ -37,24 +37,24 @@ tags: ["accounting", "v18"]
 - Nativo: **`l10n_it_edi`** (trasmissione/ricezione via **proxy SdI Odoo**, `account_edi_proxy_client`),
   + `l10n_it_edi_sale`, `l10n_it_edi_doi` (dichiarazione d'intento), `l10n_it_edi_ndd` (note di debito),
   `l10n_it_edi_withholding` (ritenuta in e-fattura).
-- Rimpiazza l'intera famiglia OCA `l10n_it_fatturapa_*` (out/in/purchase/sale/rc/sp/wt/stamp…).
+- Sostituisce l'intera famiglia OCA `l10n_it_fatturapa_*` (out/in/purchase/sale/rc/sp/wt/stamp…).
 - **Connettori esterni di trasmissione**: **dismettibili** a favore del proxy SdI nativo.
 
 ### Mappatura funzione → nativo V18
 | Funzione | OCA (≤17) | Nativo V18 | Note |
 |---|---|---|---|
-| DDT | `l10n_it_delivery_note` | `l10n_it_stock_ddt` (source) | migrare i dati DDT |
-| Ritenute d'acconto | `l10n_it_withholding_tax` | `l10n_it_edi_withholding` (source) | |
-| Dichiarazione d'intento | `l10n_it_declaration_of_intent` | `l10n_it_edi_doi` (source) | |
+| DDT | `l10n_it_delivery_note` | `l10n_it_stock_ddt` (nei sorgenti Community) | migrare i dati DDT |
+| Ritenute d'acconto | `l10n_it_withholding_tax` | `l10n_it_edi_withholding` (nei sorgenti Community) | |
+| Dichiarazione d'intento | `l10n_it_declaration_of_intent` | `l10n_it_edi_doi` (nei sorgenti Community) | |
 | RiBa | `l10n_it_ricevute_bancarie` | `l10n_it_riba` (enterprise) | |
 | Intrastat | `l10n_it_intrastat` | `account_intrastat` (enterprise) | verificare invio telematico |
 | Cespiti | `l10n_it_asset_management` | `account_asset` (enterprise) | migrare registri cespiti |
-| Libro giornale | `l10n_it_central_journal_reportlab` | `l10n_it_reports` (enterprise) | i patch custom diventano spesso obsoleti |
+| Libro giornale | `l10n_it_central_journal_reportlab` | `l10n_it_reports` (enterprise) | le patch custom diventano spesso obsolete |
 | Bilancio civilistico SP/CE | `l10n_it_financial_statements_report` | `l10n_it_reports` (enterprise) | **parziale**: verificare dettaglio/nota integrativa |
 | Liquidazione periodica IVA (LIPE) | `l10n_it_vat_statement_communication` | `l10n_it_xml_export` (`comunicazioneIvp`, enterprise) | |
-| Scissione pagamenti | `l10n_it_split_payment` | `l10n_it_edi` (EsigibilitaIVA=S) | gestita via tax/EDI |
+| Scissione pagamenti | `l10n_it_split_payment` | `l10n_it_edi` (EsigibilitaIVA=S) | gestita tramite imposte/EDI |
 | Reverse charge | `l10n_it_reverse_charge` | `l10n_it_edi` (TD16-19 / VJ) | **parziale**: verificare autofattura/integrazione |
-| **Registri IVA** (stampa sezionali) | `l10n_it_vat_registries` | — **nessun nativo** | **GAP → KEEP-OCA** 18.0 |
+| **Registri IVA** (stampa sezionali) | `l10n_it_vat_registries` | — **nessun nativo** | **GAP → resta OCA** in 18.0 |
 | CF / IPA / REA / natura aliquote / tipi doc | `l10n_it_*` vari | `l10n_it` + `l10n_it.document.type` | nativo/parziale |
 
 ### Gap noti (restano OCA 18.0)

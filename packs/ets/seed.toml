@@ -1,123 +1,123 @@
-# The seed of the ETS pack into the hub (core: texo seed, route admin/seed). Every item has a stable code or
-# key: a new version of the seed updates what a lead did not change and keeps what a lead changed.
-lang = "en_US"
+# Il seed del pacchetto ETS nel hub (core: texo seed, route admin/seed). Ogni voce ha un code o una key stabile:
+# una nuova versione del seed aggiorna ciò che un lead non ha cambiato e tiene ciò che un lead ha cambiato.
+lang = "it_IT"
 
 [[activities]]
 code = "funding"
-name = "Funding"
+name = "Finanziamenti"
 sequence = 30
-description = "Calls for funding, applications, agreements with funders and donors."
+description = "Avvisi e bandi di finanziamento, domande, convenzioni con finanziatori e donatori."
 
 [[activities]]
 code = "reporting"
-name = "Reporting"
+name = "Rendicontazione"
 sequence = 40
-description = "Reporting to funders and to the registry: figures, documents, financial statements."
+description = "La rendicontazione ai finanziatori e al registro: cifre, documenti, bilanci e rendiconti."
 
 [[activities]]
 code = "volunteers"
-name = "Volunteers and members"
+name = "Volontari e associati"
 sequence = 50
-description = "Members, volunteers and staff: registers, insurance, reimbursements, meetings."
+description = "Associati, volontari e personale: registri, assicurazione, rimborsi, assemblee."
 
 [[activities]]
 code = "services"
-name = "Services to people"
+name = "Servizi alle persone"
 sequence = 60
-description = "The services the organisation runs for the people it serves: the activity with the strictest rules."
+description = "I servizi che l'organizzazione svolge per le persone che serve: l'attività con le regole più severe."
 
 [[sections]]
 code = "governance"
 name = "Governance"
 sequence = 60
-description = "Statute, bodies and their terms, members' meetings, the registry of the Third Sector."
+description = "Statuto, organi e loro mandati, assemblee degli associati, il registro del Terzo settore."
 
 [[rules]]
 key = "no_data_of_people_served"
-name = "No data of the people served"
+name = "Nessun dato delle persone servite"
 severity = "never"
 activities = ["services", "communication", "reporting"]
 section = "compliance"
-keywords = "beneficiari, utenti, persone accolte, dati personali, privacy, beneficiaries"
-body = "Never write data about the people the organisation serves (names, stories, situations, contacts, not even an invented example) in the memory, in git, in a conversation or in a document you draft: describe the work by activities, aggregated numbers and outcomes."
+keywords = "beneficiari, utenti, persone accolte, persone servite, dati personali, privacy, beneficiaries"
+body = "Non scrivere mai dati delle persone che l'organizzazione serve (nomi, storie, situazioni, contatti, neppure in un esempio inventato) nella memoria, in git, in una conversazione o in un documento che redigi: descrivi il lavoro con attività, numeri aggregati ed esiti."
 
 [[rules]]
 key = "protected_addresses"
-name = "Protected addresses are never written"
+name = "Gli indirizzi protetti non si scrivono mai"
 severity = "never"
 activities = []
 section = "compliance"
 keywords = "indirizzo, struttura protetta, casa rifugio, accoglienza, address, shelter"
-body = "Never write the address of a protected facility anywhere: not in the memory, not in a project, not in a text for the public."
+body = "Non scrivere mai da nessuna parte l'indirizzo di una struttura protetta: né nella memoria, né in un progetto, né in un testo per il pubblico."
 
 [[rules]]
 key = "communication_never_identifies"
-name = "Communication never identifies a person"
+name = "La comunicazione non identifica mai una persona"
 severity = "never"
 activities = ["communication"]
 section = "operations"
-keywords = "comunicazione, comunicato, social, report pubblico, anonimato"
-body = "A text about the services (report, post, press release, call for volunteers) never makes a person served recognisable, directly or by the combination of place, period, service and small numbers."
+keywords = "comunicazione, comunicato, social, report pubblico, anonimato, riconoscibile"
+body = "Un testo sui servizi (report, post, comunicato stampa, appello per volontari) non rende mai riconoscibile una persona servita, né direttamente né per la combinazione di luogo, periodo, servizio e numeri piccoli."
 
 [[rules]]
 key = "registry_deadlines_tracked"
-name = "Registry and grant deadlines are tasks"
+name = "Le scadenze del registro e dei contributi sono task"
 severity = "must"
 activities = ["reporting", "funding"]
 section = "governance"
-keywords = "RUNTS, scadenza, deposito, bilancio, rendiconto, deadline"
-body = "Every deadline of the registry of the Third Sector and of each grant is a task of the hub with its date, opened as soon as the deadline is known."
+keywords = "RUNTS, scadenza, deposito, bilancio, rendiconto, contributo, deadline"
+body = "Ogni scadenza del registro del Terzo settore e di ogni contributo è un task del hub con la sua data, aperto appena la scadenza è nota."
 
 [[rules]]
 key = "figures_from_accounting"
-name = "Figures come from the accounting"
+name = "Le cifre vengono dalla contabilità"
 severity = "must"
 activities = ["reporting", "funding"]
 section = "operations"
-keywords = "cifre, importi, piano dei costi, rendicontazione, contabilita, figures"
-body = "Figures in an application, a report or a financial statement come from the accounting and the documents of the organisation, never estimated or rounded to fit; a missing figure is asked to the person."
+keywords = "cifre, importi, piano dei costi, rendicontazione, contabilità, contabilita, figures"
+body = "Le cifre di una domanda, di un rendiconto o di un bilancio vengono dalla contabilità e dai documenti dell'organizzazione, mai stimate o arrotondate per farle tornare; una cifra che manca si chiede alla persona."
 
 [[rules]]
 key = "cite_the_article"
-name = "An obligation cites the article in force"
+name = "Un obbligo cita l'articolo vigente"
 severity = "must"
 activities = ["analysis", "reporting", "funding"]
 section = "compliance"
-keywords = "norma, articolo, legge, decreto, citazione, Codice del Terzo settore"
-body = "An answer about a legal obligation cites the act and the article read in the text in force; a reference of the pack is a map, not a substitute for the text."
+keywords = "norma, articolo, legge, decreto, citazione, testo vigente, Codice del Terzo settore"
+body = "Una risposta su un obbligo di legge cita l'atto e l'articolo letti nel testo vigente; un reference del pacchetto è una mappa, non sostituisce il testo."
 
 [[rules]]
 key = "person_submits"
-name = "The person submits"
+name = "Presenta la persona"
 severity = "never"
 activities = ["funding", "reporting"]
 section = "operations"
-keywords = "invio, firma, presentazione, PEC, piattaforma, submit"
-body = "Never sign, submit or send an application, a declaration, a report or a registry filing: the agent prepares and checks, the person signs and submits."
+keywords = "invio, firma, presentazione, PEC, piattaforma, deposito, submit"
+body = "Non firmare, presentare o inviare mai una domanda, una dichiarazione, un rendiconto o un deposito al registro: l'agente prepara e controlla, la persona firma e presenta."
 
 [[project_templates]]
 key = "grant_application"
-name = "Grant application (template)"
-description = "<p>From a call for funding to the submission of the application.</p>"
+name = "Domanda di finanziamento (template)"
+description = "<p>Da un avviso di finanziamento alla presentazione della domanda.</p>"
 tasks = [
-    {name = "Card of the call", description = "<p>Funder, objectives, eligible applicants and activities, budget, deadline, criteria, exclusion causes, each with its article.</p>"},
-    {name = "Decision to apply", description = "<p>Requirements checked on the facts of the organisation; who decided and why.</p>"},
-    {name = "Partners and agreements"},
-    {name = "Project proposal", description = "<p>On the chapters of the call and its criteria, in the order of their weight.</p>"},
-    {name = "Budget plan", description = "<p>Eligible items, figures from the person or the accounting, co-financing.</p>"},
-    {name = "Declarations and signatures"},
-    {name = "Final check and submission by the person"},
+    {name = "Scheda dell'avviso", description = "<p>Finanziatore, obiettivi, soggetti e attività ammissibili, dotazione, scadenza, criteri, cause di esclusione, ciascuno con il suo articolo.</p>"},
+    {name = "Decisione di partecipare", description = "<p>Requisiti controllati sui fatti dell'organizzazione; chi ha deciso e perché.</p>"},
+    {name = "Partner e accordi"},
+    {name = "Proposta progettuale", description = "<p>Sui capitoli dell'avviso e sui suoi criteri, nell'ordine del loro peso.</p>"},
+    {name = "Piano dei costi", description = "<p>Voci ammissibili, cifre dalla persona o dalla contabilità, cofinanziamento.</p>"},
+    {name = "Dichiarazioni e firme"},
+    {name = "Controllo finale e presentazione da parte della persona"},
 ]
 
 [[project_templates]]
 key = "funded_project"
-name = "Funded project (template)"
-description = "<p>A project funded by a call: from the agreement to the final report.</p>"
+name = "Progetto finanziato (template)"
+description = "<p>Un progetto finanziato da un avviso: dalla convenzione al rendiconto finale.</p>"
 tasks = [
-    {name = "Agreement and funder rules", description = "<p>Eligibility period, eligible costs, co-financing, staff rules, budget changes, publicity, deadlines.</p>"},
-    {name = "Kick-off"},
-    {name = "Activities"},
-    {name = "Interim report"},
-    {name = "Final report", description = "<p>Activities, results and indicators in aggregated form; the financial statement checked on the accounting.</p>"},
-    {name = "Closing and lessons"},
+    {name = "Convenzione e regole del finanziatore", description = "<p>Periodo di ammissibilità, costi ammissibili, cofinanziamento, regole sul personale, variazioni del piano dei costi, pubblicità, scadenze.</p>"},
+    {name = "Avvio"},
+    {name = "Attività"},
+    {name = "Rendiconto intermedio"},
+    {name = "Rendiconto finale", description = "<p>Attività, risultati e indicatori in forma aggregata; il rendiconto economico controllato sulla contabilità.</p>"},
+    {name = "Chiusura e lezioni"},
 ]

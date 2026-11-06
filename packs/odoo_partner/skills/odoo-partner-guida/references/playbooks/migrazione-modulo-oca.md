@@ -17,7 +17,7 @@ convenzioni OCA e alle «tasks to do» della versione). Questo playbook ne fissa
 sostituisce.
 
 > Il salto di versione dell'istanza di un progetto è in `migrazione-progetto.md`. I cambi di versione del
-> framework sono in `reference/v<N>/`, nelle lesson del hub con il tag della versione e nell'ontologia
+> framework sono in `reference/v<N>/`, nelle lezioni del hub con il tag della versione e nell'ontologia
 > generata in locale da `$(texo where --pack odoo_partner)/scripts/build_ontology.py` (`.texo/ontology/` del customer, dal filo `openupgrade`).
 
 ## Prima di toccare codice

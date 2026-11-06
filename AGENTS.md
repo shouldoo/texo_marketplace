@@ -17,6 +17,9 @@ and as Claude Code plugins.
   how to work and the reading map. The same rule never stands in both.
 - **Skills are portable.** Frontmatter `name` (the folder) and `description` only; actions named by what they do,
   never by one assistant's tool names; the texo CLI is `texo`, the core is `<core>` (`texo where`).
+- **Language.** What an agent reads at work is Italian: `SKILL.md` (its `description` too, with the requests a
+  person types), references, playbooks, the texts of `seed.toml` (`lang = "it_IT"`) and the `why` and `guide` of the
+  threads. Code, comments, commit messages, pull requests, READMEs and this file are English. One file, one language.
 - **Versions.** A change bumps `version` in `pack.toml` and in `plugin.json` together (and in
   `.claude-plugin/marketplace.json`), with a line in the changelog of the pack's README. A release is the tag
   `<name>-<version>`, after the checks are green.

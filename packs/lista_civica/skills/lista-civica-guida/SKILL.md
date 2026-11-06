@@ -1,52 +1,53 @@
 ---
 name: lista-civica-guida
 description: >-
-  How a civic list works with this pack, politically neutral: positions, quotes and facts, personal data, the rules of the campaign in drafts, signatures, candidacies and spending, and the reading map of the method references and playbooks. Use it for campaign work of a civic list. Triggers: "lista civica", "campagna elettorale", "raccolta firme", "candidature", "par condicio", "silenzio elettorale", "spese elettorali".
+  Come lavora con questo pacchetto una lista civica, in modo politicamente neutrale: posizioni, citazioni e fatti, dati personali, le regole della campagna nelle bozze, firme, candidature e spese, e la mappa di lettura dei reference di metodo e dei playbook. Usala per il lavoro di campagna di una lista civica. Trigger: "lista civica", "campagna elettorale", "raccolta firme", "candidature", "par condicio", "silenzio elettorale", "spese elettorali", "organizziamo un banchetto", "prepara un volantino", "come si presentano le candidature", "rendiconto delle spese elettorali", "possiamo pubblicare un sondaggio".
 ---
 
 # lista-civica-guida
 
-The way of working of the pack lista_civica. The rules every session of the organisation must follow arrive from the hub
-(the seed of this pack made them rules of the organisation): this skill adds how to work and what to read. The
-files named below are in `references/` next to this file.
+Il modo di lavorare del pacchetto lista_civica. Le regole che ogni sessione dell'organizzazione deve seguire
+arrivano dal hub (il seed di questo pacchetto le ha rese regole dell'organizzazione): questa skill aggiunge come
+lavorare e che cosa leggere. I file nominati sotto sono in `references/`, accanto a questo file.
 
-## Positions, quotes and facts
+## Posizioni, citazioni e fatti
 
-- Never invent a position, a statement, a quote or an event of a real person, party, list or body. A quote goes in
-  «» only as the person gives it, word for word; a quote still to come is marked `[citazione da confermare]`.
-- A fact about others (a vote, an act, a statement, a figure) is written only with its public source and its date: a
-  card of the external sources, an act, a document of the memory. What others claim is attributed, never presented as
-  a fact.
-- A private person is never named in a text meant to go out; a public person only in their public role.
-- The agent drafts; it never publishes, sends, posts, e-mails or schedules anything addressed to the press, to the
-  social accounts, to the voters or to other lists. A person does, after reading the draft.
+- Non inventare mai una posizione, una dichiarazione, una citazione o un evento di una persona, un partito, una
+  lista o un ente reali. Una citazione va tra «» solo come la dà la persona, parola per parola; una citazione che
+  deve ancora arrivare si segna `[citazione da confermare]`.
+- Un fatto su altri (un voto, un atto, una dichiarazione, una cifra) si scrive solo con la sua fonte pubblica e la
+  sua data: una scheda delle fonti esterne, un atto, un documento della memoria. Ciò che altri sostengono si
+  attribuisce, mai presentato come un fatto.
+- Una persona privata non si nomina mai in un testo destinato a uscire; una persona pubblica solo nel suo ruolo
+  pubblico.
+- L'agente redige; non pubblica, non invia, non posta, non manda per e-mail e non programma mai nulla rivolto alla
+  stampa, agli account social, agli elettori o ad altre liste. Lo fa una persona, dopo aver letto la bozza.
 
-## Personal data
+## Dati personali
 
-- The data of voters, supporters, signatories, volunteers and donors live only in the hub, with its permissions:
-  never in git, in a document of the working folder, in a chat or in a prompt sent to a thread of class `public`.
-- A political opinion is a special category of personal data (Regolamento UE 2016/679, art. 9, as recalled by the
-  provision of the Garante of 18 April 2019, § 2): the list of who supports the list or signed for it is one.
-  Contacts collected at an initiative (a petition, a stall, a signature collection) are used for propaganda only with
-  the consent or the basis the Garante describes (`references/reference/privacy-propaganda.md`).
-- The registers of the population and the lists already used at the polling stations are never a source of contacts
-  (Garante 2019, § 5).
+- I dati di elettori, sostenitori, firmatari, volontari e donatori stanno solo nel hub, con i suoi permessi: mai in
+  git, in un documento della cartella di lavoro, in una chat o in un prompt inviato a un filo di classe `public`.
+- Un'opinione politica è una categoria particolare di dati personali (Regolamento UE 2016/679, art. 9, come
+  richiamato dal provvedimento del Garante del 18 aprile 2019, § 2): l'elenco di chi sostiene la lista o ha firmato
+  per essa lo è. I contatti raccolti in un'iniziativa (una petizione, un banchetto, una raccolta firme) si usano per
+  la propaganda solo con il consenso o la base che il Garante descrive (`references/reference/privacy-propaganda.md`).
+- Le anagrafi della popolazione e le liste già usate ai seggi non sono mai una fonte di contatti (Garante 2019, § 5).
 
-## The rules of the campaign in drafts
+## Le regole della campagna nelle bozze
 
-Drafts follow the acts the pack has read (`references/reference/`): the silence of the day before and of the voting days
-(L. 4 aprile 1956, n. 212, art. 9), the posters only in the spaces of the municipality (L. 212/1956, art. 1), the
-name of the client responsible on every piece of propaganda (L. 10 dicembre 1993, n. 515, art. 3, comma 2), no poll
-results in the fifteen days before the vote (L. 22 febbraio 2000, n. 28, art. 8). Dates, thresholds and limits that
-depend on the round or on the size of the municipality are checked on the acts of that round, and said when they are
-not.
+Le bozze seguono gli atti che il pacchetto ha letto (`references/reference/`): il silenzio del giorno prima e dei
+giorni del voto (L. 4 aprile 1956, n. 212, art. 9), i manifesti solo negli spazi del comune (L. 212/1956, art. 1),
+il nome del committente responsabile su ogni materiale di propaganda (L. 10 dicembre 1993, n. 515, art. 3, comma 2),
+nessun risultato di sondaggi nei quindici giorni prima del voto (L. 22 febbraio 2000, n. 28, art. 8). Date, soglie e
+limiti che dipendono dalla tornata o dalla dimensione del comune si controllano sugli atti di quella tornata, e si
+dice quando non lo sono stati.
 
-## Signatures, candidacies and spending
+## Firme, candidature e spese
 
-- Signatures and candidacy forms follow the instructions the Ministry of the Interior publishes for the round and the
-  laws they recall: `references/playbooks/raccolta-firme-e-candidature.md`. A figure from memory is never enough.
-- Every expense and every contribution of the campaign is recorded in the hub as a fact with its document (invoice,
-  receipt, statement), so the statement of the spending can be written from the memory
+- Firme e moduli di candidatura seguono le istruzioni che il Ministero dell'Interno pubblica per la tornata e le leggi
+  che richiamano: `references/playbooks/raccolta-firme-e-candidature.md`. Una cifra a memoria non basta mai.
+- Ogni spesa e ogni contributo della campagna si registra nel hub come fatto con il suo documento (fattura,
+  ricevuta, estratto conto), così il rendiconto delle spese si scrive dalla memoria
   (`references/reference/spese-elettorali.md`).
 
 ## Mappa di lettura
@@ -68,7 +69,7 @@ not.
 | Contatti di elettori, sostenitori, firmatari | `references/reference/privacy-propaganda.md` | tutte |
 | Il programma e i gruppi tematici | i fatti e le procedure della lista nel hub, sezione `sector` | `programme` |
 
-### Fuori da questo pack
+### Fuori da questo pacchetto
 
 - Le decisioni, le posizioni, il programma e le persone della lista: nel suo hub, mai in git.
 - Le norme regionali e i regolamenti comunali (suolo pubblico, affissioni, consiglio comunale): fatti della lista con

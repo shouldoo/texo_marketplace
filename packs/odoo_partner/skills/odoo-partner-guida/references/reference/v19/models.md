@@ -1,58 +1,58 @@
 ---
 type: "Reference"
-title: "Models & ORM — Delta Odoo 19"
-description: "Models & ORM — Delta Odoo 19: i cambi di Odoo 19 rispetto alla versione prima, da leggere con le lesson del tag models e con il codice della versione."
+title: "Modelli e ORM — Delta Odoo 19"
+description: "Modelli e ORM — Delta Odoo 19: i cambi di Odoo 19 rispetto alla versione prima, da leggere con le lezioni del tag models e con il codice della versione."
 tags: ["models", "v19"]
 ---
 
-# Models & ORM — Delta Odoo 19
+# Modelli e ORM — Delta Odoo 19
 
-> Per i progetti su Odoo 19, insieme alle lesson del hub con il tag `models` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-19` (`.texo/THREADS.md`). Breaking change 18→19 ed errori specifici della versione.
+> Per i progetti su Odoo 19, insieme alle lezioni del hub con il tag `models` (`texo search "<parole>" --scope lessons`) e al codice della versione nel mirror del filo `odoo-19` (`.texo/THREADS.md`). Breaking change 18→19 ed errori specifici della versione.
 
-## Changed in 19.0
+## Cambiato in 19.0
 
-| What Changed | Before (18.0) | Now (19.0) | Impact |
+| Cosa cambia | Prima (18.0) | Ora (19.0) | Impatto |
 |-------------|---------------|------------|--------|
-| `name_get()` | Deprecated (still works) | **Fully removed** | **Breaking** -- any `name_get()` override causes `AttributeError` |
-| `read_group()` | Public API method | **Replaced** by `_read_group()` and `formatted_read_group()` | **Breaking** -- direct `read_group()` calls fail |
-| `@api.returns` | Available (deprecated) | **Removed** | **Breaking** -- decorator causes `AttributeError` |
-| `_sql_constraints` | Standard list of tuples | `models.Constraint` class **required** | **Breaking** -- old attribute is only logged as a warning and the constraint is silently never created (no SQL constraint ends up on the DB) |
-| Domain expressions | `from odoo.osv import expression` + `expression.OR(...)` | `from odoo.fields import Domain` + `Domain(...) \| Domain(...)` | **New API** -- old import still works but new `Domain` class preferred |
-| `self.user_has_groups('xmlid')` | Method on models | **Removed** | **Breaking** -- `AttributeError`; use `self.env.user.has_group('xmlid')` |
-| `@api.depends('id')` | Tolerated | **Prohibited** -- raises `NotImplementedError` | **Breaking** -- a compute cannot depend on `id` |
-| `from odoo.addons.http_routing.models.ir_http import slug` | Importable | **Removed** | **Breaking** -- use `IrHttp._slug` (see below) |
-| `from odoo.addons.base.models.res_partner import WARNING_MESSAGE` | Importable | **Removed** | **Breaking** -- drop the import |
+| `name_get()` | Deprecato (funziona ancora) | **Rimosso del tutto** | **Incompatibile** -- qualsiasi override di `name_get()` causa `AttributeError` |
+| `read_group()` | Metodo dell'API pubblica | **Sostituito** da `_read_group()` e `formatted_read_group()` | **Incompatibile** -- le chiamate dirette a `read_group()` falliscono |
+| `@api.returns` | Disponibile (deprecato) | **Rimosso** | **Incompatibile** -- il decoratore causa `AttributeError` |
+| `_sql_constraints` | Lista standard di tuple | Classe `models.Constraint` **obbligatoria** | **Incompatibile** -- il vecchio attributo produce solo un avviso nel log e il vincolo non viene mai creato, senza avvisi (sul DB non finisce nessun vincolo SQL) |
+| Espressioni di dominio | `from odoo.osv import expression` + `expression.OR(...)` | `from odoo.fields import Domain` + `Domain(...) \| Domain(...)` | **Nuova API** -- il vecchio import funziona ancora ma è preferita la nuova classe `Domain` |
+| `self.user_has_groups('xmlid')` | Metodo sui modelli | **Rimosso** | **Incompatibile** -- `AttributeError`; usare `self.env.user.has_group('xmlid')` |
+| `@api.depends('id')` | Tollerato | **Vietato** -- solleva `NotImplementedError` | **Incompatibile** -- un compute non può dipendere da `id` |
+| `from odoo.addons.http_routing.models.ir_http import slug` | Importabile | **Rimosso** | **Incompatibile** -- usare `IrHttp._slug` (vedi sotto) |
+| `from odoo.addons.base.models.res_partner import WARNING_MESSAGE` | Importabile | **Rimosso** | **Incompatibile** -- togliere l'import |
 
-### `user_has_groups` removed → `has_group`
+### `user_has_groups` rimosso → `has_group`
 
 ```python
-# WRONG (≤18.0):
+# SBAGLIATO (≤18.0):
 if self.user_has_groups('stock.group_stock_manager'):
     ...
-# CORRECT (19.0): singular has_group on res.users is the public API
+# CORRETTO (19.0): has_group (singolare) su res.users è l'API pubblica
 if self.env.user.has_group('stock.group_stock_manager'):
     ...
 ```
 
-### `slug` import moved
+### Import di `slug` spostato
 
 ```python
-# WRONG (≤18.0):
+# SBAGLIATO (≤18.0):
 from odoo.addons.http_routing.models.ir_http import slug
-# CORRECT (19.0):
+# CORRETTO (19.0):
 from odoo.addons.base.models.ir_http import IrHttp
 slug = IrHttp._slug
 ```
 
-### Never `@classmethod` on ORM CRUD overrides
+### Mai `@classmethod` sugli override CRUD dell'ORM
 
-`create()`, `write()`, `default_get()` are **instance** methods. A leftover/bogus
-`@classmethod` (sometimes inherited from old code or scaffolding) breaks the signature:
-`TypeError: BaseModel.<method>() missing 1 required positional argument`. Always drop it.
+`create()`, `write()`, `default_get()` sono metodi **di istanza**. Un `@classmethod` rimasto o errato (a volte
+ereditato da codice vecchio o da uno scaffolding) rompe la firma:
+`TypeError: BaseModel.<method>() missing 1 required positional argument`. Toglierlo sempre.
 
-### `name_get()` fully removed -- use `_compute_display_name()`
+### `name_get()` rimosso del tutto -- usare `_compute_display_name()`
 
-**WRONG (causes error in 19.0):**
+**SBAGLIATO (errore in 19.0):**
 ```python
 def name_get(self):
     result = []
@@ -61,7 +61,7 @@ def name_get(self):
     return result
 ```
 
-**CORRECT (19.0):**
+**CORRETTO (19.0):**
 ```python
 @api.depends("code", "name")
 def _compute_display_name(self):
@@ -69,11 +69,13 @@ def _compute_display_name(self):
         record.display_name = f"[{record.code}] {record.name}"
 ```
 
-**Why:** `name_get()` was deprecated in 18.0 and fully removed in 19.0. Use the `display_name` computed field with `_compute_display_name()` instead. This method is a standard compute method decorated with `@api.depends`.
+**Perché:** `name_get()` era deprecato in 18.0 ed è stato rimosso del tutto in 19.0. Usare invece il campo
+calcolato `display_name` con `_compute_display_name()`. Questo metodo è un normale metodo compute decorato con
+`@api.depends`.
 
-### `read_group()` replaced by `_read_group()` and `formatted_read_group()`
+### `read_group()` sostituito da `_read_group()` e `formatted_read_group()`
 
-**WRONG (fails in 19.0):**
+**SBAGLIATO (fallisce in 19.0):**
 ```python
 results = self.env["sale.order"].read_group(
     domain=[("state", "=", "sale")],
@@ -82,7 +84,7 @@ results = self.env["sale.order"].read_group(
 )
 ```
 
-**CORRECT (19.0):**
+**CORRETTO (19.0):**
 ```python
 results = self.env["sale.order"]._read_group(
     domain=[("state", "=", "sale")],
@@ -91,18 +93,19 @@ results = self.env["sale.order"]._read_group(
 )
 ```
 
-**Why:** The public `read_group()` method was replaced. Use `_read_group()` for internal Python code or `formatted_read_group()` when you need the legacy dict-style output format.
+**Perché:** il metodo pubblico `read_group()` è stato sostituito. Usare `_read_group()` nel codice Python
+interno, oppure `formatted_read_group()` quando serve il vecchio formato di output a dict.
 
-### `models.Constraint` required for SQL constraints (`_sql_constraints` is silently dead)
+### `models.Constraint` obbligatorio per i vincoli SQL (`_sql_constraints` è morto senza avvisi)
 
-**WRONG (fails silently in 19.0 -- no error, no constraint):**
+**SBAGLIATO (fallisce senza avvisi in 19.0 -- nessun errore, nessun vincolo):**
 ```python
 _sql_constraints = [
     ("code_unique", "UNIQUE(code)", "The code must be unique."),
 ]
 ```
 
-**CORRECT (19.0):** the attribute name IS the constraint name.
+**CORRETTO (19.0):** il nome dell'attributo È il nome del vincolo.
 ```python
 from odoo import models
 
@@ -112,22 +115,23 @@ _code_unique = models.Constraint(
 )
 ```
 
-**The attribute name MUST start with `_`** (verified on `odoo/orm/table_objects.py`, 19.0
-build 2026-08): `code_unique = models.Constraint(...)` (without underscore) fails at import with
+**Il nome dell'attributo DEVE iniziare con `_`** (verificato su `odoo/orm/table_objects.py`, build 19.0
+2026-08): `code_unique = models.Constraint(...)` (senza underscore) fallisce all'import con
 `AssertionError: Names of SQL objects in a model must start with '_'` / `Error calling __set_name__
-on 'Constraint' instance '...'`, i.e. the whole module fails to load. The DB constraint is named
-`<table>_<name without the leading _>` (e.g. `res_company_expense_bill_reminder_days_positive`).
-The same rule applies to `models.Index` (see below, already prefixed `_..._idx`).
+on 'Constraint' instance '...'`, cioè l'intero modulo non si carica. Il vincolo sul DB si chiama
+`<tabella>_<nome senza il _ iniziale>` (es. `res_company_expense_bill_reminder_days_positive`).
+La stessa regola vale per `models.Index` (vedi sotto, già con il prefisso `_..._idx`).
 
-**Why:** verified against `odoo/orm/model_classes.py` in the 19.0 source: the loader only does
+**Perché:** verificato su `odoo/orm/model_classes.py` nei sorgenti 19.0: quando trova `_sql_constraints` il
+loader si limita a
 `_logger.warning("Model attribute '_sql_constraints' is no longer supported, please define models.Constraint on the model.")`
-when it sees `_sql_constraints` -- it is never parsed into an actual SQL constraint. A module
-migrated from ≤18.0 that still declares `_sql_constraints` installs cleanly (only a log
-warning) but the uniqueness/check constraint is **not present on the DB**, so invalid data
-you expected to be rejected passes through. This is a data-integrity regression, not a
-cosmetic deprecation -- always port to `models.Constraint` when touching a v19 model.
+: l'attributo non viene mai trasformato in un vero vincolo SQL. Un modulo migrato da ≤18.0 che dichiara ancora
+`_sql_constraints` si installa senza errori (solo un avviso nel log) ma il vincolo di unicità/check **non è
+presente sul DB**, e i dati non validi che ci si aspettava fossero respinti passano. È una regressione
+dell'integrità dei dati, non una deprecazione cosmetica -- portare sempre a `models.Constraint` quando si tocca
+un modello v19.
 
-### `models.Index` (19.0) -- companion to `models.Constraint`
+### `models.Index` (19.0) -- il compagno di `models.Constraint`
 
 ```python
 from odoo import models
@@ -135,67 +139,69 @@ from odoo import models
 _journal_id_company_id_idx = models.Index("(journal_id, company_id)")
 ```
 
-Same pattern as `models.Constraint`: the attribute name is arbitrary (by convention prefixed
-`_..._idx`), the value is the raw index expression.
+Stesso pattern di `models.Constraint`: il nome dell'attributo è libero (per convenzione con il prefisso
+`_..._idx`), il valore è l'espressione grezza dell'indice.
 
-### Domain Construction — OR/AND Composition
+### Costruzione dei domini — composizione OR/AND
 
-WRONG (Odoo 19.0 — deprecated):
+SBAGLIATO (Odoo 19.0 — deprecato):
 ```python
 from odoo.osv.expression import OR, AND
 domain = OR([[('state', '=', 'draft')], [('state', '=', 'sent')]])
 combined = AND([domain, [('active', '=', True)]])
 ```
 
-CORRECT (Odoo 19.0):
+CORRETTO (Odoo 19.0):
 ```python
 from odoo.fields import Domain
 domain = Domain("state", "=", "draft") | Domain("state", "=", "sent")
 combined = domain & Domain("active", "=", True)
 ```
 
-CORRECT (Odoo 17.0-18.0 — expression module still available):
+CORRETTO (Odoo 17.0-18.0 — il modulo expression è ancora disponibile):
 ```python
 from odoo.osv import expression
 domain = expression.OR([[('state', '=', 'draft')], [('state', '=', 'sent')]])
 ```
 
-Note: Simple list syntax `[('field', 'op', value)]` remains valid in all versions.
-Use `Domain` class only when composing OR/AND logic in Odoo 19.0+.
+Nota: la semplice sintassi a lista `[('field', 'op', value)]` resta valida in tutte le versioni.
+Usare la classe `Domain` solo quando si compone logica OR/AND in Odoo 19.0 e successive.
 
-### @api.private (Odoo 19.0+)
+### @api.private (Odoo 19.0 e successive)
 
-Marks methods as non-RPC-callable. Prevents external API access to internal logic.
+Marca i metodi come non richiamabili via RPC. Impedisce l'accesso alla logica interna dall'API esterna.
 
-**WRONG (Odoo 19.0 -- internal method exposed to RPC):**
+**SBAGLIATO (Odoo 19.0 -- metodo interno esposto a RPC):**
 ```python
 def _prepare_invoice_values(self):
     return {'partner_id': self.partner_id.id}
 ```
 
-**CORRECT (Odoo 19.0 -- internal method protected):**
+**CORRETTO (Odoo 19.0 -- metodo interno protetto):**
 ```python
 @api.private
 def _prepare_invoice_values(self):
     return {'partner_id': self.partner_id.id}
 ```
 
-**Why:** Without `@api.private`, any method starting with `_` can still be called via XML-RPC or JSON-RPC by external integrations. `@api.private` blocks RPC access entirely, hardening internal logic against unauthorized external calls.
+**Perché:** senza `@api.private`, qualsiasi metodo che inizia con `_` può ancora essere chiamato via XML-RPC o
+JSON-RPC dalle integrazioni esterne. `@api.private` blocca del tutto l'accesso RPC e protegge la logica
+interna dalle chiamate esterne non autorizzate.
 
-**Do NOT use `@api.private` on:**
-- ORM overrides: `create()`, `write()`, `unlink()`
-- Computed field methods with `@api.depends`
-- Constraint methods with `@api.constrains`
-- Onchange methods with `@api.onchange`
-- Methods decorated with `@api.model` or `@api.model_create_multi`
-- Methods called by XML actions or buttons (these need RPC access)
-- ORM hooks: `_search_display_name()`, `_compute_display_name()`
-- Cached methods with `@tools.ormcache`
+**NON usare `@api.private` su:**
+- override dell'ORM: `create()`, `write()`, `unlink()`
+- metodi dei campi calcolati con `@api.depends`
+- metodi di vincolo con `@api.constrains`
+- metodi onchange con `@api.onchange`
+- metodi decorati con `@api.model` o `@api.model_create_multi`
+- metodi chiamati da azioni XML o da pulsanti (hanno bisogno dell'accesso RPC)
+- hook dell'ORM: `_search_display_name()`, `_compute_display_name()`
+- metodi in cache con `@tools.ormcache`
 
-**Use `@api.private` on:**
-- `_prepare_*` helper methods
-- `_get_*` internal data retrieval
-- `_audit_*` internal audit helpers
-- `_webhook_*` internal extension points
-- `_post_*` internal processing hooks
-- Any standalone `_check_*` validator not decorated with `@api.constrains`
+**Usare `@api.private` su:**
+- metodi di supporto `_prepare_*`
+- lettura interna di dati `_get_*`
+- metodi di supporto interni per l'audit `_audit_*`
+- punti di estensione interni `_webhook_*`
+- hook interni di elaborazione `_post_*`
+- qualsiasi validatore `_check_*` a sé stante non decorato con `@api.constrains`

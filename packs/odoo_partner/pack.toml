@@ -1,47 +1,47 @@
-# The contract of this pack with the texo CLI (texo/packs.py of the core).
+# Il contratto di questo pacchetto con la CLI texo (texo/packs.py del core).
 [pack]
 name = "odoo_partner"
-version = "v1.1.0"
+version = "v1.2.0"
 core = ">=2.2, <3"
 hub = ">=20.0.1.0.0"
-# created by texo mount in the working folder, never versioned there
+# create da texo mount nella cartella di lavoro, mai versionate lì
 work_dirs = ["progetti", "modules/V17", "modules/V18", "modules/V19", "modules/V20", "odoo/odoo-clients"]
 
-# The threads this pack suggests: texo mount says which are missing. Declare them in the threads of the hub
-# (Texo Threads) and pin their ref; add one odoo-<NN> per version in use and one oca-<repo> per OCA repository
-# the projects use (their .gitmodules list them).
-# The threads the pack carries: part of its method, mounted with it at the ref its version pins (core 2.2). The hub
-# replaces one by declaring a thread with the same id.
+# I fili che questo pacchetto suggerisce: texo mount dice quali mancano. Dichiarali tra i fili del hub
+# (Texo Threads) e fissane il ref; aggiungi un odoo-<NN> per ogni versione in uso e un oca-<repo> per ogni
+# repository OCA che i progetti usano (li elencano i loro .gitmodules).
+# I fili che il pacchetto porta: parte del suo metodo, montati con lui al ref che la sua versione fissa (core 2.2).
+# Il hub ne sostituisce uno dichiarando un filo con lo stesso id.
 [[thread]]
 id = "odoo-skills"
 type = "source"
 driver = "git-mirror"
 repo = "github.com/odoo/odoo"
-# master of odoo/odoo on 2026-11-05: a new version of the pack moves it
+# master di odoo/odoo al 2026-11-05: una nuova versione del pacchetto lo sposta
 ref = "906fa5c4ebf95ddf4d50282eb3feda608aa9f02c"
 paths = ["skills"]
 skills = "skills"
 data_class = "public"
-guide = "The official skills of Odoo (odoo-guidelines, odoo-web-guidelines, odoo-review, odoo-security, odoo-git): the house rules of Odoo for module code, loaded when a task matches."
+guide = "Le skill ufficiali di Odoo (odoo-guidelines, odoo-web-guidelines, odoo-review, odoo-security, odoo-git): le regole della casa di Odoo per il codice dei moduli, caricate quando un compito corrisponde."
 
 [[suggested_thread]]
 id = "odoo-20"
-why = "the source of Odoo Community 20.0: names of fields, methods and views are checked there, never guessed"
+why = "il sorgente di Odoo Community 20.0: i nomi di campi, metodi e viste si controllano lì, mai a intuito"
 type = "source"
 driver = "git-mirror"
 repo = "github.com/odoo/odoo"
 ref = "<commit of 20.0>"
 paths = ["addons", "odoo"]
 data_class = "public"
-guide = "Odoo Community 20.0: rg the models, views and tests of the module you touch before writing code."
+guide = "Odoo Community 20.0: cerca con rg i modelli, le viste e i test del modulo che tocchi prima di scrivere codice."
 
 [[suggested_thread]]
 id = "openupgrade-20"
-why = "the analyses of OCA/OpenUpgrade: what changed from 19.0 to 20.0 (the script build_ontology.py of the pack)"
+why = "le analisi di OCA/OpenUpgrade: che cosa è cambiato dalla 19.0 alla 20.0 (lo script build_ontology.py del pacchetto)"
 type = "source"
 driver = "git-mirror"
 repo = "github.com/OCA/OpenUpgrade"
 ref = "<commit of 20.0>"
 paths = ["openupgrade_scripts"]
 data_class = "public"
-guide = "Version changes of Odoo Community, model by model: for a migration and for a port between versions."
+guide = "I cambi di versione di Odoo Community, modello per modello: per una migrazione e per un porting tra versioni."

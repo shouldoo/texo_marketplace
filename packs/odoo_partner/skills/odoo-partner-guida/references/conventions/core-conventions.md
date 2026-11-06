@@ -99,7 +99,7 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
 ## Dati dei progetti: dove stanno
 
 - **Procedurale** (convenzioni, reference Odoo per versione, playbook, skill):
-  in git, in questo pack (del pack) e in `conventions/` e `skills/` del customer. Solo
+  in git, in questo pacchetto (del pacchetto) e in `conventions/` e `skills/` del customer. Solo
   contenuto generico e anonimo.
 - **Per progetto** (perimetro, ambienti, moduli installati e decisioni nella
   description; roadmap nelle milestone; presente nell'ultimo update; eventi nel
@@ -121,7 +121,7 @@ Header copyright in ogni file Python: `# $AUTHOR_NAME`.
   dall'istanza; in locale e in stage solo database neutralizzati e
   anonimizzati.
 - Una soluzione nata su un progetto e riusabile altrove diventa una lezione del hub senza cliente; arriva
-  in questo pack (`conventions/patterns/`) solo riscritta in astratto, verificata su una fonte pubblica,
+  in questo pacchetto (`conventions/patterns/`) solo riscritta in astratto, verificata su una fonte pubblica,
   con una pull request rivista.
 
 ## Allegati e deliverable

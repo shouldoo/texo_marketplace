@@ -7,7 +7,7 @@ tags: ["rendicontazione", "progetto", "finanziamento"]
 
 # Playbook: la rendicontazione di un progetto finanziato
 
-> Il progetto nel hub parte dal template «Funded project (template)». Riferimento:
+> Il progetto nel hub parte dal template «Progetto finanziato (template)». Riferimento:
 > `reference/bandi-e-rendicontazione.md`. Le cifre vengono dalla contabilità; l'agente le raccoglie, le
 > confronta e segnala ciò che non torna, non le stima.
 

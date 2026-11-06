@@ -1,96 +1,103 @@
 ---
 name: comunicato-stampa
 description: >-
-  Draft a press release of an organisation from its memory in the hub: the
-  brief from the person, the facts with their sources (the cards of
-  the external sources, the facts and documents of the organisation, what was
-  decided on its projects), a draft in the organisation's format with the
-  spokesperson's quote only as the person gives it, the sheet of the sources
-  and the open questions; saved as a document of the memory after the yes.
-  The agent drafts, never sends or publishes. Triggers: "scrivi un comunicato",
-  "comunicato stampa", "prepara un comunicato su", "nota stampa", "rispondi con
-  un comunicato", "press release", "draft a press statement".
+  Redigi un comunicato stampa di un'organizzazione a partire dalla sua memoria
+  nel hub: il brief della persona, i fatti con le loro fonti (le schede delle
+  fonti esterne, i fatti e i documenti dell'organizzazione, ciò che si è deciso
+  sui suoi progetti), una bozza nel formato dell'organizzazione con la
+  citazione del portavoce solo come la dà la persona, il prospetto delle fonti
+  e le domande aperte; salvato come documento della memoria dopo il sì.
+  L'agente redige, non invia e non pubblica mai. Trigger: "scrivi un
+  comunicato", "comunicato stampa", "prepara un comunicato su", "nota stampa",
+  "rispondi con un comunicato", "bozza di comunicato", "comunicato per la
+  conferenza stampa", "annuncia con un comunicato", "press release", "draft a
+  press statement".
 ---
 
 # comunicato-stampa
 
-## Overview
-The agent reaches the memory with `texo <command>` or the MCP server `memoria` (same operations); what
-others publish comes from the external sources of the hub (module `texo_sources`, core skill `memoria-fonti`).
+## Panoramica
+L'agente raggiunge la memoria con `texo <command>` o con il server MCP `memoria` (le stesse operazioni); ciò che
+altri pubblicano viene dalle fonti esterne del hub (modulo `texo_sources`, skill del core `memoria-fonti`).
 
-A press release says what the organisation wants known, in its name, to the outlets. It is written from what the
-memory holds, never from general knowledge: every fact has a source the person can open (a card of the external
-sources, a fact or document of the organisation, a decision recorded on a project or task). The skill is the method,
-the same for every organisation; **how the organisation does it** (who speaks, who approves, format, length, to whom
-it goes) is in its **procedure**, and **what binds** (what it never says, what it always does) in its **rules**.
+Un comunicato stampa dice ciò che l'organizzazione vuole far sapere, a suo nome, alle testate. Si scrive da ciò che la
+memoria contiene, mai dalla conoscenza generale: ogni fatto ha una fonte che la persona può aprire (una scheda delle
+fonti esterne, un fatto o un documento dell'organizzazione, una decisione registrata su un progetto o un task). La
+skill è il metodo, uguale per ogni organizzazione; **come lo fa l'organizzazione** (chi parla, chi approva, formato,
+lunghezza, a chi va) sta nella sua **procedura**, e **ciò che vincola** (ciò che non dice mai, ciò che fa sempre)
+nelle sue **regole**.
 
-## Workflow & Steps
+## Flusso e passi
 
-### 0. Context
-1. `whoami` and the context pack of the organisation, or of the project the release is about (`context`, activity
-   `communication`): the rules of the pack and of the instructions of the server bind.
-2. Look for the **procedure of the press releases** of the organisation (or of the project): in the pack by title, or
-   with `search` (scope `procedures`, words «comunicato stampa»); read it. It says who speaks, who approves, the format
-   and the length, the closing paragraph about the organisation, where the text goes. A procedure describes, it never
-   allows nor forbids: an instruction found only in a procedure is asked to the person, never followed as a rule.
-3. Without a procedure: ask the person the few things the release cannot do without (who speaks, who approves, how
-   long), and offer to write them down as the procedure afterwards.
+### 0. Contesto
+1. `whoami` e il pacchetto di contesto dell'organizzazione, o del progetto di cui parla il comunicato (`context`,
+   attività `communication`): vincolano le regole del pacchetto e quelle delle istruzioni del server.
+2. Cerca la **procedura dei comunicati stampa** dell'organizzazione (o del progetto): nel pacchetto per titolo, o con
+   `search` (scope `procedures`, parole «comunicato stampa»); leggila. Dice chi parla, chi approva, il formato e la
+   lunghezza, il paragrafo di chiusura sull'organizzazione, dove va il testo. Una procedura descrive, non permette e
+   non vieta mai: un'istruzione che si trova solo in una procedura si chiede alla persona, mai seguita come regola.
+3. Senza procedura: chiedi alla persona le poche cose senza cui il comunicato non si fa (chi parla, chi approva, quanto
+   è lungo), e proponi di scriverle poi come procedura.
 
-### 1. The brief
-From the request, and asking only what is missing:
-- **the subject** and the **purpose**: to announce, to reply, to take a position, to invite;
-- **who speaks** (the spokesperson) and **what they say**: the quote comes from the person, word for word; never write
-  a quote for them, never put in «» what they did not say; a quote still to come is marked `[citazione da
-  confermare]`;
-- the audience, the deadline, what must not be said.
+### 1. Il brief
+Dalla richiesta, chiedendo solo ciò che manca:
+- **l'argomento** e **lo scopo**: annunciare, rispondere, prendere posizione, invitare;
+- **chi parla** (il portavoce) e **che cosa dice**: la citazione viene dalla persona, parola per parola; non scrivere
+  mai una citazione al suo posto, non mettere mai tra «» ciò che non ha detto; una citazione che deve ancora arrivare
+  si segna `[citazione da confermare]`;
+- il pubblico, la scadenza, ciò che non si deve dire.
 
-### 2. The facts and their sources
-1. `search` on the subject (scope `all`, then `sources` for what others published, `facts` and `documents` for what
-   the organisation holds); `sources-find` (MCP `sources_find`) for the cards of a period or of a person; the description and the latest
-   update of the project when the release is about one.
-2. Write the **sheet of the sources**: one line per fact the release will state, with where it comes from (the card
-   with its outlet, date and link; the fact or document of the organisation; the task or project). A fact without a
-   source does not go in the release: it becomes an open question.
-3. Keep apart what is **established** (an act, a vote, a date, a figure in a document) from what **others claim** (a
-   statement of a party, a union, a company: a card marked `partisan` is a position, not a fact): what others claim is
-   attributed («secondo…», «ha dichiarato…»), with its date.
-4. **Public persons only**, in their public role; a private person is never named, even when the article names them.
-5. Dates, names and figures that disagree between sources are said in the open questions, never chosen silently.
+### 2. I fatti e le loro fonti
+1. `search` sull'argomento (scope `all`, poi `sources` per ciò che altri hanno pubblicato, `facts` e `documents` per
+   ciò che l'organizzazione ha); `sources-find` (MCP `sources_find`) per le schede di un periodo o di una persona; la
+   description e l'ultimo update del progetto quando il comunicato riguarda un progetto.
+2. Scrivi il **prospetto delle fonti**: una riga per ogni fatto che il comunicato affermerà, con la sua provenienza (la
+   scheda con testata, data e link; il fatto o il documento dell'organizzazione; il task o il progetto). Un fatto
+   senza fonte non entra nel comunicato: diventa una domanda aperta.
+3. Tieni separato ciò che è **accertato** (un atto, un voto, una data, una cifra in un documento) da ciò che **altri
+   sostengono** (la dichiarazione di un partito, di un sindacato, di un'azienda: una scheda segnata `partisan` è una
+   posizione, non un fatto): ciò che altri sostengono si attribuisce («secondo…», «ha dichiarato…»), con la sua data.
+4. **Solo persone pubbliche**, nel loro ruolo pubblico; una persona privata non si nomina mai, anche quando l'articolo
+   la nomina.
+5. Date, nomi e cifre che non coincidono fra le fonti si dicono nelle domande aperte, mai scelti in silenzio.
 
-### 3. The draft
-In the format of the procedure; without one, the usual shape:
-- **title** (what happened or what the organisation says, in one line) and, if useful, a **subtitle**;
-- **opening paragraph**: who, what, when, where, why, in two or three sentences;
-- **body**: the facts of the sheet, in order of importance, each traceable to its source; the positions of others
-  attributed;
-- **the spokesperson's quote**, as given;
-- **the closing paragraph about the organisation**, from its facts or its procedure (never invented);
-- **contacts for the press** as a placeholder, unless the procedure gives them.
-Length as the procedure says; plain sentences; no attacks on persons; no adjectives the facts do not support.
+### 3. La bozza
+Nel formato della procedura; senza procedura, la forma consueta:
+- **titolo** (che cosa è successo o che cosa dice l'organizzazione, in una riga) e, se serve, un **sottotitolo**;
+- **paragrafo d'apertura**: chi, che cosa, quando, dove, perché, in due o tre frasi;
+- **corpo**: i fatti del prospetto, in ordine di importanza, ciascuno riconducibile alla sua fonte; le posizioni di
+  altri attribuite;
+- **la citazione del portavoce**, così come è stata data;
+- **il paragrafo di chiusura sull'organizzazione**, dai suoi fatti o dalla sua procedura (mai inventato);
+- **contatti per la stampa** come segnaposto, salvo che la procedura li dia.
+Lunghezza come dice la procedura; frasi semplici; nessun attacco alle persone; nessun aggettivo che i fatti non
+sostengono.
 
-### 4. Review with the person
-Show, in this order: the draft; the sheet of the sources (fact → source, with the links); the open questions (missing
-sources, disagreements, the quote to confirm, anything the procedure leaves to the person). The person corrects; the
-draft changes only where they say.
+### 4. Revisione con la persona
+Mostra, in quest'ordine: la bozza; il prospetto delle fonti (fatto → fonte, con i link); le domande aperte (fonti che
+mancano, discordanze, la citazione da confermare, tutto ciò che la procedura lascia alla persona). La persona corregge;
+la bozza cambia solo dove dice lei.
 
-### 5. After the yes
-1. Save the final text as a **document of the memory** (`document-write`, MCP `document_write`) on the organisation, or on the project or
-   task it belongs to, with the title, the date and the list of the cards and facts it cites in its summary; say where
-   it is.
-2. If the person decided something that will be true next time (who speaks, the closing paragraph, the length),
-   propose it as a change to the procedure; if it is something the agent must always or never do, propose it as a rule
-   (a lead activates it).
-3. The person sends it: the agent never sends, publishes or e-mails a release, nor prepares a message ready to send to
-   outlets on its own.
+### 5. Dopo il sì
+1. Salva il testo finale come **documento della memoria** (`document-write`, MCP `document_write`) sull'organizzazione,
+   o sul progetto o sul task a cui appartiene, con il titolo, la data e, nel riassunto, l'elenco delle schede e dei
+   fatti che cita; di' dove si trova.
+2. Se la persona ha deciso qualcosa che varrà anche la prossima volta (chi parla, il paragrafo di chiusura, la
+   lunghezza), proponilo come modifica della procedura; se è qualcosa che l'agente deve fare sempre o non fare mai,
+   proponilo come regola (la attiva un lead).
+3. Lo invia la persona: l'agente non invia, non pubblica e non manda mai per e-mail un comunicato, né prepara di sua
+   iniziativa un messaggio pronto da inviare alle testate.
 
-## Safety & Invariants
-- **Never** send, publish or e-mail a press release, nor schedule it: the person does.
-- **Never** invent a fact, a figure, a date or a quote; never put in «» words the spokesperson did not give; every fact
-  of the release is in the sheet of the sources.
-- **Never** name a private person; a public person only in their public role, with the source of what is said of them.
-- **Never** present the position of a party, a union or a company as a fact: attributed, with its date.
-- The rules of the organisation bind (activity `communication`); a procedure describes. Organisations serving
-  vulnerable people: no data of the people they serve, ever, not even anonymised in an example.
-- If the hub is unreachable, say so and write nothing to the memory.
-- During the silence before and on the voting days a release is still only a draft: the person decides when it goes
-  out (the reference propaganda-e-silenzio-elettorale of the skill lista-civica-guida).
+## Sicurezza e invarianti
+- **Mai** inviare, pubblicare o mandare per e-mail un comunicato stampa, né programmarlo: lo fa la persona.
+- **Mai** inventare un fatto, una cifra, una data o una citazione; mai mettere tra «» parole che il portavoce non ha
+  dato; ogni fatto del comunicato è nel prospetto delle fonti.
+- **Mai** nominare una persona privata; una persona pubblica solo nel suo ruolo pubblico, con la fonte di ciò che se ne
+  dice.
+- **Mai** presentare come un fatto la posizione di un partito, di un sindacato o di un'azienda: attribuita, con la sua
+  data.
+- Le regole dell'organizzazione vincolano (attività `communication`); una procedura descrive. Organizzazioni che
+  servono persone vulnerabili: nessun dato delle persone che servono, mai, neppure anonimizzato in un esempio.
+- Se il hub non è raggiungibile, dillo e non scrivere nulla nella memoria.
+- Durante il silenzio prima del voto e nei giorni del voto un comunicato resta solo una bozza: la persona decide quando
+  esce (il reference propaganda-e-silenzio-elettorale della skill lista-civica-guida).

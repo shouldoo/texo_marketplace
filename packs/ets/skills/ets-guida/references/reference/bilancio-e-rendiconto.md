@@ -22,7 +22,7 @@ tags: ["bilancio", "rendiconto", "contabilita"]
 - Fatto nel hub: «Forma del bilancio», con le soglie lette, l'articolo, le entrate dell'esercizio dell'ente (dalla
   contabilità), il documento e il modello che ne seguono, la data di verifica; scadenza un anno.
 - Un ente che opera esclusivamente o principalmente in forma di impresa commerciale segue le scritture del
-  codice civile e il registro delle imprese (CTS, art. 13, commi 4-5): fuori dal perimetro di questo pack.
+  codice civile e il registro delle imprese (CTS, art. 13, commi 4-5): fuori dal perimetro di questo pacchetto.
 
 ## Che cosa ci va
 
