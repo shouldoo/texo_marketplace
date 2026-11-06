@@ -17,7 +17,7 @@ map, with its references in `skills/*-guida/references/`.
 
 ### v1.3.0
 
-- The demo of the pack: «Terni 2027», the civic list of the scenario S3 of the measures of the memory, as its curated layer (a searchable session note on every task, keywords, summaries) with the verified public facts, the public acts converted with Docling (`demo/texts/`), 45 press and video cards as cards of the external sources (`SOURCES`, read by the loader of a core later than 2.2.1) and the four question sets in one file (`demo/questions.json`, a `set` key per question), so the search of the memory can be measured on it with `eval_memoria.py`.
+- The demo of the pack: «Terni 2027», the civic list of the scenario S3 of the measures of the memory, as its curated layer (a searchable session note on every task, keywords, summaries) with the verified public facts, the public acts converted with Docling (`demo/texts/`), 45 press and video cards as cards of the external sources (`SOURCES`, read by the loader of the core from v2.3.0) and the four question sets in one file (`demo/questions.json`, a `set` key per question), so the search of the memory can be measured on it with `eval_memoria.py`.
 
 ### v1.2.0
 
