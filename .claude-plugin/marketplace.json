@@ -13,8 +13,8 @@
     {
       "name": "ets",
       "source": "./packs/ets",
-      "description": "Third sector organisations (ETS): the way of working with the people served, volunteers, funding, reporting and the registry, method references and playbooks, the hub seed of the sector.",
-      "version": "1.2.0"
+      "description": "Third sector organisations (ETS): the way of working with the people served, volunteers, funding, reporting and the registry, method references and playbooks, the hub seed of the sector and a demo.",
+      "version": "1.3.0"
     },
     {
       "name": "studio_progettazione",

@@ -1,0 +1,2246 @@
+{
+ "about": "The question sets of the demo of the pack ets (Ginestra APS, scenario S1 of the memory scenarios), measured on the curated layer with <core>/scripts/eval_memoria.py; expected records by title, resolved on the database. A: Question set A of scenario S1 (Ginestra APS), written knowing the data, 2026-11-01. B: Blind question set B of scenario S1 (Ginestra APS): written from the titles only, 2026-11-01. passaggi: Domande sul passaggio (articolo/comma o sezione) dei documenti dell'associazione del terzo settore, scritte il 2026-11-02 dai passaggi prodotti da structure.passages()",
+ "questions": [
+  {
+   "set": "A",
+   "query": "quando andiamo a ritirare il gazebo che ci prestano gli scout?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Evento in piazza 25/11"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti testi sono arrivati finora per il concorso di scrittura degli istituti superiori?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Premio racconti scuole superiori"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il video con le nostre voci a che punto sta? si è fatto vivo quello dei video?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Video campagna"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanto ci è costato l'intervento del tecnico sul riscaldamento della casa e su quale bilancio va messo?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Caldaia in blocco (E10)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la lavatrice che fa la pozza sotto, viene qualcuno a vederla?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Lavatrice perde acqua"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la macchia sul soffitto della stanza blu: chi paga i lavori del terrazzo?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Infiltrazione stanza blu"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "con chi l'abbiamo fatta la conta di tutta la roba su in magazzino?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Inventario materiale 2026"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando l'abbiamo cambiata la serratura di sopra, dopo che non si trovava più il mazzo?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Serratura magazzino di sopra"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il divano e i letti che ci hanno regalato li abbiamo segnati da qualche parte? la ricevuta?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Divano e due letti donati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quante allieve frequentano la formazione d'autunno e in che sere si tiene?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Corso base autunno 2026"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi fa il sabato 15 allo sportello? e il 29 l'ha preso qualcuna?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Turni sportello novembre-dicembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "le ragazze nuove quando devono firmare quella cosa della privacy?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Patto di riservatezza nuove"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "cosa è successo dopo che il portale ci ha rimandato indietro il deposito del bilancio dell'anno scorso?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Caricare il bilancio 2025"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi ha la password della pec dell'associazione?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "La pec dell'associazione sul registro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quella pec dalla Regione che ci ha fatto venire un colpo, alla fine cos'era?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Lettera della Regione di settembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "la nuova presidente non ha la firma digitale: come facciamo ad aggiornare le cariche sul registro?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Cambio presidente: variazione cariche"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti iscritti in regola con la quota avevamo a fine anno e quanti volontari abbiamo comunicato?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Dati soci e volontari al 31/12"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "Giulia dice che quest'anno basta il bilancino semplice, è vero?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Bilancino 2026: Mod. D o Mod. E?"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "i fondi che riceviamo tramite la capofila vanno messi nella pagina della trasparenza?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Pagina contributi pubblici sul sito"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il 5x1000 ci è arrivato sul conto vecchio, bisogna cambiare qualcosa?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "IBAN cinque per mille"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "i soldi del banchetto del 25 vanno rendicontati da qualche parte?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Rendiconto raccolta fondi 25 novembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "cosa manca alla bozza del bilancio sociale?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Bilancio sociale 2025"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "fino a quando vale la firma digitale che abbiamo rinnovato in Camera di commercio?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Rinnovo firma digitale Anna"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "entro quando ci risponde l'avvocato socio per il registro dei trattamenti?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Registro trattamenti privacy"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanto ci hanno assegnato per Fili e quale voce ci hanno decurtato?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Graduatoria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il foglio ore di ottobre delle operatrici chi non l'ha ancora firmato?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Timesheet mensili operatrici"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il foglio presenze del sabato di ottobre, mancano firme delle volontarie?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Registro ore volontarie (cofinanziamento)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "ci hanno autorizzato a spostare i 1.200 euro da materiali a supervisione?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Variazione budget comunicazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti euro di spese tagliate nel verbale di controllo di Passi e con quali motivi?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Esito controllo: spese tagliate"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "dopo il verbale con i tagli di Passi, cosa abbiamo mandato nei 30 giorni per recuperare?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Integrazioni al controllo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "da quando abbiamo cambiato il modo di lavorare su Fili dopo la batosta di Passi, e cosa abbiamo deciso?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Lezione per Fili"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanto ci danno i valdesi rispetto a quello che avevamo chiesto?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Approvazione e accettazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "per il rendiconto degli arredi che foto possiamo mandare alla fondazione?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Rendiconto Valle Verde"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "perché non siamo riuscite a presentare la domanda per il pulmino?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Bando Valle Verde 2026 seconda sessione (pulmino)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il rimborso del primo semestre della convenzione è arrivato?",
+   "scope": "tasks",
+   "class": "lexical",
+   "expected": [
+    {
+     "task": "Rimborso primo semestre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "cosa ci hanno chiesto di proporre al tavolo con servizi sociali e consultorio per il nuovo protocollo?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Tavolo rete antiviolenza"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "sul sito del Comune c'è ancora l'orario vecchio senza il sabato, chi lo sistema?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Orari sportello nel sito del Comune"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando abbiamo mandato la lettera di adesione alla coop di Perugia, e la scadenza era già passata?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Lettera di adesione rete territoriale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "abbiamo chiesto alla Regione di partecipare alla co-progettazione anche senza budget?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Chiedere di partecipare al tavolo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il post coi mobili caricati sul furgone, perché l'avete tolto?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Post furgone donazioni - rimosso"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando abbiamo aperto per la prima volta di sabato con il progetto regionale?",
+   "scope": "tasks",
+   "class": "temporale",
+   "expected": [
+    {
+     "task": "Avvio sabato allo sportello"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "da quando esiste l'associazione e quante persone ci lavorano o fanno volontariato?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chi è Ginestra"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "che orari fa lo sportello il mercoledì?",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Orari sportello"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi ha le chiavi nuove del magazzino adesso?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chiavi del magazzino di sopra"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando è stata rinnovata la firma digitale della presidente e per quanti anni vale?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Firma digitale presidente"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "da che anno siamo iscritte al registro unico e in quale sezione?",
+   "scope": "facts",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "RUNTS"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "da quale giorno una nuova volontaria è coperta dalla polizza infortuni?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Assicurazione volontarie"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "home banking: sopra quanti euro serve la doppia autorizzazione?",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Conto e pagamenti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi fa parte del consiglio direttivo e ogni quanto si riunisce?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Assemblea e direttivo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "dove trovo statuto, visura e ultimo bilancio con verbale pronti da allegare a una domanda?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Cartella documenti standard"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "entro quanti giorni va comunicato al registro un cambio di sede o di statuto?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Scadenze del registro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "che sanzione rischiamo se non pubblichiamo l'elenco dei contributi pubblici ricevuti?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Contributi pubblici sul sito"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "perché noi facciamo il rendiconto per cassa e non il bilancio con stato patrimoniale?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Bilancino: rendiconto per cassa"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "fino a quando dura il contratto di manutenzione della caldaia e quanto costa un'uscita urgente?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Ditta caldaia"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti set di lenzuola e kit igiene dobbiamo avere sempre di scorta?",
+   "scope": "facts",
+   "class": "lexical",
+   "expected": [
+    {
+     "fact": "Scorte minime"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "in piazza se una non firma il foglio per le foto cosa fotografiamo, la panchina?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Liberatorie foto evento"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "entro quando va consegnato il rendiconto intermedio del progetto regionale?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "fact": "Scadenze Fili"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "come mai abbiamo lasciato perdere il bando sul caporalato?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Perché non abbiamo partecipato a Umbria legale e sicura 2"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "in Regione quando conviene telefonare che tanto alle pec non rispondono?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Ufficio regionale di riferimento"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "in che mese escono le linee guida della Tavola valdese e su quale piattaforma si presenta la domanda?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Bando 8x1000 come funziona"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "entro quanti giorni dalla fine va rendicontato il contributo della fondazione prima che lo revochino?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Valle Verde: come funziona"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti soldi ci dà il Comune all'anno per lo sportello e quando pagano di solito?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Convenzione sportello"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "arriva una nuova volontaria: quali passaggi deve fare prima di entrare nel gruppo dei turni?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Nuova volontaria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "una signora ci vuole regalare dei materassi usati, li prendiamo?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Donazioni in natura"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "alla casa la caldaia si è piantata di nuovo, che devo fare?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Caldaia in blocco"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "sabato non ce la faccio a fare il turno, come mi faccio sostituire?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Cambio turno"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi deve rileggere un comunicato stampa prima che esca e chi lo firma?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Comunicati e post"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quali allegati vanno nel PDF del rendiconto quando lo depositiamo sul portale?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Caricare il bilancio sul registro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "cosa allegare all'istanza di variazione dei titolari delle cariche dopo la nomina?",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Cambio cariche sul registro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "rimborso senza scontrini con autocertificazione: massimo quanto al giorno e al mese?",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Rimborsi spese volontarie"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "per il personale di un progetto FSE+ quali documenti servono: busta paga, F24, quietanza?",
+   "scope": "procedures",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Rendicontare un progetto FSE+"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nella relazione finale per i valdesi possiamo mettere le foto dei ragazzi?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Rendiconto 8x1000"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "dove si trovano le stufette elettriche se resta senza riscaldamento la casa?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Caldaia in blocco"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi fa la ricevuta a chi ci dona qualcosa e chi decide quanto vale?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Donazioni in natura"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nella pratica deposito bilanci che annualità si mette, l'anno chiuso o quello del deposito?",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "procedure": "Caricare il bilancio sul registro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "le ore del personale scritte tutte insieme alla chiusura del progetto passano al controllo?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Timesheet compilati a fine progetto vengono tagliati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "un compenso pagato cash con regolare ricevuta si riesce a recuperare con un'integrazione?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Le spese in contanti non si rendicontano"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "fatture senza CUP tagliate al controllo: si rimedia con nota di credito e rifattura?",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Fatture senza CUP"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "una domanda online non è partita perché mancava il verbale firmato scansionato: cosa abbiamo imparato?",
+   "scope": "lessons",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Una scadenza persa per un verbale non scansionato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanto tempo prima della scadenza della firma digitale conviene mettere un promemoria?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "lesson": "Controllare la firma digitale prima di un bando"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "in un avviso di co-progettazione cosa bisogna valutare per prima cosa prima di candidarsi?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Leggere i requisiti di esperienza prima di tutto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "una foto delle cose donate può far riconoscere un posto riservato: come si evita?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Una foto di ringraziamento può mostrare un luogo protetto"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "in che momento del percorso vanno mandati i nomi delle nuove all'assicurazione, prima o dopo i primi turni?",
+   "scope": "lessons",
+   "class": "temporale",
+   "expected": [
+    {
+     "lesson": "Volontarie nuove: assicurazione prima dell'affiancamento"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "se la caldaia va in blocco serve schiacciare reset tante volte finché riparte?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "caldaia: non resettare più volte"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "le commissioni tagliano le spese di comunicazione se sono troppo alte nel piano?",
+   "scope": "all",
+   "class": "lexical",
+   "expected": [
+    {
+     "lesson": "Le commissioni tagliano le spese di comunicazione alte"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "perché un deposito respinto può passare inosservato e andare oltre la scadenza?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Gli esiti del registro arrivano sulla PEC registrata"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "presidente nuova senza firma digitale e solo 30 giorni per le cariche, come se ne esce?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "cambio presidente senza firma digitale"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "posso dare l'indirizzo della casa al corriere dei mobili così consegna lì?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "L'indirizzo della casa non compare mai"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nelle note posso scrivere le iniziali e l'età di un'ospite?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Nessun dato delle donne nella memoria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "posso raccontare nel gruppo whatsapp com'è andato il turno di oggi?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Riservatezza dello sportello"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "mi ha chiamato uno della radio per un'intervista, gli rispondo io?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Con la stampa parlano solo presidente e coordinatrice"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "si può fotografare il furgone parcheggiato davanti alla casa rifugio?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Foto: mai la casa, mai persone senza liberatoria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "per un progetto finanziato posso pagare una piccola spesa con la cassa contanti?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Spese dei progetti solo tracciabili"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "dopo quanto tempo si danno le chiavi a una volontaria appena entrata?",
+   "scope": "notes",
+   "class": "temporale",
+   "expected": [
+    {
+     "note": "Chiavi solo dopo il primo mese"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "entro che giorno del mese dopo vanno firmati i timesheet delle operatrici sui progetti regionali?",
+   "scope": "notes",
+   "class": "temporale",
+   "expected": [
+    {
+     "note": "Timesheet mensili firmati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quando si chiede al fornitore di mettere il CUP e la dicitura del programma?",
+   "scope": "notes",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "CUP e dicitura su ogni giustificativo"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "sui post del progetto finanziato va messo il logo dell'Otto per mille?",
+   "scope": "notes",
+   "class": "lexical",
+   "expected": [
+    {
+     "note": "Visibilità del contributo Otto per mille"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "per un acquisto da 1.500 euro pagato dalla Fondazione quante offerte bisogna raccogliere?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Tre preventivi sopra i 1.000 euro"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nella relazione per i servizi sociali posso raccontare un caso specifico?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Al Comune solo dati aggregati"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "c'è un vademecum del turno con la chiusura, il quaderno e cosa fare se chiama un giornalista?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Vademecum del turno allo sportello"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanto pagano di quota associativa gli studenti?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Verbale assemblea dei soci aprile 2026"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "cosa ha deciso l'assemblea sui bandi che chiedono un cofinanziamento alto?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Verbale assemblea dei soci aprile 2026"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti turni al mese deve garantire come minimo una volontaria?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Regolamento interno delle volontarie (rev. luglio 2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "chi smette di fare volontariato deve ridare il badge e le chiavi?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Regolamento interno delle volontarie (rev. luglio 2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti soci servono come minimo per essere un'associazione di promozione sociale?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "secondo l'articolo 4 i sindacati e le associazioni politiche sono enti del Terzo settore?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il decreto che adotta stato patrimoniale, rendiconto gestionale, relazione di missione e Mod. D",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "DM 5 marzo 2020 - modelli di bilancio ETS"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "che differenza c'è tra la delega solo per compilare e inviare e quella che permette anche di firmare?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il delegato del legale rappresentante può occuparsi anche dell'accreditamento al 5x1000?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il bilancio si può mandare via pec all'ufficio invece che dal portale?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Deposito dei bilanci nel RUNTS (Ministero)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "gli enti con più di un milione di entrate devono depositare anche il bilancio sociale?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Deposito dei bilanci nel RUNTS (Ministero)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "un ente con l'esercizio iniziato a luglio 2025 può già usare il rendiconto aggregato?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Circolare 6/2026 - rendiconto per cassa aggregato"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nel manuale del front office del portale dove sono spiegate la pratica di cancellazione e quella cinque per mille?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il testo vero della lettera della Regione sul registro, quella di fine estate",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DD 8521/2026 Regione Umbria - indicazioni operative RUNTS"
+    },
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il commercialista può presentare qualsiasi pratica al registro o solo il deposito del bilancio?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "qual è l'indirizzo email ordinario dell'ufficio del registro della Regione Umbria?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "da che giorno parte il conto alla rovescia sui social per l'evento del 25?",
+   "scope": "all",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "Piano editoriale ottobre-dicembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il mercoledì sui social di che cosa parliamo?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Piano editoriale ottobre-dicembre"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quanti soldi metteva in tutto il bando del caporalato sulla parte FSE+?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "che punteggio minimo bisognava raggiungere nella valutazione delle proposte di co-progettazione sullo sfruttamento lavorativo?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'istanza di candidatura per la co-progettazione regionale va in bollo? di quanto?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Allegato 1 - Domanda di partecipazione"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "nel piano dei costi fino a che percentuale si calcolano i costi indiretti?",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Allegato 3 - Piano dei costi"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'autodichiarazione dei requisiti di onorabilità per ogni ente del raggruppamento",
+   "scope": "documents",
+   "class": "lexical",
+   "expected": [
+    {
+     "document": "Allegato 5 - Autodichiarazione enti del raggruppamento"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "quale determina ha spostato la scadenza dal 9 al 12 ottobre e cosa correggeva?",
+   "scope": "documents",
+   "class": "temporale",
+   "expected": [
+    {
+     "document": "DD 10004/2026 - rettifica e proroga"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "l'atto della Regione che approva l'elenco delle candidature ammesse alla co-progettazione",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "query": "il bando regionale da cui è nato Fili quanti soldi metteva in tutto?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DD 3832/2026 - avviso programmi regionali ODV/APS quota 2024"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la caldaia della casa è andata in errore e non scalda, c'è già un ticket aperto?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Caldaia in blocco (E10)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi segue il guasto della macchina del bucato che allaga il pavimento?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Lavatrice perde acqua"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "c'è una macchia di umido sul soffitto in una delle camere, qualcuno se ne sta occupando?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Infiltrazione stanza blu"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "internet all'help desk va a scatti, l'abbiamo segnalato a qualcuno?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Wifi sportello lento"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quando parte la formazione introduttiva per le nuove volontarie in questa stagione?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Corso base autunno 2026"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "chi copre l'accoglienza nelle ultime settimane dell'anno? c'è il calendario delle presenze?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Turni sportello novembre-dicembre"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come si organizza la serata conviviale di dicembre tra socie e volontarie?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Cena di fine anno"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come stiamo organizzando la manifestazione pubblica per la giornata contro la violenza sulle donne?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Evento in piazza 25/11"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "quel video corto per instagram coi dati regionali sui femminicidi a che punto è?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Reel numeri violenza Umbria"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Abbiamo comunicato all'albo nazionale degli enti la nuova legale rappresentante dopo l'avvicendamento?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Cambio presidente: variazione cariche"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quale schema di rendiconto dobbiamo adottare per i conti di quest'anno?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Bilancino 2026: Mod. D o Mod. E?"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "le coordinate bancarie per il 5x1000 le abbiamo sistemate?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "IBAN cinque per mille"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "la smart card per firmare di Anna sta per scadere, chi se ne occupa?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Rinnovo firma digitale Anna"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "A che punto è il documento GDPR che elenca come gestiamo i dati personali?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Registro trattamenti privacy"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "i fogli ore delle dipendenti di questo mese chi li raccoglie?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Timesheet mensili operatrici"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Abbiamo messo i loghi del finanziatore e il codice unico di progetto su volantini e gadget?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Logo e CUP su materiali"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "ci hanno decurtato dei costi alla verifica del finanziatore, che è successo?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Esito controllo: spese tagliate"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "chi viene a mettere su i mobili guardaroba nuovi in casa?",
+   "scope": "tasks",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "task": "Montaggio armadi"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Stiamo chiedendo un contributo alla fondazione per acquistare un mezzo per accompagnare le ospiti?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Bando Valle Verde 2026 seconda sessione (pulmino)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Per i laboratori nelle classi servono le autorizzazioni firmate da mamme e papà?",
+   "scope": "tasks",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "task": "Consenso genitori"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "a che ora apre l'help desk e in che giorni?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Orari sportello"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi ha le copie per aprire il deposito al piano superiore?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Chiavi del magazzino di sopra"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi possiede il dispositivo di firma elettronica dell'associazione e fino a quando vale?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Firma digitale presidente"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "con chi siamo coperte se una si fa male durante il turno?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Assicurazione volontarie"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Presso quale banca abbiamo il conto e chi può disporre i bonifici?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Conto e pagamenti"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il numero del tecnico del riscaldamento ce l'ha qualcuno?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Ditta caldaia"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quanta roba di consumo dobbiamo sempre tenere in casa come minimo?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Scorte minime"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "come mai alla fine abbiamo lasciato perdere quel bando regionale sulla legalità?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Perché non abbiamo partecipato a Umbria legale e sicura 2"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Qual è il servizio della Regione da contattare per le pratiche dell'albo degli enti?",
+   "scope": "facts",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "fact": "Ufficio regionale di riferimento"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "l'accordo col Comune per il centro d'ascolto cosa prevede?",
+   "scope": "facts",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "fact": "Convenzione sportello"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quali passi si seguono quando entra una persona nuova a fare servizio con noi?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Nuova volontaria"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "se qualcuno ci porta vestiti o mobili regalati come ci comportiamo?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Donazioni in natura"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "giovedì non posso venire, come faccio a farmi sostituire?",
+   "scope": "procedures",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Cambio turno"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come si prepara e si approva un testo da mandare ai giornali o da pubblicare sui social?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Comunicati e post"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "come si deposita il rendiconto annuale sul portale del terzo settore, passo passo?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Caricare il bilancio sul registro"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Come chiedo indietro i soldi della benzina anticipati per l'associazione?",
+   "scope": "procedures",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "procedure": "Rimborsi spese volontarie"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "per i progetti del fondo sociale europeo come si fa la rendicontazione?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "procedure": "Rendicontare un progetto FSE+"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "c'è una guida da leggersi prima del primo turno all'ascolto?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Vademecum del turno allo sportello"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dove trovo il resoconto della riunione dei soci di primavera?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Verbale assemblea dei soci aprile 2026"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Qual è la versione aggiornata delle norme interne per chi fa volontariato da noi?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Regolamento interno delle volontarie (rev. luglio 2026)"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il decreto con gli schemi di bilancio per gli enti del terzo settore dov'è?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DM 5 marzo 2020 - modelli di bilancio ETS"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "C'è una nota ministeriale che spiega il rendiconto semplificato per le piccole associazioni?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Circolare 6/2026 - rendiconto per cassa aggregato"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "le istruzioni per usare il sito del registro nazionale, dove sono finite?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Esiste un elenco di tutto quello che abbiamo tra la struttura e il deposito?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "Inventario casa e magazzino 2026"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il budget che avevamo allegato alla domanda per il bando regionale sulla legalità?",
+   "scope": "documents",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "Allegato 3 - Piano dei costi"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dov'è l'atto della Regione con la classifica dei progetti ammessi al finanziamento?",
+   "scope": "documents",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "il bando della regione per le odv e aps coi soldi del 2024?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "document": "DD 3832/2026 - avviso programmi regionali ODV/APS quota 2024"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Cosa succede se le ore lavorate si registrano tutte solo alla chiusura del progetto?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Timesheet compilati a fine progetto vengono tagliati"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "se pago cash poi lo posso mettere nelle spese del progetto?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Le spese in contanti non si rendicontano"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "È mai capitato di saltare un termine perché un documento dell'assemblea non era stato digitalizzato?",
+   "scope": "all",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Una scadenza persa per un verbale non scansionato"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "prima di candidarci a un finanziamento cosa conviene controllare sul token per firmare?",
+   "scope": "lessons",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "Controllare la firma digitale prima di un bando"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Quali rischi ci sono nel pubblicare un'immagine per dire grazie a un donatore?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Una foto di ringraziamento può mostrare un luogo protetto"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "se il riscaldamento si blocca, quante volte posso premere il pulsante di sblocco?",
+   "scope": "all",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "lesson": "caldaia: non resettare più volte"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Dove arrivano le risposte dell'ufficio dell'albo sulle nostre pratiche?",
+   "scope": "lessons",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "lesson": "Gli esiti del registro arrivano sulla PEC registrata"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "posso scrivere dove sta la struttura protetta in un messaggio o in un documento?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "L'indirizzo della casa non compare mai"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Chi è autorizzato a rilasciare dichiarazioni ai giornalisti?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Con la stampa parlano solo presidente e coordinatrice"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "In che modo vanno pagati i costi dei progetti finanziati?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Spese dei progetti solo tracciabili"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "a una volontaria appena arrivata posso dare il mazzo per entrare?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Chiavi solo dopo il primo mese"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "per comprare una cosa da duemila euro basta un'offerta sola?",
+   "scope": "notes",
+   "class": "colloquiale",
+   "expected": [
+    {
+     "note": "Tre preventivi sopra i 1.000 euro"
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "query": "Cosa possiamo comunicare all'amministrazione comunale sulle persone che si rivolgono a noi?",
+   "scope": "notes",
+   "class": "paraphrase",
+   "expected": [
+    {
+     "note": "Al Comune solo dati aggregati"
+    }
+   ]
+  },
+  {
+   "set": "passaggi",
+   "query": "Se durante un procedimento di cancellazione dal registro chiediamo di passare a un'altra sezione, il procedimento si ferma? E in quanto tempo deve chiudersi?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ],
+   "passage": "Art. 24 (Il procedimento di cancellazione dal RUNTS) > commi 5-6"
+  },
+  {
+   "set": "passaggi",
+   "query": "Dopo essere stati cancellati dal registro del terzo settore possiamo continuare a usare la sigla nel nome dell'associazione? E potremo iscriverci di nuovo?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ],
+   "passage": "Art. 25 (Conseguenze della cancellazione dal RUNTS) > commi 4-8"
+  },
+  {
+   "set": "passaggi",
+   "query": "Nel popolamento iniziale del RUNTS, quali bilanci acquisiscono gli uffici ai fini dell'informazione antimafia (art. 36 DM 106/2020)?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ],
+   "passage": "> Art. 36"
+  },
+  {
+   "set": "passaggi",
+   "query": "Cosa devono allegare gli enti religiosi iscritti all'anagrafe delle Onlus quando chiedono l'iscrizione al RUNTS, al posto di atto costitutivo e statuto?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ],
+   "passage": "Art. 34 (Gli enti iscritti all'anagrafe delle Onlus) > commi 3-4"
+  },
+  {
+   "set": "passaggi",
+   "query": "Quando il registro è partito con i dati dei vecchi registri regionali, quali informazioni minime di ogni ente si potevano consultare sul portale?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ],
+   "passage": "> Art. 37"
+  },
+  {
+   "set": "passaggi",
+   "query": "Cosa significano gli stati 'Sospesa' ed 'Evasa' di una pratica nella Lista Pratiche del portale RUNTS?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ],
+   "passage": "9 Lista Pratiche"
+  },
+  {
+   "set": "passaggi",
+   "query": "Con la funzione Messaggi del portale RUNTS il dichiarante può scrivere per primo all'Ufficio RUNTS?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ],
+   "passage": "10 Messaggi"
+  },
+  {
+   "set": "passaggi",
+   "query": "Quanto possono durare al massimo i progetti di «Umbria legale e sicura 2» e fino a quando, al 31.12.2028, possono essere prorogati?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ],
+   "passage": "Art.4 - Durata del Progetto"
+  },
+  {
+   "set": "passaggi",
+   "query": "Se veniamo scelti come partner, partecipare agli incontri di co-progettazione con la Regione è obbligatorio? Ci viene pagato?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ],
+   "passage": "Art. 10 - Fase di coprogettazione"
+  },
+  {
+   "set": "passaggi",
+   "query": "Con una sola candidatura ammissibile la Regione può andare avanti con la co-progettazione? Serve il punteggio minimo di 60/100?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ],
+   "passage": "Art. 12 - Clausola di salvaguardia"
+  },
+  {
+   "set": "passaggi",
+   "query": "Possiamo rimborsare le spese ai volontari con una semplice dichiarazione firmata da loro, senza ricevute? Entro quali limiti?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ],
+   "passage": "Art. 17 > commi 4-5"
+  },
+  {
+   "set": "passaggi",
+   "query": "Se dopo la costituzione i soci della nostra associazione di promozione sociale scendono sotto il minimo, quanto tempo abbiamo per rimediare prima di essere cancellati?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ],
+   "passage": "Art. 35 > commi 1-2"
+  },
+  {
+   "set": "passaggi",
+   "query": "Un'APS quanti lavoratori può impiegare rispetto ai volontari, secondo l'art. 36 del Codice (cinquanta per cento)?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ],
+   "passage": "Art. 36"
+  },
+  {
+   "set": "passaggi",
+   "query": "Quali registri interni un ente del terzo settore deve tenere per forza, e chi deve tenerli aggiornati?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ],
+   "passage": "Art. 15"
+  },
+  {
+   "set": "passaggi",
+   "query": "Se l'associazione sposta la sede in un'altra via dello stesso comune, dobbiamo cambiare lo statuto? Cosa va fatto sul registro e in quanto tempo?",
+   "scope": "documents",
+   "class": "passaggio-parafrasi",
+   "expected": [
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ],
+   "passage": "Variazione Sede Legale"
+  },
+  {
+   "set": "passaggi",
+   "query": "Quali enti ha ammesso alla co-progettazione la DD 10735/2026 con la graduatoria dell'avviso?",
+   "scope": "documents",
+   "class": "passaggio-lessicale",
+   "expected": [
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ],
+   "passage": "D E T E R M I N A"
+  }
+ ]
+}
