@@ -146,7 +146,7 @@ ORGANISATION = {
          "keywords": "DM 17/06/2016 / decreto parametri, corrispettivi SIA / tariffe professionali, calcolo "
                      "parcella / onorario, CP = V x G x Q x P, spese e oneri accessori, base di gara, D.Lgs. "
                      "50/2016 art. 24"},
-        {"key": "dm_17_06_2016_tavole", "name": "DM 17/06/2016 - tavole (categorie, G, Q)",
+        {"key": "dm_tavole_categorie", "name": "DM 17/06/2016 - tavole (categorie, G, Q)",
          "summary": "Tavole allegate al D.M. 17/06/2016 (testo OCR dalla Gazzetta Ufficiale): classificazione "
                     "delle categorie d'opera E, S, IA, V, D, T, P, U con i gradi di complessità G e le "
                     "corrispondenze con le classi della vecchia L. 143/49, e aliquote Q delle prestazioni per "
@@ -185,7 +185,7 @@ ORGANISATION = {
          "keywords": "D.Lgs. 36/2023 / codice appalti, codice dei contratti pubblici, correttivo D.Lgs. "
                      "209/2024, RUP / responsabile unico del progetto, art. 50 affidamento diretto / sotto "
                      "soglia, art. 43 BIM, OEPV, direzione lavori e collaudo"},
-        {"key": "dlgs_81_cantieri", "name": "D.Lgs. 81/2008 artt. 88-101 e All. XV",
+        {"key": "dlgs_cantieri_sicurezza", "name": "D.Lgs. 81/2008 artt. 88-101 e All. XV",
          "summary": "Titolo IV Capo I del D.Lgs. 81/2008 (artt. 88-101) e Allegato XV, testo vigente: sicurezza "
                     "nei cantieri temporanei o mobili. Regola campo di applicazione ed esclusioni, obblighi del "
                     "committente, CSP e CSE, contenuti minimi di PSC e POS, notifica preliminare (art. 99) e "

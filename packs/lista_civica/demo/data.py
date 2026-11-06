@@ -2050,7 +2050,7 @@ ARTICLE_CARDS = [
                      "stessa seduta passa il bilancio consolidato con 15 sì, 9 no e 6 astenuti. Temi: crisi di "
                      "maggioranza, opposizione alla giunta, sfiducia. Rilevanza: alta, apre la crisi. Collegate: "
                      "Umbria24 27/10, Umbria Settegiorni 28/10, Quotidiano dell'Umbria 29/10."),
-    _article("umbria24_notaio", "Umbria24", "27/10/2026",
+    _article("umbriaventiquattro_notaio", "Umbria24", "27/10/2026",
              "cdx dal notaio per le dimissioni (firmano in sei), M5S avvia le firme per la sfiducia", UMBRIA24_2710,
              summary="Scheda Umbria24 del 27/10/2026, eventi dello stesso giorno. FdI, Forza Italia, Lega e UdC "
                      "raccolgono dal notaio le dimissioni contestuali dei consiglieri per sciogliere il consiglio "
@@ -2654,7 +2654,7 @@ SOURCES = {
           "keywords": "Fratelli d'Italia, centrodestra, cdx, firme per la sfiducia, mandare a casa il sindaco, "
                       "fonte di parte, nota FdI",
           "persons": ["Stefano Bandecchi"], "bodies": ["FdI", "PD", "Comune di Terni"], "places": [],
-          "themes": ["Crisi in Comune"], "related": ["um_mozione", "settegiorni_sfiducia", "umbria24_notaio"]},
+          "themes": ["Crisi in Comune"], "related": ["um_mozione", "settegiorni_sfiducia", "umbriaventiquattro_notaio"]},
         {"key": "um_villalago", "channel": "UmbriaON", "kind": "article", "published_on": "2026-10-30",
           "event_date": None, "stance": "none", "relevance": "1",
           "url": "https://www.umbriaon.it/terni-villalago-50-mila-euro-per-la-gronda-ok-allintervento-francucci/",
@@ -2794,7 +2794,7 @@ SOURCES = {
                       "presidenti di commissione, Viminale",
           "persons": ["Stefano Bandecchi"], "bodies": ["Comune di Terni", "Per Terni", "Ministero dell'Interno"],
           "places": [], "themes": ["Crisi in Comune"], "related": ["um_pd_destino"]},
-        {"key": "umbria24_notaio", "channel": "Umbria24", "kind": "article", "published_on": "2026-10-27",
+        {"key": "umbriaventiquattro_notaio", "channel": "Umbria24", "kind": "article", "published_on": "2026-10-27",
           "event_date": "2026-10-27", "stance": "none", "relevance": "3",
           "url": "https://www.umbria24.it/terni/crisi-politica-terni-centrodestra-invoca-dimissioni-dei-consiglier"
                  "i-m5s-chiede-sfiducia-a-bandecchi/",
@@ -2822,7 +2822,7 @@ SOURCES = {
           "persons": ["Stefano Bandecchi"],
           "bodies": ["PD", "M5S", "AVS", "PSI", "Casa Riformista-IV", "Rifondazione", "Comune di Terni"],
           "places": [], "themes": ["Crisi in Comune"],
-          "related": ["um_mozione", "um_fdi_firme", "umbria24_notaio"]},
+          "related": ["um_mozione", "um_fdi_firme", "umbriaventiquattro_notaio"]},
         {"key": "qdu_17", "channel": "Quotidiano dell'Umbria", "kind": "article", "published_on": "2026-10-29",
           "event_date": "2026-10-29", "stance": "none", "relevance": "3",
           "url": "https://www.quotidianodellumbria.it/terni/terni-il-centrosinistra-prepara-la-sfiducia-bandecchi-"
