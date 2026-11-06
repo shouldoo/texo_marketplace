@@ -8,11 +8,16 @@ A Texo skill pack. Civic lists, politically neutral: positions and facts, person
 | Seed (`seed.toml`) | activities `campaign`, `press`, `programme`, `election`; sections none; 6 rules of the organisation; templates: Campagna per le comunali (template), Raccolta firme (template) |
 | Suggested threads | `normativa`, `rassegna`, `social` |
 | Working folders | none |
+| `demo/` | «Terni 2027», an invented civic list with its press review (the cards of `texo_sources`), and its question sets (A, B, the 30 questions of a person, the questions on the external sources), loaded by `<core>/setup/load-demo.sh lista_civica scenario-lista [--create]` into a test database whose hub has `texo_sources` and `texo_sources_vector` |
 
 The rules that must always hold arrive in the hub through the seed; the guide skill holds how to work and the reading
 map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
+
+### v1.3.0
+
+- The demo of the pack: «Terni 2027», the civic list of the scenario S3 of the measures of the memory, as its curated layer (a searchable session note on every task, keywords, summaries) with the verified public facts, the public acts converted with Docling (`demo/texts/`), 45 press and video cards as cards of the external sources (`SOURCES`, read by the loader of a core later than 2.2.1) and the four question sets in one file (`demo/questions.json`, a `set` key per question), so the search of the memory can be measured on it with `eval_memoria.py`.
 
 ### v1.2.0
 
