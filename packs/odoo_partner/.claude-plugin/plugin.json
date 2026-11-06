@@ -1,6 +1,6 @@
 {
   "name": "odoo_partner",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Odoo Community partners: the way of working on Odoo projects, version deltas, conventions, playbooks, the skills odoo-progetto and browser-test, the hub seed of the sector and a demo.",
   "author": {
     "name": "Shouldoo"

@@ -14,6 +14,10 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.0.1
+
+- The reading map of the guide names the folder of the pack (`texo where --pack ets`).
+
 ### v1.0.0
 
 - First release.

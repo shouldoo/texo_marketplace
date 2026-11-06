@@ -30,7 +30,7 @@ CTX="texo"      # from the working folder
 | Standalone module repositories | `modules/V<N>/<repo>/` | git |
 | Local instances | `odoo/odoo-clients/<slug>/` | Docker |
 | The upstream code of a version, OCA, OpenUpgrade | the mirrors of the threads `odoo-<NN>`, `oca-<repo>`, `openupgrade` | `rg`, paths in `.texo/THREADS.md` |
-| The official Odoo skills (`odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git`) | the thread `odoo-skills` | linked by `texo mount` |
+| The official Odoo skills (`odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git`) | the thread `odoo-skills`, carried by the pack | linked by `texo mount` |
 | What changed between versions | `reference/v<N>/`; the lessons of the hub tagged with the version and the area; `.texo/ontology/` | read |
 
 ## 1. The version of the instance

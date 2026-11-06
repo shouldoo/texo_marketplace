@@ -49,7 +49,7 @@ files named below are in `references/` next to this file.
 ## Mappa di lettura
 
 > Nessun file di questo pack è precaricato: si legge quello che il compito tocca. I percorsi sono
-> relativi a questo pack (`` dalla cartella di lavoro). Regola: prima di scrivere
+> relativi a questo pack (`$(texo where --pack odoo_partner)` dalla cartella di lavoro). Regola: prima di scrivere
 > codice su un'area si leggono il delta della versione del progetto, le lesson del hub di quell'area e il
 > codice upstream di quella versione.
 
@@ -108,7 +108,7 @@ nell'ontologia che `$(texo where --pack odoo_partner)/scripts/build_ontology.py`
 |---|---|---|
 | `odoo-progetto` | questo pack | dopo `texo-sessione`, su ogni progetto Odoo |
 | `browser-test` | questo pack | prova della UI dopo JavaScript, Owl, viste, azioni |
-| `odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git` | le skill ufficiali di Odoo, dal filo `odoo-skills` (mirror di `odoo/odoo`, cartella `skills/`), collegate da `texo mount` | scrittura e revisione di codice, sicurezza, git |
+| `odoo-guidelines`, `odoo-web-guidelines`, `odoo-review`, `odoo-security`, `odoo-git` | le skill ufficiali di Odoo, dal filo `odoo-skills` che il pacchetto porta (mirror di `odoo/odoo`, cartella `skills/`), collegate da `texo mount` | scrittura e revisione di codice, sicurezza, git |
 | `texo-sessione`, `memoria-consolidamento`, `memoria-ingestione`, `memoria-fonti` | il core | la sessione, la revisione della memoria, i documenti, le fonti |
 
 Un assistente che non carica le skill da solo apre il `SKILL.md` quando il compito corrisponde.
@@ -120,7 +120,10 @@ Un assistente che non carica le skill da solo apre il `SKILL.md` quando il compi
 | `odoo-<NN>` | source, `git-mirror` di `github.com/odoo/odoo` al ref della versione | il codice di Odoo Community di ogni versione dei progetti |
 | `oca-<repo>` | source, `git-mirror` di `github.com/OCA/<repo>` | i repository OCA in uso, dai `.gitmodules` dei progetti |
 | `openupgrade` | source, `git-mirror` di `github.com/OCA/OpenUpgrade` | facoltativo: le analisi dei cambi tra versioni, per l'ontologia e le migrazioni |
-| `odoo-skills` | source, `git-mirror` di `github.com/odoo/odoo` con `paths = ["skills"]` e `skills = "skills"` | le skill ufficiali di Odoo |
 
 L'organizzazione li dichiara tra i fili del hub (Texo Threads) con il ref fissato; `texo mount` li monta,
 `texo doctor` li controlla.
+
+Il pacchetto porta il filo `odoo-skills` (`git-mirror` di `github.com/odoo/odoo`, cartella `skills/`, al commit che
+la versione del pacchetto fissa): le skill ufficiali di Odoo arrivano con il pacchetto. Un filo del hub con lo stesso
+id lo sostituisce, per esempio con un commit più recente.

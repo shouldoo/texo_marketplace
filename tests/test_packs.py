@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CORE = Path(os.environ.get("TEXO_CORE") or ROOT / ".core")
 sys.path.insert(0, str(CORE))
-from texo import mount, threads  # noqa: E402
+from texo import mount, packs, threads  # noqa: E402
 
 CODE = re.compile(r"^[a-z][a-z0-9_]*$")
 SKILL_NAME = re.compile(r"^[a-z][a-z0-9-]*$")
@@ -72,6 +72,14 @@ class PacksTest(unittest.TestCase):
                 else:
                     self.assertIn(thread["type"], threads.TYPES, f"{pack.name}: {thread['id']}")
                     self.assertIn(thread["data_class"], threads.DATA_CLASSES, f"{pack.name}: {thread['id']}")
+
+    def test_the_threads_a_pack_carries_are_public_sources_at_a_pinned_ref(self):
+        for pack in PACKS:
+            for thread in tomllib.loads((pack / "pack.toml").read_text()).get("thread") or []:
+                thread = dict(thread, origin=f"pack {pack.name}")
+                errors = [m for level, m in threads.check(thread) + packs.thread_problems(thread) if level == "error"]
+                self.assertEqual(errors, [], f"{pack.name}: {thread['id']}")
+                self.assertRegex(thread["ref"], r"^[0-9a-f]{40}$|^v?\d", f"{pack.name}: {thread['id']} is pinned")
 
     def test_every_seed_follows_the_rules_of_the_hub(self):
         for pack in PACKS:
