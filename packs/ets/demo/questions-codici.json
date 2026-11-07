@@ -1,0 +1,623 @@
+{
+ "about": "The code questions of the demo of the pack ets: each question is only a rare act number or acronym of the demo (in one to three records), the expected records are those whose text holds the code, taken from the content of the demo database and not from the search. They measure what only the words find: a hit of every word must stay in the first five of the hybrid search. Written 2026-11-07 (phase 5 of the review of the memory). Classes: atto (an act number), sigla (an acronym). Measured with <core>/scripts/eval_memoria.py; the titles of the expected documents are resolved by their words, so the act numbers in them need texo_hub 20.0.1.8.0 or later.",
+ "questions": [
+  {
+   "query": "DD 9321/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    },
+    {
+     "document": "DD 9321/2026 - approvazione avviso"
+    }
+   ]
+  },
+  {
+   "query": "DD 9321/2026",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Archiviare avviso e allegati"
+    }
+   ]
+  },
+  {
+   "query": "DD 10735/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "query": "DD 10735/2026",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Graduatoria uscita"
+    }
+   ]
+  },
+  {
+   "query": "DD 10004/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 10004/2026 - rettifica e proroga"
+    }
+   ]
+  },
+  {
+   "query": "DD 10004/2026",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Lettera di adesione rete territoriale"
+    }
+   ]
+  },
+  {
+   "query": "DD 3832/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 3832/2026 - avviso programmi regionali ODV/APS quota 2024"
+    }
+   ]
+  },
+  {
+   "query": "DD 3832/2026",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Domanda e formulario"
+    }
+   ]
+  },
+  {
+   "query": "DD 8521/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 8521/2026 Regione Umbria - indicazioni operative RUNTS"
+    },
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "query": "DD 8521/2026",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Lettera della Regione di settembre"
+    }
+   ]
+  },
+  {
+   "query": "DM 106/2020",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    },
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "query": "DM 106/2020",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "La pec dell'associazione sul registro"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. n. 117/2017",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 8521/2026 Regione Umbria - indicazioni operative RUNTS"
+    },
+    {
+     "document": "DD 9321/2026 - approvazione avviso"
+    },
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "query": "DGR 1001/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 9321/2026 - approvazione avviso"
+    },
+    {
+     "document": "DD 10004/2026 - rettifica e proroga"
+    },
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "query": "DD n. 9320/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 10735/2026 - graduatoria"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. n. 286/1998",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Allegato 1 - Domanda di partecipazione"
+    },
+    {
+     "document": "Allegato 5 - Autodichiarazione enti del raggruppamento"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 112/17",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Allegato 1 - Domanda di partecipazione"
+    },
+    {
+     "document": "Allegato 5 - Autodichiarazione enti del raggruppamento"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 82/2005",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Allegato 1 - Domanda di partecipazione"
+    },
+    {
+     "document": "Allegato 5 - Autodichiarazione enti del raggruppamento"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs. n. 286/1998",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs.159/2011",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "Reg.UE 2016/679",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "L. 241/1990",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "DPR n. 445/2000",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "L. 241/90",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "DM n. 39/2020",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "query": "DM n. 107/2021",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs 117/2017",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "query": "Legge n.108/2025",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "query": "DM106/2020",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 117/2017",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ]
+  },
+  {
+   "query": "BURL",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    }
+   ]
+  },
+  {
+   "query": "CADES",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "query": "CCIAA",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Rinnovo firma digitale Anna"
+    }
+   ]
+  },
+  {
+   "query": "CSV",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    },
+    {
+     "document": "DD 8521/2026 Regione Umbria - indicazioni operative RUNTS"
+    },
+    {
+     "document": "Indicazioni operative RUNTS Umbria (allegato DD 8521/2026)"
+    }
+   ]
+  },
+  {
+   "query": "DPO",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "F24",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "procedure": "Rendicontare un progetto FSE+"
+    }
+   ]
+  },
+  {
+   "query": "GDPR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    }
+   ]
+  },
+  {
+   "query": "GDPR",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Registro trattamenti privacy"
+    }
+   ]
+  },
+  {
+   "query": "ICNPO",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "query": "ISTAT",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "query": "ISTAT",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Reel numeri violenza Umbria"
+    }
+   ]
+  },
+  {
+   "query": "MLPS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    },
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    },
+    {
+     "document": "DD 3832/2026 - avviso programmi regionali ODV/APS quota 2024"
+    }
+   ]
+  },
+  {
+   "query": "MIUR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 5 marzo 2020 - modelli di bilancio ETS"
+    }
+   ]
+  },
+  {
+   "query": "MIBAC",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 5 marzo 2020 - modelli di bilancio ETS"
+    }
+   ]
+  },
+  {
+   "query": "ONLUS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    },
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    },
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "query": "P7M",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Manuale utente del portale RUNTS"
+    }
+   ]
+  },
+  {
+   "query": "SOMS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 2/2026 - modifiche al DM 106/2020 (notizia del Ministero)"
+    }
+   ]
+  },
+  {
+   "query": "CONI",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ]
+  },
+  {
+   "query": "ONG",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 106/2020 - il RUNTS (testo GU)"
+    },
+    {
+     "document": "Avviso «Umbria legale e sicura 2» (Allegato A alla DD 9321/2026)"
+    },
+    {
+     "document": "DD 10004/2026 - rettifica e proroga"
+    }
+   ]
+  },
+  {
+   "query": "CELEX",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Codice del Terzo settore (D.Lgs. 117/2017), articoli scelti"
+    }
+   ]
+  },
+  {
+   "query": "BUR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DD 9321/2026 - approvazione avviso"
+    },
+    {
+     "document": "DD 10004/2026 - rettifica e proroga"
+    }
+   ]
+  }
+ ]
+}

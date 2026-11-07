@@ -1,0 +1,256 @@
+{
+ "about": "The code questions of the demo of the pack lista_civica: each question is only a rare act number or acronym of the demo (in one to three records), the expected records are those whose text holds the code, taken from the content of the demo database and not from the search. They measure what only the words find: a hit of every word must stay in the first five of the hybrid search. Written 2026-11-07 (phase 5 of the review of the memory). Classes: atto (an act number), sigla (an acronym). Measured with <core>/scripts/eval_memoria.py; the titles of the expected documents are resolved by their words, so the act numbers in them need texo_hub 20.0.1.8.0 or later.",
+ "questions": [
+  {
+   "query": "L. 28/2000",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "L. 28/2000 - par condicio"
+    },
+    {
+     "fact": "Par condicio e silenzio"
+    }
+   ]
+  },
+  {
+   "query": "L. 28/2000",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Par condicio: cosa cambia dall'indizione"
+    }
+   ]
+  },
+  {
+   "query": "L. 212/1956",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "L. 212/1956 - propaganda elettorale e silenzio"
+    },
+    {
+     "fact": "Par condicio e silenzio"
+    }
+   ]
+  },
+  {
+   "query": "L. 212/1956",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Par condicio: cosa cambia dall'indizione"
+    }
+   ]
+  },
+  {
+   "query": "L. 53/1990",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "L. 53/1990 - autenticazione delle firme (art. 14)"
+    },
+    {
+     "procedure": "Chi può autenticare le firme"
+    }
+   ]
+  },
+  {
+   "query": "L. 53/1990",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Raccolta sottoscrizioni: moduli e autenticatori"
+    }
+   ]
+  },
+  {
+   "query": "L. 182/1991",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "fact": "Quando si vota se cade"
+    }
+   ]
+  },
+  {
+   "query": "L. 515/1993",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "L. 515/1993 - campagne elettorali, mandatario e rendiconto"
+    }
+   ]
+  },
+  {
+   "query": "L. 515/1993",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Mandatario: nomina e conto dedicato"
+    }
+   ]
+  },
+  {
+   "query": "ANPR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "procedure": "Chi può autenticare le firme"
+    }
+   ]
+  },
+  {
+   "query": "ANPR",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Certificati elettorali dei firmatari"
+    }
+   ]
+  },
+  {
+   "query": "BEREC",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "AGCOM avviso 8/4/2026 - comunali: vale la 122/24/CONS"
+    }
+   ]
+  },
+  {
+   "query": "DAIT",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Schema adempimenti dalle istruzioni del Viminale"
+    }
+   ]
+  },
+  {
+   "query": "FOIA",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Accesso civico: atti da chiedere"
+    }
+   ]
+  },
+  {
+   "query": "GPDP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Garante privacy 18/4/2019 - dati e propaganda elettorale"
+    }
+   ]
+  },
+  {
+   "query": "IMU",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Negozi del centro: idee per il programma"
+    }
+   ]
+  },
+  {
+   "query": "ISEE",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Incontro coop sociali sui servizi 0-6"
+    }
+   ]
+  },
+  {
+   "query": "NEET",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Disoccupazione giovanile: dati"
+    }
+   ]
+  },
+  {
+   "query": "OCSE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "L. 96/2012 - limiti di spesa nelle comunali (art. 13)"
+    }
+   ]
+  },
+  {
+   "query": "URP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Garante privacy 18/4/2019 - dati e propaganda elettorale"
+    }
+   ]
+  },
+  {
+   "query": "RSU",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "fact": "Chi fa cosa"
+    }
+   ]
+  },
+  {
+   "query": "RSU",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Lettera degli operatori del PS: risposta"
+    }
+   ]
+  }
+ ]
+}

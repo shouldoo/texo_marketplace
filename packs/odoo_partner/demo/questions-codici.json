@@ -1,0 +1,38 @@
+{
+ "about": "The code questions of the demo of the pack odoo_partner: each question is only a rare act number or acronym of the demo (in one to three records), the expected records are those whose text holds the code, taken from the content of the demo database and not from the search. They measure what only the words find: a hit of every word must stay in the first five of the hybrid search. Written 2026-11-07 (phase 5 of the review of the memory). Classes: atto (an act number), sigla (an acronym). Measured with <core>/scripts/eval_memoria.py; the titles of the expected documents are resolved by their words, so the act numbers in them need texo_hub 20.0.1.8.0 or later.",
+ "questions": [
+  {
+   "query": "API",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "note": "Segreti fuori dal codice"
+    }
+   ]
+  },
+  {
+   "query": "ORM",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "note": "Database attraverso l'ORM"
+    }
+   ]
+  },
+  {
+   "query": "SQL",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "note": "Database attraverso l'ORM"
+    }
+   ]
+  }
+ ]
+}
