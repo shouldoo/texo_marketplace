@@ -1,0 +1,759 @@
+{
+ "about": "The code questions of the demo of the pack studio_progettazione: each question is only a rare act number or acronym of the demo (in one to three records), the expected records are those whose text holds the code, taken from the content of the demo database and not from the search. They measure what only the words find: a hit of every word must stay in the first five of the hybrid search. Written 2026-11-07 (phase 5 of the review of the memory). Classes: atto (an act number), sigla (an acronym). Measured with <core>/scripts/eval_memoria.py; the titles of the expected documents are resolved by their words, so the act numbers in them need texo_hub 20.0.1.8.0 or later.",
+ "questions": [
+  {
+   "query": "DM 256/2022",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "fact": "CAM nuovi"
+    }
+   ]
+  },
+  {
+   "query": "DM 24/11",
+   "scope": "tasks",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Seminario nuovi CAM"
+    },
+    {
+     "task": "Relazione CAM"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 209/2024",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "L. 10/91",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. n. 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "Legge 447/95",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    },
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "Legge 10/91",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    },
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs. n. 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "L. n. 136/2010",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "Legge n. 136/2010",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs n. 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs. n.50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "D. Lgs. 50/2016",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "DD 618/2026",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria DD 618/2026 - elenchi regionali"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. n. 36/2023",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria DD 618/2026 - elenchi regionali"
+    }
+   ]
+  },
+  {
+   "query": "D.Lgs. 163/2006",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "query": "DM 232/1991",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    }
+   ]
+  },
+  {
+   "query": "DM 18/11",
+   "scope": "all",
+   "class": "atto",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 17/06/2016 - tavole (categorie, G, Q)"
+    }
+   ]
+  },
+  {
+   "query": "AGID",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "ANCI",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "ARAN",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "GSE - Regole applicative Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "CCNL",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "CILA",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "CILA",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Progetto e CILA"
+    }
+   ]
+  },
+  {
+   "query": "CPV",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ]
+  },
+  {
+   "query": "CSDDD",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "DGUE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "Glossario dello studio"
+    },
+    {
+     "procedure": "Partecipazione gara SIA"
+    }
+   ]
+  },
+  {
+   "query": "DNSH",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "DOCFAP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    },
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "DUVRI",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "ENEA",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "EPBD",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    },
+    {
+     "document": "Glossario dello studio"
+    },
+    {
+     "fact": "Detrazioni 2026-2027"
+    }
+   ]
+  },
+  {
+   "query": "ESPD",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "TED 418556-2026 - SIA in BIM, uffici giudiziari Ancona"
+    },
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "ESRS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "FESR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Regione Umbria - capitolato progettazione sede di Terni via Saffi"
+    }
+   ]
+  },
+  {
+   "query": "FVOE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "GBER",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "GPP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM MASE 24/11/2025 - nuovi CAM edilizia (decreto)"
+    },
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    },
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "GUUE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Glossario dello studio"
+    }
+   ]
+  },
+  {
+   "query": "HVAC",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "INAIL",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "query": "INPS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "query": "MASE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM MASE 24/11/2025 - nuovi CAM edilizia (decreto)"
+    },
+    {
+     "fact": "CAM nuovi"
+    }
+   ]
+  },
+  {
+   "query": "MIT",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "NZEB",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "PNRR",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    },
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "RSPP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    },
+    {
+     "fact": "Meccanica Nera: chi decide"
+    }
+   ]
+  },
+  {
+   "query": "RTI",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "SOA",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "query": "WBS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "Linee guida BIM dello studio (rev. 2026)"
+    },
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    }
+   ]
+  },
+  {
+   "query": "NUTS",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    },
+    {
+     "document": "TED 418556-2026 - SIA in BIM, uffici giudiziari Ancona"
+    }
+   ]
+  },
+  {
+   "query": "LCA",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 36/2023 All. I.7 - contenuti dei livelli di progettazione"
+    },
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    },
+    {
+     "document": "D.Lgs. 36/2023 All. II.14 - direzione lavori e collaudo"
+    }
+   ]
+  },
+  {
+   "query": "GWP",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "DM 7/8/2025 - Conto Termico 3.0"
+    }
+   ]
+  },
+  {
+   "query": "PMI",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "ISPESL",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "D.Lgs. 81/2008 artt. 88-101 e All. XV"
+    }
+   ]
+  },
+  {
+   "query": "MISE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "MATTM",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "GEIE",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "ANAC Bando tipo 2/2026 - disciplinare SIA sopra soglia"
+    }
+   ]
+  },
+  {
+   "query": "EN15978",
+   "scope": "all",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "document": "CAM edilizia 2025 - Allegato 1 (criteri)"
+    }
+   ]
+  },
+  {
+   "query": "IFC4",
+   "scope": "tasks",
+   "class": "sigla",
+   "set": "codici",
+   "expected": [
+    {
+     "task": "Test export IFC impianti"
+    },
+    {
+     "task": "Consegna PFTE su ACDat ATER"
+    }
+   ]
+  }
+ ]
+}

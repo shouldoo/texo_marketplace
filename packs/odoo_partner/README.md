@@ -17,6 +17,12 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.3.1
+
+- The code questions of the demo (`demo/questions-codici.json`, 3 questions): each is only a rare
+  act number or acronym of the demo, the expected records those whose text holds it. They measure what only
+  the words find, which no other set asked; the act numbers in the titles need texo_hub 20.0.1.8.0 or later.
+
 ### v1.3.0
 
 - The skills no longer restate the rules of the seed: they send the agent to the rules of the hub (`texo rules`,

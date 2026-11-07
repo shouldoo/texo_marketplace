@@ -15,6 +15,12 @@ map, with its references in `skills/*-guida/references/`.
 
 ## Changelog
 
+### v1.3.1
+
+- The code questions of the demo (`demo/questions-codici.json`, 22 questions): each is only a rare
+  act number or acronym of the demo, the expected records those whose text holds it. They measure what only
+  the words find, which no other set asked; the act numbers in the titles need texo_hub 20.0.1.8.0 or later.
+
 ### v1.3.0
 
 - The demo of the pack: «Terni 2027», the civic list of the scenario S3 of the measures of the memory, as its curated layer (a searchable session note on every task, keywords, summaries) with the verified public facts, the public acts converted with Docling (`demo/texts/`), 45 press and video cards as cards of the external sources (`SOURCES`, read by the loader of the core from v2.3.0) and the four question sets in one file (`demo/questions.json`, a `set` key per question), so the search of the memory can be measured on it with `eval_memoria.py`.
